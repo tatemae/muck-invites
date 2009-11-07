@@ -1,0 +1,20 @@
+--- 
+id: 
+  muck: 
+    invites: 
+      add_invite_button: "Tambahkan Undangan"
+      continue_button: Lanjutkan
+      create_success: "Invites dikirim ke {{emails}}. Anda akan diberitahu jika mereka bergabung {{app_name}}"
+      email_password: "Email Password"
+      email_password_help: "Password dari account email Anda"
+      invite: "{{inviter}} Mengundang Anda untuk bergabung {{app_name}}"
+      invite_button: Undangan
+      invite_friends: "Undang teman untuk bergabung {{app_name}}"
+      invited_joined: "{{user}} Bergabung Folksemantic"
+      new_invites: "Mengundang kontak email Anda untuk bergabung {{app_name}}"
+      no_contacts_found: "Tidak ada kontak yang ditemukan"
+      no_email_error: "Tidak ada alamat email yang ditentukan"
+      retrieving_contacts: "Mengambil kontak"
+      select_all: "Pilih Semua"
+      your_email: "Your Email (Gmail, Hotmail, atau Yahoo)"
+      your_email_help: "Alamat email dari account dengan kontak yang ingin Anda mengundang"

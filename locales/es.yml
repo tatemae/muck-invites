@@ -1,0 +1,20 @@
+--- 
+es: 
+  muck: 
+    invites: 
+      add_invite_button: "Añadir Invitación"
+      continue_button: Continuar
+      create_success: "Invita fueron enviados a {{emails}}. Usted será notificado si se unen a {{app_name}}"
+      email_password: "Email Contraseña"
+      email_password_help: "La contraseña de su cuenta de correo electrónico"
+      invite: "{{inviter}} Le invita a unirse a {{app_name}}"
+      invite_button: Invitación
+      invite_friends: "Invita a tus amigos a unirse a {{app_name}}"
+      invited_joined: "{{user}} Unió Folksemantic"
+      new_invites: "Invita a tus contactos de correo electrónico para unirse a {{app_name}}"
+      no_contacts_found: "No se han encontrado contactos"
+      no_email_error: "No se especifican las direcciones de correo electrónico"
+      retrieving_contacts: "Recuperación de los contactos"
+      select_all: "Seleccionar todo"
+      your_email: "Su correo electrónico (Gmail, Hotmail o Yahoo)"
+      your_email_help: "La dirección de correo electrónico de una cuenta con los contactos que desea invitar a"

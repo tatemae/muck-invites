@@ -1,0 +1,21 @@
+--- 
+? "no"
+: 
+  muck: 
+    invites: 
+      add_invite_button: "Legg Inviter"
+      continue_button: Fortsett
+      create_success: "Invitasjoner ble sendt til {{emails}}. Du blir varslet hvis de delta {{app_name}}"
+      email_password: "Email Password"
+      email_password_help: "Passordet til din e-postkonto"
+      invite: "{{inviter}} Inviterer deg til å bli {{app_name}}"
+      invite_button: Inviter
+      invite_friends: "Inviter dine venner til å delta {{app_name}}"
+      invited_joined: "{{user}} Blitt Folksemantic"
+      new_invites: "Inviter din email kontaktene til å delta {{app_name}}"
+      no_contacts_found: "Ingen kontakter ble funnet"
+      no_email_error: "Ingen e-postadresser ble spesifisert"
+      retrieving_contacts: "Hente kontakter"
+      select_all: "Velg alle"
+      your_email: "Din e-post (Gmail, Hotmail eller Yahoo)"
+      your_email_help: "E-postadressen til en konto med kontakter som du vil invitere"

@@ -1,0 +1,20 @@
+--- 
+pl: 
+  muck: 
+    invites: 
+      add_invite_button: "Dodaj zaproszenie"
+      continue_button: Kontynuuj
+      create_success: "Zachęca zostały wysłane do {{emails}}. Zostaniesz powiadomiony, jeśli przyłączenia {{app_name}}"
+      email_password: "E-mail Hasło"
+      email_password_help: "Hasła do konta e-mail"
+      invite: "{{inviter}} Zaprasza się do {{app_name}}"
+      invite_button: Zaproś
+      invite_friends: "Zaproś znajomych do {{app_name}}"
+      invited_joined: "{{user}} Dołączył Folksemantic"
+      new_invites: "Zaproś swoich kontaktów e-mail do przyłączenia {{app_name}}"
+      no_contacts_found: "Nie znaleziono kontaktów"
+      no_email_error: "Brak adresów e-mail zostały określone"
+      retrieving_contacts: "Pobieranie kontaktów"
+      select_all: "Zaznacz wszystko"
+      your_email: "Twój e-mail (Gmail, Hotmail czy Yahoo)"
+      your_email_help: "Adres e-mail konto w kontakty, które chcesz zaprosić"

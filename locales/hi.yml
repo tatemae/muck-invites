@@ -1,0 +1,20 @@
+--- 
+hi: 
+  muck: 
+    invites: 
+      add_invite_button: "आमंत्रित जोड़ें"
+      continue_button: "जारी रखें"
+      create_success: "निमंत्रण को {{emails}}. भेजा गया तुम अधिसूचित अगर वे {{app_name}} में शामिल हो जाएगा"
+      email_password: "ईमेल पासवर्ड"
+      email_password_help: "आपके ईमेल खाते का पासवर्ड"
+      invite: "{{inviter}} आमंत्रित तुम {{app_name}} शामिल होने के लिए"
+      invite_button: "आमंत्रित करें"
+      invite_friends: "अपने मित्रों को आमंत्रित करें {{app_name}} शामिल होने के लिए"
+      invited_joined: "{{user}} Folksemantic में शामिल हो गए"
+      new_invites: "आमंत्रित अपना ईमेल संपर्क {{app_name}} शामिल होने के लिए"
+      no_contacts_found: "कोई संपर्क नहीं मिले"
+      no_email_error: "कोई ईमेल पते निर्दिष्ट किया गया"
+      retrieving_contacts: "संपर्क पुनःप्राप्त"
+      select_all: "सभी का चयन करें"
+      your_email: "आपका ईमेल (जीमेल, हॉटमेल, या याहू)"
+      your_email_help: "संपर्क के साथ एक खाते के ईमेल पता है कि आप आमंत्रित करना चाहता हूँ"

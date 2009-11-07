@@ -1,0 +1,20 @@
+--- 
+lt: 
+  muck: 
+    invites: 
+      add_invite_button: "Pridėti Pakviesti"
+      continue_button: Tęsti
+      create_success: "Siūlo buvo išsiųsti {{emails}}. Jums bus pranešta, jeigu jos įstos {{app_name}}"
+      email_password: "Paštas Slaptažodis"
+      email_password_help: "Jūsų elektroninio pašto sąskaitos slaptažodį"
+      invite: "{{inviter}} Kviečia Jus prisijungti prie {{app_name}}"
+      invite_button: Pakviesti
+      invite_friends: "Pakvieskite savo draugus prisijungti prie {{app_name}}"
+      invited_joined: "{{user}} Prisijungė Folksemantic"
+      new_invites: "Pakvieskite savo elektroninio pašto kontaktų prisijungti {{app_name}}"
+      no_contacts_found: "Nėra įrašų nerasta"
+      no_email_error: "Nei elektroninio pašto adresai yra nurodyti"
+      retrieving_contacts: "Gaukite Kontaktai"
+      select_all: "Select All"
+      your_email: "Jūsų elektroninis paštas (Gmail, Hotmail ar Yahoo)"
+      your_email_help: "Pašto adresą ir sąskaitos ryšius, kuriuos norite pakviesti"

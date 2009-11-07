@@ -1,0 +1,20 @@
+--- 
+lv: 
+  muck: 
+    invites: 
+      add_invite_button: "Pievienot Invite"
+      continue_button: Turpināt
+      create_success: "Aicina nosūtītas {{emails}}. Jums tiks paziņots, ja tie pievienotos {{app_name}}"
+      email_password: "E-pasts Parole"
+      email_password_help: "Parole jūsu e-pasta konts"
+      invite: "{{inviter}} Aicina Jūs pievienoties {{app_name}}"
+      invite_button: Invite
+      invite_friends: "Uzaiciniet savus draugus pievienoties {{app_name}}"
+      invited_joined: "{{user}} Pievienojās Folksemantic"
+      new_invites: "Uzaiciniet savu e-pasta kontaktus pievienoties {{app_name}}"
+      no_contacts_found: "Adreses netika atrasts"
+      no_email_error: "Ne e-pasta adreses ir precizēti"
+      retrieving_contacts: "Izguvei kontakti"
+      select_all: "Atlasīt visu"
+      your_email: "Jūsu E-pasts (Gmail, Hotmail vai Yahoo)"
+      your_email_help: "E-pasta adrese konta kontaktus, kurus vēlaties uzaicināt"

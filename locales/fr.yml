@@ -1,0 +1,20 @@
+--- 
+fr: 
+  muck: 
+    invites: 
+      add_invite_button: "Ajouter Inviter"
+      continue_button: Continuer
+      create_success: "Invite ont été envoyés à {{emails}}. Vous serez avisé si elles adhèrent à {{app_name}}"
+      email_password: "Courriel Mot de passe"
+      email_password_help: "Le mot de passe de votre compte e-mail"
+      invite: "{{inviter}} Vous invite à rejoindre {{app_name}}"
+      invite_button: Inviter
+      invite_friends: "Invitez vos amis à rejoindre {{app_name}}"
+      invited_joined: "{{user}} Rejoint Folksemantic"
+      new_invites: "Invitez vos contacts à rejoindre {{app_name}}"
+      no_contacts_found: "Aucun contact n&#39;a été trouvé"
+      no_email_error: "Aucune adresse de courriel ont été précisées"
+      retrieving_contacts: "Récupération des contacts"
+      select_all: "Select All"
+      your_email: "Votre e-mail (Gmail, Hotmail ou Yahoo)"
+      your_email_help: "L&#39;adresse e-mail d&#39;un compte avec des contacts que vous souhaitez inviter"

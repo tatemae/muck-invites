@@ -1,0 +1,20 @@
+--- 
+iw: 
+  muck: 
+    invites: 
+      add_invite_button: "הוסף הזמן"
+      continue_button: המשך
+      create_success: "הזמנות נשלחו {{emails}}. תקבל הודעה אם הם מצטרפים {{app_name}}"
+      email_password: "אימייל סיסמה"
+      email_password_help: "את הסיסמה של חשבון הדוא&quot;ל שלך"
+      invite: "{{inviter}} מזמינה אותך להצטרף {{app_name}}"
+      invite_button: הזמן
+      invite_friends: "הזמן את חבריך להצטרף {{app_name}}"
+      invited_joined: "{{user}} הצטרף Folksemantic"
+      new_invites: "אנשי הקשר שלך הדוא&quot;ל הזמן להצטרף {{app_name}}"
+      no_contacts_found: "לא נמצאו אנשי קשר"
+      no_email_error: "לא היו כתובות דוא&quot;ל שצוין"
+      retrieving_contacts: "למציאת קשרים"
+      select_all: "בחר הכל"
+      your_email: "דואר אלקטרוני (Gmail, Hotmail, Yahoo או שלך)"
+      your_email_help: "כתובת הדוא&quot;ל של חשבון עם אנשי קשר שברצונך להזמין"

@@ -1,0 +1,6 @@
+= Muck Invites
+
+
+== Setup
+
+Copyright (c) 2009 Muck Your App, released under the MIT license

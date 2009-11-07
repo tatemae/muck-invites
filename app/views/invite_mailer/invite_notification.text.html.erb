@@ -1,0 +1,9 @@
+<p><%= h(@user.full_name) %> invites you to join Folksemantic.</p>
+
+<p>Folksemantic is the leading OpenCourseWare search engine. It has over 110,000 resources in its index and provides tools for sharing and discussing resources and receiving personalized recommendations.</p>
+
+<p>Visit Folksemantic at: <a href="<%= root_url %>"><%= root_url %></a></p>
+
+<p>See what <%= h(@user.full_name) %> is doing at: <a href="<%= profile_path(@user) %>"><%= profile_path(@user) %></a></p>
+
+<p>If the links do not work, try copying and pasting them into your web browser.</p>

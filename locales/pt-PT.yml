@@ -1,0 +1,20 @@
+--- 
+pt-PT: 
+  muck: 
+    invites: 
+      add_invite_button: "Adicionar Convidar"
+      continue_button: Continue
+      create_success: "Convites foram enviados para {{emails}}. Você será notificado se juntar {{app_name}}"
+      email_password: "Email Senha"
+      email_password_help: "A senha de sua conta de e-mail"
+      invite: "{{inviter}} Convida você para participar {{app_name}}"
+      invite_button: Convidar
+      invite_friends: "Convide seus amigos para se juntarem {{app_name}}"
+      invited_joined: "{{user}} Juntou Folksemantic"
+      new_invites: "Convide seus contatos de e-mail para se juntar {{app_name}}"
+      no_contacts_found: "Nenhum contato foi encontrado"
+      no_email_error: "Não foram especificados os endereços de e-mail"
+      retrieving_contacts: "Recuperando contatos"
+      select_all: "Selecionar Tudo"
+      your_email: "Seu e-mail (Gmail, Hotmail ou Yahoo)"
+      your_email_help: "O endereço de e-mail de uma conta com os contactos que pretende convidar"

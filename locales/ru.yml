@@ -1,0 +1,20 @@
+--- 
+ru: 
+  muck: 
+    invites: 
+      add_invite_button: "Добавить Пригласить"
+      continue_button: Продолжить
+      create_success: "Приглашения были направлены {{emails}}. Вы будете уведомлены, если они вступят {{app_name}}"
+      email_password: "Email Пароль"
+      email_password_help: "Пароль учетной записи электронной почты"
+      invite: "{{inviter}} Приглашает Вас присоединиться к {{app_name}}"
+      invite_button: Пригласить
+      invite_friends: "Пригласите своих друзей присоединиться к {{app_name}}"
+      invited_joined: "{{user}} Вступил Folksemantic"
+      new_invites: "Приглашение контакты электронной почты присоединиться {{app_name}}"
+      no_contacts_found: "Не найдено ни контактов"
+      no_email_error: "Не были указаны адреса электронной почты"
+      retrieving_contacts: "Получение контактов"
+      select_all: "Выбрать все"
+      your_email: "Ваша электронная почта (Gmail, Hotmail или Yahoo)"
+      your_email_help: "Адрес электронной почты счет контактов, которые вы хотите пригласить"

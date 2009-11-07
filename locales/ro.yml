@@ -1,0 +1,20 @@
+--- 
+ro: 
+  muck: 
+    invites: 
+      add_invite_button: "Adăugaţi Invita"
+      continue_button: Continuaţi
+      create_success: "Invitaţii au fost trimise la {{emails}}. Vei fi notificat în cazul în care se alăture {{app_name}}"
+      email_password: "Email Parola"
+      email_password_help: "Parola contului dumneavoastră de e-mail"
+      invite: "{{inviter}} Vă invită să se alăture {{app_name}}"
+      invite_button: Invite
+      invite_friends: "Invitaţi-vă prietenii să se alăture {{app_name}}"
+      invited_joined: "{{user}} S-au alăturat Folksemantic"
+      new_invites: "Invitaţi-contactele dvs. de email să se alăture {{app_name}}"
+      no_contacts_found: "Nici un contact au fost găsite"
+      no_email_error: "Nu adrese de email au fost specificate"
+      retrieving_contacts: "Preluarea de contact"
+      select_all: "Selecteaza Tot"
+      your_email: "Email-ul dvs. (Gmail, Hotmail, sau Yahoo)"
+      your_email_help: "Adresa de e-mail a unui cont cu persoanele de contact pe care doriţi să le invitaţi"

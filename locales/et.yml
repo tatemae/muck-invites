@@ -1,0 +1,20 @@
+--- 
+et: 
+  muck: 
+    invites: 
+      add_invite_button: "Lisa Kutsu"
+      continue_button: Jätka
+      create_success: "Kutsub saadeti {{emails}}. Teile antakse teada, kui nad kolivad {{app_name}}"
+      email_password: "E-mail Parool"
+      email_password_help: "Parool Teie e-posti konto"
+      invite: "{{inviter}} Kutsub sind liituma {{app_name}}"
+      invite_button: Kutsu
+      invite_friends: "Kutsu sõpru liituma {{app_name}}"
+      invited_joined: "{{user}} Liitunud Folksemantic"
+      new_invites: "Kutsu oma e-posti aadressid liituda {{app_name}}"
+      no_contacts_found: "Ühtegi kontakti ei leitud"
+      no_email_error: "Nr e-posti aadressid on täpsustatud"
+      retrieving_contacts: "Otsib kontakte"
+      select_all: "Vali kõik"
+      your_email: "Sinu e-post (Gmail, Hotmail või Yahoo)"
+      your_email_help: "E-posti aadressi konto kontaktid, mida soovite kutsuda"

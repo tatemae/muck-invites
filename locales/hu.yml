@@ -1,0 +1,20 @@
+--- 
+hu: 
+  muck: 
+    invites: 
+      add_invite_button: "Add meghívó"
+      continue_button: Továbbra
+      create_success: "Felkéri küldtek {{emails}}. Ön értesítést kap, ha csatlakoznak {{app_name}}"
+      email_password: "E-mail Jelszó"
+      email_password_help: "A jelszó az e-mail fiók"
+      invite: "{{inviter}} Meghívja Önt, hogy csatlakozzon {{app_name}}"
+      invite_button: Meghívja
+      invite_friends: "Hívd meg a barátaidat, hogy csatlakozzanak {{app_name}}"
+      invited_joined: "{{user}} Csatlakozott Folksemantic"
+      new_invites: "Hívd meg e-mail címek, hogy csatlakozzanak {{app_name}}"
+      no_contacts_found: "Egyetlen partner sem találtak"
+      no_email_error: "Nincs e-mail címét adta meg"
+      retrieving_contacts: "Retrieving kapcsolatok"
+      select_all: "Select All"
+      your_email: "Ön e-mail (Gmail, Hotmail vagy a Yahoo)"
+      your_email_help: "Az e-mail címét számlával rendelkező partnerek a meghívni kívánt"

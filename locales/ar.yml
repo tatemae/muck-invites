@@ -1,0 +1,20 @@
+--- 
+ar: 
+  muck: 
+    invites: 
+      add_invite_button: "إضافة دعوة"
+      continue_button: تواصل
+      create_success: "تدعو ارسلت الى {{emails}}. سيتم إعلامك إذا كانت انضمام {{app_name}}"
+      email_password: "البريد الإلكتروني كلمة المرور"
+      email_password_help: "كلمة السر لحساب البريد الإلكتروني"
+      invite: "{{inviter}}يدعوك للانضمام {{app_name}}"
+      invite_button: دعوة
+      invite_friends: "دعوة أصدقائك للانضمام {{app_name}}"
+      invited_joined: "{{user}}انضم Folksemantic"
+      new_invites: "دعوة جهات الاتصال الخاصة بك البريد الالكتروني للانضمام {{app_name}}"
+      no_contacts_found: "تم العثور على أي اتصالات"
+      no_email_error: "لا عناوين البريد الالكتروني تم تحديده"
+      retrieving_contacts: "استرداد الاتصالات"
+      select_all: "حدد الكل"
+      your_email: "البريد الإلكتروني (بريد جوجل ، هوتميل أو ياهو)"
+      your_email_help: "عنوان البريد الإلكتروني للحساب مع جهات الاتصال التي تريد دعوة"

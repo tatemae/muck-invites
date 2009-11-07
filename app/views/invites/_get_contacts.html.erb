@@ -1,0 +1,27 @@
+<%= output_errors(t('muck.invites.problem_adding_invite'), {:class => 'help-box'}, @invite) %>
+<% if !@contacts.blank? -%>
+  <% custom_form_for(:invite_contacts, :url => {:action => 'create'}, :html => {:id => "invite-contacts-form", :name => 'invite-contacts-form'} ) do |f| -%>
+     <div id="contact-chooser">
+       <div id="contact-chooser-list">
+         <fieldset>
+           <div id="select-all-contacts">
+             <input id="select-all" type="checkbox" onclick='jQuery("input[type=checkbox]").attr("checked",jQuery("#select-all:checked").val() != null);' />
+             <%= t('muck.invites.select_all') %>
+           </div>
+           <div class="table-wrapper">
+             <table id="contacts-list">
+               <% @contacts.each do |contact| %>
+                 <tr class="contact">
+                   <td class="cb"><input type="checkbox" value="<%= h(contact[1]) %>" name="emails[]"></td>
+                   <td class="name"><%= contact[0] %></td>
+                   <td class="email"><%= contact[1] %></td>
+                 </tr>
+               <% end %>
+             </table>
+           </div>
+         </fieldset>
+       </div>
+     </div>
+     <%= f.submit t('muck.invites.invite_button'), :class => "button invite-submit" %>
+  <% end -%>
+<% end -%>

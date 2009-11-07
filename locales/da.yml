@@ -1,0 +1,20 @@
+--- 
+da: 
+  muck: 
+    invites: 
+      add_invite_button: "Tilføj Inviter"
+      continue_button: Fortsæt
+      create_success: "Opfordrer blev sendt til {{emails}}. Du vil få besked, hvis de tilslutter {{app_name}}"
+      email_password: "Email Password"
+      email_password_help: "Adgangskoden til din e-mail-konto"
+      invite: "{{inviter}} Inviterer dig til at deltage {{app_name}}"
+      invite_button: Inviter
+      invite_friends: "Inviter dine venner til at deltage {{app_name}}"
+      invited_joined: "{{user}} Tiltrådte Folksemantic"
+      new_invites: "Inviter din e-mail kontakter til at slutte {{app_name}}"
+      no_contacts_found: "Ingen kontakter blev ikke fundet"
+      no_email_error: "Ingen e-mail-adresser blev specificeret"
+      retrieving_contacts: "Henter kontakter"
+      select_all: "Vælg alle"
+      your_email: "Din e-mail (Gmail, Hotmail eller Yahoo)"
+      your_email_help: "E-mail-adresse på en konto med kontakter, du vil invitere"

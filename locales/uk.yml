@@ -1,0 +1,20 @@
+--- 
+uk: 
+  muck: 
+    invites: 
+      add_invite_button: "Додати Запросити"
+      continue_button: Продовжити
+      create_success: "Запрошення були направлені {{emails}}. Ви будете повідомлені, якщо вони набудуть {{app_name}}"
+      email_password: "Email Пароль"
+      email_password_help: "Пароль облікового запису електронної пошти"
+      invite: "{{inviter}} Запрошує Вас приєднатися до {{app_name}}"
+      invite_button: Запросити
+      invite_friends: "Запросіть своїх друзів приєднатися до {{app_name}}"
+      invited_joined: "{{user}} Набрав Folksemantic"
+      new_invites: "Запрошення контакти електронної пошти приєднатися {{app_name}}"
+      no_contacts_found: "Не знайдено ні контактів"
+      no_email_error: "Не були вказані адреси електронної пошти"
+      retrieving_contacts: "Отримання контактів"
+      select_all: "Обрати всіх"
+      your_email: "Ваша електронна пошта (Gmail, Hotmail або Yahoo)"
+      your_email_help: "Адреса електронної пошти рахунок контактів, які ви хотіли б запросити"

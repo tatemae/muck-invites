@@ -1,0 +1,20 @@
+--- 
+fa: 
+  muck: 
+    invites: 
+      add_invite_button: "دعوت از اضافه کردن"
+      continue_button: ادامه
+      create_success: "دعوتنامه فرستاده شد به {{emails}}. شما خواهد بود اگر آنها مطلع عضویت {{app_name}}"
+      email_password: "پست الکترونیکی کلمه عبور"
+      email_password_help: "کلمه عبور مربوط به حساب ایمیل خود"
+      invite: "{{inviter}}دعوت شما برای پیوستن به {{app_name}}"
+      invite_button: دعوت
+      invite_friends: "دعوت از دوستان خود برای پیوستن به {{app_name}}"
+      invited_joined: "{{user}}تاریخ عضویت Folksemantic"
+      new_invites: "تماس با دعوت از ایمیل خود برای پیوستن به {{app_name}}"
+      no_contacts_found: "هیچ تماسی پیدا نشد"
+      no_email_error: "بدون آدرس ایمیل مشخص شدند"
+      retrieving_contacts: "بازیابی تماس با ما"
+      select_all: "انتخاب همه"
+      your_email: "شما ایمیل (جیمیل ، Hotmail ، و یا یاهو)"
+      your_email_help: "آدرس ایمیل کنید با تماس با ما را که می خواهید به دعوت"

@@ -1,0 +1,20 @@
+--- 
+cs: 
+  muck: 
+    invites: 
+      add_invite_button: "Přidat Pozvat"
+      continue_button: Pokračovat
+      create_success: "Vyzývá byly zaslány {{emails}}. Budete vždy upozorněni, pokud se připojí {{app_name}}"
+      email_password: "E-mail Heslo"
+      email_password_help: "Heslo e-mailového účtu"
+      invite: "{{inviter}} Vás zve ke vstupu {{app_name}}"
+      invite_button: Pozvat
+      invite_friends: "Pozvěte své přátele, aby se {{app_name}}"
+      invited_joined: "{{user}} Připojil Folksemantic"
+      new_invites: "Pozvěte své e-mailové kontakty připojit {{app_name}}"
+      no_contacts_found: "Nebyly nalezeny žádné kontakty"
+      no_email_error: "Žádné e-mailové adresy jsou uvedeny"
+      retrieving_contacts: "Získávám kontakty"
+      select_all: "Select All"
+      your_email: "Váš email (Gmail, Hotmail, nebo Yahoo)"
+      your_email_help: "E-mailovou adresu účtu s kontakty, které chcete pozvat"

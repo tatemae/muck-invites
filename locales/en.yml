@@ -1,0 +1,19 @@
+en:
+  muck:
+    invites:
+      add_invite_button: Add Invite
+      invite: "{{inviter}} invites you to join {{app_name}}"
+      invited_joined: "{{user}} joined Folksemantic"
+      new_invites: Invite your email contacts to join {{app_name}}
+      invite_friends: Invite your friends to join {{app_name}}
+      your_email: Your Email (Gmail, Hotmail, or Yahoo)
+      your_email_help: The email address of an account with contacts that you want to invite
+      email_password: Email Password
+      email_password_help: The password of your email account
+      continue_button: Continue
+      retrieving_contacts: Retrieving contacts
+      invite_button: Invite
+      select_all: Select All
+      create_success: "Invites were sent to {{emails}}. You will be notified if they join {{app_name}}"
+      no_email_error: No email addresses were specified
+      no_contacts_found: No contacts were found

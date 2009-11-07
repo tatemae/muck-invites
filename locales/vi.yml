@@ -1,0 +1,20 @@
+--- 
+vi: 
+  muck: 
+    invites: 
+      add_invite_button: "Thêm Invite"
+      continue_button: "Tiếp tục"
+      create_success: "Lời mời được gửi đến {{emails}}. Bạn sẽ được thông báo nếu họ tham gia {{app_name}}"
+      email_password: "Email Mật khẩu"
+      email_password_help: "Mật khẩu của tài khoản email của bạn"
+      invite: "{{inviter}} Mời các bạn tham gia {{app_name}}"
+      invite_button: Mời
+      invite_friends: "Mời bạn bè tham gia {{app_name}}"
+      invited_joined: "{{user}} Gia nhập Folksemantic"
+      new_invites: "Mời bạn liên hệ email để tham gia {{app_name}}"
+      no_contacts_found: "Không có địa chỉ liên lạc đã được tìm thấy"
+      no_email_error: "Không có địa chỉ email được chỉ định"
+      retrieving_contacts: "Lấy địa chỉ liên hệ"
+      select_all: "Chọn Tất cả"
+      your_email: "Email (Gmail, Hotmail, hay Yahoo của bạn)"
+      your_email_help: "Địa chỉ email của một tài khoản với địa chỉ liên lạc mà bạn muốn mời"

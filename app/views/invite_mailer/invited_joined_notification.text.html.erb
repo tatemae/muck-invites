@@ -1,0 +1,5 @@
+<p><%= h(@user.full_name) %>, a contact you invited, joined Folksemantic.</p>
+
+<p>Visit <%= h(@user.full_name) %>'s profile to see what they are doing and to begin following them: <a href="<%= profile_path(@inviter) %>"><%= profile_path(@inviter) %></a></p>
+
+<p>If the links do not work, try copying and pasting them into your web browser.</p>

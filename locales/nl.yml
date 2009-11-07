@@ -1,0 +1,20 @@
+--- 
+nl: 
+  muck: 
+    invites: 
+      add_invite_button: "Voeg uitnodigen"
+      continue_button: Doorgaan
+      create_success: "Uitnodigingen werden verstuurd naar {{emails}}. U wordt verwittigd wanneer zij zich bij {{app_name}}"
+      email_password: "E-mail Wachtwoord"
+      email_password_help: "Het wachtwoord van uw e-mailaccount"
+      invite: "{{inviter}} Nodigt u uit om {{app_name}} toetreden"
+      invite_button: Invite
+      invite_friends: "Nodig je vrienden uit om {{app_name}} toetreden"
+      invited_joined: "{{user}} Toegetreden Folksemantic"
+      new_invites: "Nodig uw e-mail contacten te treden {{app_name}}"
+      no_contacts_found: "Geen contacten gevonden"
+      no_email_error: "Geen e-mail adressen werden gespecificeerd"
+      retrieving_contacts: "Contacten ophalen"
+      select_all: "Alles selecteren"
+      your_email: "Uw e-mail (Gmail, Hotmail of Yahoo)"
+      your_email_help: "Het e-mailadres van een account met contacten die u wilt uitnodigen"

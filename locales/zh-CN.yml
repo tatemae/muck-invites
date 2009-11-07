@@ -1,0 +1,20 @@
+--- 
+zh-CN: 
+  muck: 
+    invites: 
+      add_invite_button: 添加邀请
+      continue_button: 继续
+      create_success: "请被送往{{emails}}.您将会收到通知，如果他们加入{{app_name}}"
+      email_password: 邮箱密码
+      email_password_help: 您的电子邮件帐户的密码
+      invite: "{{inviter}}邀请您加入{{app_name}}"
+      invite_button: 邀请
+      invite_friends: "邀请您的朋友加入{{app_name}}"
+      invited_joined: "{{user}}加入Folksemantic"
+      new_invites: "邀请您的电子邮件联系人加入{{app_name}}"
+      no_contacts_found: 没有发现接触
+      no_email_error: 没有被指定的电子邮件地址
+      retrieving_contacts: 检索接触
+      select_all: 选择所有
+      your_email: 您的电子邮件（Gmail，Hotmail或雅虎）
+      your_email_help: 一个接触到的帐户的电子邮件地址，您希望邀请

@@ -1,0 +1,20 @@
+--- 
+tl: 
+  muck: 
+    invites: 
+      add_invite_button: "Magdagdag ng Mag-imbita"
+      continue_button: Magpatuloy
+      create_success: "Paanyaya ay ipinadala sa {{emails}}. Makakatanggap ka ng notipikasyon kung sumali sila {{app_name}}"
+      email_password: "Email ang Password"
+      email_password_help: "Ang password ng iyong email account"
+      invite: "{{inviter}} Imbitasyon upang sumali ka sa {{app_name}}"
+      invite_button: Mag-anyaya
+      invite_friends: "Anyayahan ang iyong mga kaibigan na sumali sa {{app_name}}"
+      invited_joined: "{{user}} Sumali Folksemantic"
+      new_invites: "Anyayahan ang iyong email contact sa sumali {{app_name}}"
+      no_contacts_found: "Walang contact ang natagpuan"
+      no_email_error: "Walang mga email address ay tinukoy"
+      retrieving_contacts: "Kinukuha ang mga contact"
+      select_all: "Piliin ang Lahat"
+      your_email: "Ang iyong Email (Gmail, ang Hotmail, Yahoo o)"
+      your_email_help: "Ang email address ng isang account na may mga kontak na gusto mong mag-imbita"

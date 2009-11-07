@@ -1,0 +1,20 @@
+--- 
+fi: 
+  muck: 
+    invites: 
+      add_invite_button: "Lisää Kutsu"
+      continue_button: Jatka
+      create_success: "Kehottaa lähetettiin {{emails}}. Saat ilmoituksen, jos ne liittyvät {{app_name}}"
+      email_password: "Sähköposti Salasana"
+      email_password_help: "Salasana sähköpostitilisi"
+      invite: "{{inviter}} Pyytää teitä liittymään {{app_name}}"
+      invite_button: Kehota
+      invite_friends: "Kutsu ystäväsi liittymään {{app_name}}"
+      invited_joined: "{{user}} Liittyi Folksemantic"
+      new_invites: "Kutsu sähköpostiyhteystiedot liittyä {{app_name}}"
+      no_contacts_found: "Yhteystietoja ei löytynyt"
+      no_email_error: "O sähköpostiosoitteet on yksilöity"
+      retrieving_contacts: "Haetaan yhteystiedot"
+      select_all: "Valitse kaikki"
+      your_email: "Sähköpostiosoitteesi (Gmail, Hotmail tai Yahoo)"
+      your_email_help: "Sähköpostiosoite tilin yhteystiedot, jotka haluat kutsua"

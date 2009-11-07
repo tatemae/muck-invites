@@ -1,0 +1,20 @@
+--- 
+sq: 
+  muck: 
+    invites: 
+      add_invite_button: "Add Invite"
+      continue_button: Vazhdo
+      create_success: "Fton u dërguan për të {{emails}}. Ju do të njoftoheni nëse ata bashkohen {{app_name}}"
+      email_password: "Email Password"
+      email_password_help: "Fjalëkalimin e llogarisë tuaj e-mail"
+      invite: "{{inviter}} Ju fton për t&#39;u bashkuar me {{app_name}}"
+      invite_button: Invite
+      invite_friends: "Fto shokët tuaj për t&#39;u bashkuar me {{app_name}}"
+      invited_joined: "{{user}} Bashkua Folksemantic"
+      new_invites: "Fto kontakteve tuaj e-mail për t&#39;u bashkuar me {{app_name}}"
+      no_contacts_found: "Nuk u gjet kontakte"
+      no_email_error: "Nuk adresat e-mail ishin përcaktuar"
+      retrieving_contacts: "Retrieving kontakte"
+      select_all: "Select All"
+      your_email: "Your Email (Gmail, Hotmail apo Yahoo)"
+      your_email_help: "Adresa email-i një llogari me kontaktet që ju doni të ftoni"

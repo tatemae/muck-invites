@@ -1,0 +1,20 @@
+--- 
+mt: 
+  muck: 
+    invites: 
+      add_invite_button: "Żid Invite"
+      continue_button: Kompli
+      create_success: "Jistieden intbagħtu lill {{emails}}. Inti ser tiġi notifikata jekk jissieħbu {{app_name}}"
+      email_password: "Email Password"
+      email_password_help: "Il-password ta &#39;kont email tieghek"
+      invite: "{{inviter}} Tistiednek biex jissieħbu {{app_name}}"
+      invite_button: Invite
+      invite_friends: "Jistiednu lill-ħbieb tiegħek biex jissieħbu {{app_name}}"
+      invited_joined: "{{user}} Ssieħbu Folksemantic"
+      new_invites: "Kuntatti Tistieden email tiegħek biex jissieħbu {{app_name}}"
+      no_contacts_found: "L-ebda kuntatti nstabu"
+      no_email_error: "Nru indirizzi email kienu speċifikati"
+      retrieving_contacts: "Irkupru tal-kuntatti"
+      select_all: "Select All"
+      your_email: "Your Email (Gmail, Hotmail, jew Yahoo)"
+      your_email_help: "L-indirizz tal-email ta &#39;kont ma&#39; kuntatti li inti tixtieq li tistieden"

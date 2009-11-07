@@ -1,0 +1,20 @@
+--- 
+bg: 
+  muck: 
+    invites: 
+      add_invite_button: "Добави Покани"
+      continue_button: Продължи
+      create_success: "Приканва бяха изпратени {{emails}}. Вие ще бъдете уведомени, ако те се присъединят {{app_name}}"
+      email_password: "Имейл Парола"
+      email_password_help: "Паролата на вашия имейл сметка"
+      invite: "{{inviter}} Ви кани да се присъедините {{app_name}}"
+      invite_button: Покани
+      invite_friends: "Поканете приятели да се присъединят към {{app_name}}"
+      invited_joined: "{{user}} Присъединиха Folksemantic"
+      new_invites: "Поканете своя имейл контактите да се присъединят към {{app_name}}"
+      no_contacts_found: "Не са намерени контакти"
+      no_email_error: "Не имейл адреси са посочени"
+      retrieving_contacts: "Изтегляне на контакти"
+      select_all: "Избери всички"
+      your_email: "Вашият Email (Gmail, Hotmail или Yahoo)"
+      your_email_help: "Имейл адресът на сметка, с контактите, които искате да поканите"

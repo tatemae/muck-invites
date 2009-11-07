@@ -1,0 +1,20 @@
+--- 
+ca: 
+  muck: 
+    invites: 
+      add_invite_button: "Afegir Invitació"
+      continue_button: Continuar
+      create_success: "Convida van ser enviats a {{emails}}. Seràs notificat si s&#39;uneixen a {{app_name}}"
+      email_password: "Email Contrasenya"
+      email_password_help: "La contrasenya del vostre compte de correu electrònic"
+      invite: "{{inviter}} Li convida a unir-se a {{app_name}}"
+      invite_button: Invitació
+      invite_friends: "Convida als teus amics a unir-se a {{app_name}}"
+      invited_joined: "{{user}} Unió Folksemantic"
+      new_invites: "Convida als teus contactes de correu electrònic per unir-se a {{app_name}}"
+      no_contacts_found: "No s&#39;han trobat contactes"
+      no_email_error: "No s&#39;especifiquen les adreces de correu electrònic"
+      retrieving_contacts: "Recuperació dels contactes"
+      select_all: "Seleccionar tot"
+      your_email: "El seu correu electrònic (Gmail, Hotmail o Yahoo)"
+      your_email_help: "L&#39;adreça de correu electrònic d&#39;un compte amb els contactes que voleu convidar"
