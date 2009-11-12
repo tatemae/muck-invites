@@ -50,7 +50,7 @@ begin
     gemspec.name = "muck-invites"
     gemspec.summary = "The invite engine for the muck system"
     gemspec.email = "justinball@gmail.com"
-    gemspec.homepage = "http://github.com/jbasdf/muck_invites"
+    gemspec.homepage = "http://github.com/tatemae/muck_invites"
     gemspec.description = "The invite engine for the muck system."
     gemspec.authors = ["Justin Ball, Joel Duffin"]
     gemspec.rubyforge_project = 'muck-invites'
@@ -62,5 +62,5 @@ begin
     rubyforge.doc_task = "rdoc"
   end
 rescue LoadError
-  puts "Jeweler not available. Install it with: sudo gem install technicalpickles-jeweler -s http://gems.github.com"
+  puts "Jeweler not available. Install it with: sudo gem install jeweler"
 end
