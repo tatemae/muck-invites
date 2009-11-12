@@ -49,7 +49,7 @@ begin
   Jeweler::Tasks.new do |gemspec|
     gemspec.name = "muck-invites"
     gemspec.summary = "The invite engine for the muck system"
-    gemspec.email = "justinball@gmail.com"
+    gemspec.email = "justin@tatemae.com"
     gemspec.homepage = "http://github.com/tatemae/muck_invites"
     gemspec.description = "The invite engine for the muck system."
     gemspec.authors = ["Justin Ball, Joel Duffin"]

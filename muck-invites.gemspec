@@ -11,7 +11,7 @@ Gem::Specification.new do |s|
   s.authors = ["Justin Ball, Joel Duffin"]
   s.date = %q{2009-10-29}
   s.description = %q{The invite engine for the muck system.}
-  s.email = %q{justinball@gmail.com}
+  s.email = %q{justin@tatemae.com}
   s.extra_rdoc_files = [
     "README.rdoc"
   ]
