@@ -5,11 +5,11 @@
 
 Gem::Specification.new do |s|
   s.name = %q{muck-invites}
-  s.version = "0.1.2"
+  s.version = "0.1.3"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Justin Ball, Joel Duffin"]
-  s.date = %q{2009-10-29}
+  s.date = %q{2009-11-13}
   s.description = %q{The invite engine for the muck system.}
   s.email = %q{justin@tatemae.com}
   s.extra_rdoc_files = [
@@ -324,16 +324,8 @@ Gem::Specification.new do |s|
      "test/rails_root/script/process/spawner",
      "test/rails_root/script/runner",
      "test/rails_root/script/server",
-     "test/rails_root/test/factories.rb",
      "test/rails_root/test/functional/.keep",
      "test/rails_root/test/functional/invites_controller_test.rb",
-     "test/rails_root/test/mocks/development/.keep",
-     "test/rails_root/test/mocks/test/.keep",
-     "test/rails_root/test/shoulda_macros/controller.rb",
-     "test/rails_root/test/shoulda_macros/forms.rb",
-     "test/rails_root/test/shoulda_macros/models.rb",
-     "test/rails_root/test/shoulda_macros/pagination.rb",
-     "test/rails_root/test/shoulda_macros/plugins.rb",
      "test/rails_root/test/test_helper.rb",
      "test/rails_root/test/unit/.keep",
      "test/rails_root/test/unit/contacts_test.rb",
@@ -361,7 +353,7 @@ Gem::Specification.new do |s|
      "test/rails_root/vendor/plugins/ssl_requirement/test/ssl_requirement_test.rb",
      "uninstall.rb"
   ]
-  s.homepage = %q{http://github.com/jbasdf/muck_invites}
+  s.homepage = %q{http://github.com/tatemae/muck_invites}
   s.rdoc_options = ["--charset=UTF-8"]
   s.require_paths = ["lib"]
   s.rubyforge_project = %q{muck-invites}
@@ -403,13 +395,7 @@ Gem::Specification.new do |s|
      "test/rails_root/features/support/paths.rb",
      "test/rails_root/public/dispatch.rb",
      "test/rails_root/script/create_project.rb",
-     "test/rails_root/test/factories.rb",
      "test/rails_root/test/functional/invites_controller_test.rb",
-     "test/rails_root/test/shoulda_macros/controller.rb",
-     "test/rails_root/test/shoulda_macros/forms.rb",
-     "test/rails_root/test/shoulda_macros/models.rb",
-     "test/rails_root/test/shoulda_macros/pagination.rb",
-     "test/rails_root/test/shoulda_macros/plugins.rb",
      "test/rails_root/test/test_helper.rb",
      "test/rails_root/test/unit/contacts_test.rb",
      "test/rails_root/test/unit/invite_mailer_test.rb",
