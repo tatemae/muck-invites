@@ -15,7 +15,7 @@ end
 
 Rails::Initializer.run do |config|
   config.time_zone = 'UTC'
-  config.gem "binarylogic-authlogic", :lib => 'authlogic', :source  => 'http://gems.github.com', :version => ">=2.1.0"
+  config.gem "authlogic"
   config.gem "contacts"
   config.gem 'muck-engine', :lib => 'muck_engine'
   config.gem 'muck-users', :lib => 'muck_users'
