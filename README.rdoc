@@ -1,6 +1,39 @@
 = Muck Invites
-
+Make it easy to let users invite other users.
 
 == Setup
 
-Copyright (c) 2009 Muck Your App, released under the MIT license
+=== Inviter model
+Add 'acts_as_muck_inviter' to the class that you wish to have do the inviting.  This is commonly the user model, but
+might also be another model - for example Event.
+
+  class User < ActiveRecord::Base
+    acts_as_authentic do |c|
+      c.crypto_provider = Authlogic::CryptoProviders::BCrypt
+    end
+    acts_as_muck_user
+    acts_as_muck_inviter
+  end
+
+or
+  
+  class Event < ActiveRecord::Base
+    acts_as_muck_inviter
+  end
+
+=== Other models
+These models are required for the invite system to function and must be named as specified.  Addition functionality
+can be added to each model as needed.
+
+Create an Invitee model:
+  class Invitee < ActiveRecord::Base
+    acts_as_muck_invitee
+  end
+
+Create an Invite model:
+  class Invite < ActiveRecord::Base
+    acts_as_muck_invite
+  end
+
+
+Copyright (c) 2009 Tatemae.com, released under the MIT license

@@ -8,10 +8,8 @@ module ActiveRecord
       module ClassMethods
 
         def acts_as_muck_inviter(options = {})
-
-          has_many :user_invites
-          has_many :invites, :through => :user_invites
-
+          has_many :invites, :as => :inviter
+          has_many :invitees, :through => :invites
           named_scope :by_newest, :order => "created_at DESC"
           named_scope :by_oldest, :order => "created_at ASC"
           named_scope :recent, lambda { { :conditions => ['created_at > ?', 1.week.ago] } }
@@ -34,6 +32,12 @@ module ActiveRecord
       # All the methods available to a record that has had <tt>acts_as_muck_inviter</tt> specified.
       module InstanceMethods
 
+        # Gets all emails have been invited
+        def invitee_emails
+          invitees.map(&:email)
+        end
+
+        # Sends out notification email and adds an activity to each of the inviters activity feeds
         def notify_inviters(invite_id = nil)
           inviters = Invite.who_invited?(self.email, invite_id)
           if inviters.size > 0
@@ -49,13 +53,18 @@ module ActiveRecord
           
         end
 
-        def invite(emails)
+        def invite(emails, user)
           emails = emails.split(/[, ]/) if !emails.is_a?(Array)
-          emails = emails.find_all { |email| !email.blank?}
+          emails = emails.find_all { |email| !email.blank? }
+          emails = emails.flatten.collect { |email| email.strip }
           raise I18n.t('muck.invites.no_email_error') if emails.blank?
+          check_emails = invitee_emails
           emails.each do |email|
-            invite = Invite.find_by_email(email) || Invite.create(:email => email)
-            invites << invite if !invites.include?(invite)
+            if !check_emails.include?(email)
+              check_emails << email
+              invitee = Invitee.find_by_email(email) || Invitee.create!(:email => email)
+              Invite.create!(:inviter => self, :invitee => invitee, :user => user)
+            end
           end 
         end
 

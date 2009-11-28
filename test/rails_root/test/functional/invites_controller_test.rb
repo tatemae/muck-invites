@@ -53,13 +53,19 @@ class Muck::InvitesControllerTest < ActionController::TestCase
         should_render_template :get_contacts
       end
 
-      context "create invite" do
-        should " be able to create a invite" do
-          assert_difference "Invite.count" do
-            post :create,  :emails => [[Factory.next(:name),Factory.next(:email)]]
+      context "POST to create" do
+        should "create a invite s" do
+          assert_difference "Invite.count", 2 do
+            post :create,  :emails => [[Factory.next(:email),Factory.next(:email)]]
+          end
+        end
+        should "create a invitee" do
+          assert_difference "Invite.count", 2 do
+            post :create,  :emails => [[Factory.next(:email),Factory.next(:email)]]
           end
         end
       end
+      
     end
     
   end

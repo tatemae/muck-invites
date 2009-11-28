@@ -38,10 +38,17 @@ class Muck::InvitesController < ApplicationController
 
   def create
     if params[:emails]
-      current_user.invite(params[:emails])
-      flash[:notice] = t('muck.invites.create_success', :emails => params[:emails].join(', '), :app_name => GlobalConfig.application_name)
-    end  
-    redirect_to('/')
+      current_user.invite(params[:emails], current_user)
+      message = t('muck.invites.create_success', :emails => params[:emails].join(', '), :app_name => GlobalConfig.application_name)
+    end
+    respond_to do |format|
+      format.html do
+        flash[:notice] = message
+        redirect_to('/')
+      end
+      format.pjs { render :text => message }
+    end 
+    
   rescue ActiveRecord::RecordInvalid => ex
     if @invite
       errors = @invite.errors.full_messages.to_sentence
@@ -49,6 +56,10 @@ class Muck::InvitesController < ApplicationController
       errors = ex
     end
     flash[:error] = t('muck.invites.create_error', :errors => errors)
+    respond_to do |format|
+      format.html { render :template => 'invites/new' }
+      format.pjs { render :template => 'invites/new', :layout => false }
+    end
   end
 
   protected
