@@ -5,9 +5,9 @@ class UserTest < ActiveSupport::TestCase
   context "A class that is inviteable" do
     setup do
       @user = Factory(:user)
-      email = Factory.next(:email)
-      @invite = @user.invites.build(:email => email)
-      @user.save!
+      @invitee = Factory(:invitee)      
+      Invite.create!(:inviter => @user, :invitee => @invitee, :user => @user)
+      @user.reload
     end
     
     should "have invites" do

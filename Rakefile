@@ -16,7 +16,7 @@ end
 begin
   require 'rcov/rcovtask'
   Rcov::RcovTask.new do |t|
-    #t.libs << 'lib'
+    t.libs << 'lib'
     t.libs << 'test/rails_root/lib'
     t.pattern = 'test/rails_root/test/**/*_test.rb'
     t.verbose = true

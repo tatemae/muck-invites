@@ -37,11 +37,11 @@ module ActiveRecord
           users = []
 
           if !invitee_id.nil?
-            invite = Invite.find(invitee_id)
+            invite = Invitee.find(invitee_id)
             users |= invite.users if !invite.nil?
           end
 
-          invite = Invite.find_by_email(email)
+          invite = Invitee.find_by_email(email)
           users |= invite.users if !invite.nil?
 
           users

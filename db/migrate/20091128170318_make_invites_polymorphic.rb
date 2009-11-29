@@ -4,6 +4,7 @@ class MakeInvitesPolymorphic < ActiveRecord::Migration
     drop_table :user_invites
     rename_table :invites, :invitees
     create_table :invites, :force => true do |t|
+      t.integer  :user_id
       t.integer  :invitee_id, :null => false
       t.integer  :inviter_id, :null => false
       t.string   :inviter_type

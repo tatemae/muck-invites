@@ -39,7 +39,7 @@ module ActiveRecord
 
         # Sends out notification email and adds an activity to each of the inviters activity feeds
         def notify_inviters(invite_id = nil)
-          inviters = Invite.who_invited?(self.email, invite_id)
+          inviters = Invitee.who_invited?(self.email, invite_id)
           if inviters.size > 0
             content = I18n.t('muck.activities.joined_status', :name => self.full_name, :application_name => GlobalConfig.application_name)
             inviters.each do |inviter|

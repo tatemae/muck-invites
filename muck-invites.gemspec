@@ -9,7 +9,7 @@ Gem::Specification.new do |s|
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Justin Ball, Joel Duffin"]
-  s.date = %q{2009-11-13}
+  s.date = %q{2009-11-28}
   s.description = %q{The invite engine for the muck system.}
   s.email = %q{justin@tatemae.com}
   s.extra_rdoc_files = [
@@ -23,7 +23,6 @@ Gem::Specification.new do |s|
      "VERSION",
      "app/controllers/muck/invites_controller.rb",
      "app/models/invite_mailer.rb",
-     "app/models/user_invite.rb",
      "app/views/invite_mailer/invite_notification.text.html.erb",
      "app/views/invite_mailer/invite_notification.text.plain.erb",
      "app/views/invite_mailer/invited_joined_notification.text.html.erb",
@@ -32,8 +31,10 @@ Gem::Specification.new do |s|
      "app/views/invites/new.html.erb",
      "config/muck_invites_routes.rb",
      "db/migrate/20090928213532_create_invites.rb",
+     "db/migrate/20091128170318_make_invites_polymorphic.rb",
      "install.rb",
      "lib/active_record/acts/muck_invite.rb",
+     "lib/active_record/acts/muck_invitee.rb",
      "lib/active_record/acts/muck_inviter.rb",
      "lib/muck_invites.rb",
      "lib/muck_invites/initialize_routes.rb",
@@ -96,6 +97,7 @@ Gem::Specification.new do |s|
      "test/rails_root/app/models/.keep",
      "test/rails_root/app/models/activity.rb",
      "test/rails_root/app/models/invite.rb",
+     "test/rails_root/app/models/invitee.rb",
      "test/rails_root/app/models/user.rb",
      "test/rails_root/app/models/user_session.rb",
      "test/rails_root/app/views/default/index.html.erb",
@@ -124,6 +126,7 @@ Gem::Specification.new do |s|
      "test/rails_root/db/migrate/20090703055724_add_contents.rb",
      "test/rails_root/db/migrate/20090704220055_create_slugs.rb",
      "test/rails_root/db/migrate/20090928213532_create_invites.rb",
+     "test/rails_root/db/migrate/20091128170318_make_invites_polymorphic.rb",
      "test/rails_root/features/comments.feature",
      "test/rails_root/features/step_definitions/comment_steps.rb",
      "test/rails_root/features/step_definitions/common_steps.rb",
@@ -331,6 +334,7 @@ Gem::Specification.new do |s|
      "test/rails_root/test/unit/contacts_test.rb",
      "test/rails_root/test/unit/invite_mailer_test.rb",
      "test/rails_root/test/unit/invite_test.rb",
+     "test/rails_root/test/unit/invitee_test.rb",
      "test/rails_root/test/unit/user_test.rb",
      "test/rails_root/vendor/plugins/jrails/CHANGELOG",
      "test/rails_root/vendor/plugins/jrails/LICENSE",
@@ -365,6 +369,7 @@ Gem::Specification.new do |s|
      "test/rails_root/app/helpers/application_helper.rb",
      "test/rails_root/app/models/activity.rb",
      "test/rails_root/app/models/invite.rb",
+     "test/rails_root/app/models/invitee.rb",
      "test/rails_root/app/models/user.rb",
      "test/rails_root/app/models/user_session.rb",
      "test/rails_root/config/boot.rb",
@@ -388,6 +393,7 @@ Gem::Specification.new do |s|
      "test/rails_root/db/migrate/20090703055724_add_contents.rb",
      "test/rails_root/db/migrate/20090704220055_create_slugs.rb",
      "test/rails_root/db/migrate/20090928213532_create_invites.rb",
+     "test/rails_root/db/migrate/20091128170318_make_invites_polymorphic.rb",
      "test/rails_root/features/step_definitions/comment_steps.rb",
      "test/rails_root/features/step_definitions/common_steps.rb",
      "test/rails_root/features/step_definitions/webrat_steps.rb",
@@ -400,6 +406,7 @@ Gem::Specification.new do |s|
      "test/rails_root/test/unit/contacts_test.rb",
      "test/rails_root/test/unit/invite_mailer_test.rb",
      "test/rails_root/test/unit/invite_test.rb",
+     "test/rails_root/test/unit/invitee_test.rb",
      "test/rails_root/test/unit/user_test.rb",
      "test/rails_root/vendor/plugins/jrails/init.rb",
      "test/rails_root/vendor/plugins/jrails/install.rb",

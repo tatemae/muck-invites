@@ -6,7 +6,8 @@ class InviteeTest < ActiveSupport::TestCase
     setup do
       @user = Factory(:user)
       @invitee = Factory(:invitee)
-      Invite.create(:inviter => @user, :invitee => @invitee, :user => @user)
+      @invite = Invite.create(:inviter => @user, :invitee => @invitee, :user => @user)
+      @user.reload
     end
 
     subject { @invitee }
@@ -18,7 +19,7 @@ class InviteeTest < ActiveSupport::TestCase
 
     should "require email" do
       assert_no_difference 'Invite.count' do
-        u = Factory.build(:invite, :email => nil)
+        u = Factory.build(:invitee, :email => nil)
         assert !u.valid?
         assert u.errors.on(:email)
       end
@@ -33,7 +34,7 @@ class InviteeTest < ActiveSupport::TestCase
     end
 
     should "be able to see how many inviters it has" do
-      assert_equal 1, @invite.users.size
+      assert_equal 1, @invitee.users.size
     end
 
   end
@@ -46,49 +47,51 @@ class InviteeTest < ActiveSupport::TestCase
     subject { @user }
 
     should "be able to call invite with a single email address" do
-      @user.invite(Factory.next(:email))
+      @user.invite(Factory.next(:email), @user)
       assert_equal 1, @user.invites.size
     end
 
     should "be able to call invite with a string specifying a space delimited list of email addresses" do
-      @user.invite(Factory.next(:email) + ' ' + Factory.next(:email))
+      @user.invite(Factory.next(:email) + ' ' + Factory.next(:email), @user)
       assert_equal 2, @user.invites.size
     end
 
     should "be able to call invite with a string specifying a comma delimited list of email addresses" do
-      @user.invite(Factory.next(:email) + ',  ' + Factory.next(:email) + ',' + Factory.next(:email) + ',')
+      @user.invite(Factory.next(:email) + ',  ' + Factory.next(:email) + ',' + Factory.next(:email) + ',', @user)
       assert_equal 3, @user.invites.size
     end
 
     should "be able to call invite with an array of email addresses" do
-      @user.invite([Factory.next(:email),Factory.next(:email)])
+      @user.invite([Factory.next(:email),Factory.next(:email)], @user)
       assert_equal 2, @user.invites.size
     end
 
     should "be able to look up who invited them by email" do
       inviter = Factory(:user)
-      inviter.invites << Factory.build(:invite, :email => @user.email)
-      assert_equal Invite.who_invited?(@user.email).first, inviter
+      invitee = Factory.build(:invitee, :email => @user.email)
+      inviter.invites << Invite.create!(:inviter => inviter, :user => inviter, :invitee => invitee)
+      assert_equal Invitee.who_invited?(@user.email).first, inviter
     end
 
     should "be able to look up who invited them by id" do
-      invite = Factory.build(:invite, :email => @user.email)
+      invite = Factory.build(:invitee, :email => @user.email)
 
       inviter = Factory(:user)
-      inviter.invites << Factory.build(:invite, :email => @user.email)
-      assert_equal Invite.who_invited?(@user.email).first, inviter
+      invitee = Factory.build(:invitee, :email => @user.email)
+      inviter.invites << Invite.create!(:inviter => inviter, :user => inviter, :invitee => invitee) 
+      assert_equal Invitee.who_invited?(@user.email).first, inviter
     end
 
     should "look up multiple inviters by email" do
-      invite = Factory.build(:invite, :email => @user.email)
+      invitee = Factory.build(:invitee, :email => @user.email)
 
       inviter1 = Factory(:user)
-      inviter1.invites << invite
+      inviter1.invites << Invite.create!(:inviter => inviter1, :user => inviter1, :invitee => invitee)
 
       inviter2 = Factory(:user)
-      inviter2.invites << invite
+      inviter2.invites << Invite.create!(:inviter => inviter2, :user => inviter2, :invitee => invitee)
 
-      inviters = Invite.who_invited?(@user.email)
+      inviters = Invitee.who_invited?(@user.email)
       assert_equal 2, inviters.count
       assert inviters.include?(inviter1)
       assert inviters.include?(inviter2)
@@ -97,24 +100,27 @@ class InviteeTest < ActiveSupport::TestCase
     should "not create new user invites if the user has invited them before" do
       user = Factory(:user)
       email = Factory.next(:email)
-      user.invite(email)
-      user.invite(email)
-      assert_equal 1, Invite.all.size
-      assert_equal 1, user.invites.size
+      assert_difference "Invite.count" do
+        user.invite(email, user)
+      end
+      user.reload # if you don't reload the invite just created won't show up.
+      assert_no_difference "Invite.count" do
+        user.invite(email, user)
+      end
     end
   end
 
   context "Always" do
     should "be able to look up who invited them by id and by email" do
       user1 = Factory(:user)
-      invite1 = Factory(:invite)
-      user1.invites << invite1
+      invitee1 = Factory(:invitee)
+      user1.invites << Invite.create!(:inviter => user1, :user => user1, :invitee => invitee1)
 
       user2 = Factory(:user)
-      invite2 = Factory(:invite)
-      user2.invites << invite2
+      invitee2 = Factory(:invitee)
+      user2.invites << Invite.create!(:inviter => user2, :user => user2, :invitee => invitee2)
 
-      inviters = Invite.who_invited?(invite1.email, invite2.id)
+      inviters = Invitee.who_invited?(invitee1.email, invitee2.id)
       assert_equal 2, inviters.size
       assert inviters.include?(user1)
       assert inviters.include?(user2)
@@ -122,17 +128,17 @@ class InviteeTest < ActiveSupport::TestCase
 
     should "notify inviters when a new user joins" do
       user1 = Factory(:user)
-      invite1 = Factory(:invite)
-      user1.invites << invite1
+      invitee1 = Factory(:invitee)
+      user1.invites << Invite.create!(:inviter => user1, :user => user1, :invitee => invitee1)
 
       user2 = Factory(:user)
-      invite2 = Factory(:invite)
-      user2.invites << invite2
+      invitee2 = Factory(:invitee)
+      user2.invites << Invite.create!(:inviter => user2, :user => user2, :invitee => invitee2)
 
-      user3 = Factory.build(:user, :email => invite1.email)
+      user3 = Factory.build(:user, :email => invitee1.email)
 
       assert_nothing_raised do
-        user3.notify_inviters(invite2.id)
+        user3.notify_inviters(invitee2.id)
       end 
     end
   end
