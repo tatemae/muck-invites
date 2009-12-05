@@ -57,7 +57,8 @@ module ActiveRecord
           emails = emails.split(/[, ]/) if !emails.is_a?(Array)
           emails = emails.find_all { |email| !email.blank? }
           emails = emails.flatten.collect { |email| email.strip }
-          raise I18n.t('muck.invites.no_email_error') if emails.blank?
+
+          raise MuckInvites::Exceptions::NoEmails.new(I18n.t('muck.invites.no_email_error')) if emails.blank?
           check_emails = invitee_emails
           emails.each do |email|
             if !check_emails.include?(email)

@@ -1,3 +1,5 @@
+require 'muck_invites/exceptions'
+
 ActiveRecord::Base.class_eval { include ActiveRecord::Acts::MuckInvitee }
 ActiveRecord::Base.class_eval { include ActiveRecord::Acts::MuckInvite }
 ActiveRecord::Base.class_eval { include ActiveRecord::Acts::MuckInviter }
