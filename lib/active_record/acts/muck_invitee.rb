@@ -22,7 +22,7 @@ module ActiveRecord
           domain_tld_regex  = '(?:[A-Z]{2}|com|org|net|edu|gov|mil|biz|info|mobi|name|aero|jobs|museum)'.freeze
           email_regex       = /\A#{email_name_regex}@#{domain_head_regex}#{domain_tld_regex}\z/i
 
-          validates_format_of :email, :with => email_regex, :message => 'does not look like a valid email address.'
+          validates_format_of :email, :with => email_regex, :message => I18n.translate('muck.invites.invalid_email_error')
 
           include ActiveRecord::Acts::MuckInvitee::InstanceMethods
           extend ActiveRecord::Acts::MuckInvitee::SingletonMethods
