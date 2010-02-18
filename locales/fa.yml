@@ -7,6 +7,7 @@ fa:
       create_success: "دعوتنامه فرستاده شد به {{emails}}. شما خواهد بود اگر آنها مطلع عضویت {{app_name}}"
       email_password: "پست الکترونیکی کلمه عبور"
       email_password_help: "کلمه عبور مربوط به حساب ایمیل خود"
+      invalid_email_error: "مثل یک آدرس ایمیل معتبر به نظر نمی آید."
       invite: "{{inviter}}دعوت شما برای پیوستن به {{app_name}}"
       invite_button: دعوت
       invite_friends: "دعوت از دوستان خود برای پیوستن به {{app_name}}"

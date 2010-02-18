@@ -7,6 +7,7 @@ fi:
       create_success: "Kehottaa lähetettiin {{emails}}. Saat ilmoituksen, jos ne liittyvät {{app_name}}"
       email_password: "Sähköposti Salasana"
       email_password_help: "Salasana sähköpostitilisi"
+      invalid_email_error: "ei näytä kuin voimassa oleva sähköpostiosoite."
       invite: "{{inviter}} Pyytää teitä liittymään {{app_name}}"
       invite_button: Kehota
       invite_friends: "Kutsu ystäväsi liittymään {{app_name}}"

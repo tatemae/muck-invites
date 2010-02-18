@@ -7,6 +7,7 @@ pt-PT:
       create_success: "Convites foram enviados para {{emails}}. Você será notificado se juntar {{app_name}}"
       email_password: "Email Senha"
       email_password_help: "A senha de sua conta de e-mail"
+      invalid_email_error: "não se parece com um endereço de e-mail válido."
       invite: "{{inviter}} Convida você para participar {{app_name}}"
       invite_button: Convidar
       invite_friends: "Convide seus amigos para se juntarem {{app_name}}"

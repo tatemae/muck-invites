@@ -7,6 +7,7 @@ ru:
       create_success: "Приглашения были направлены {{emails}}. Вы будете уведомлены, если они вступят {{app_name}}"
       email_password: "Email Пароль"
       email_password_help: "Пароль учетной записи электронной почты"
+      invalid_email_error: "не похож на действительный адрес электронной почты."
       invite: "{{inviter}} Приглашает Вас присоединиться к {{app_name}}"
       invite_button: Пригласить
       invite_friends: "Пригласите своих друзей присоединиться к {{app_name}}"

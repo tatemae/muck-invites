@@ -7,6 +7,7 @@ tr:
       create_success: "Davet etmek için {{emails}}. gönderildi Eğer {{app_name}} katılmak Sen bildirilecektir"
       email_password: "E-posta Şifre"
       email_password_help: "E-posta hesabınızın şifre"
+      invalid_email_error: "geçerli bir e-posta adresi gibi görünmüyor."
       invite: "{{inviter}} Size {{app_name}} katılmaya davet ediyor"
       invite_button: Davet
       invite_friends: "Davet Et {{app_name}} katılmak"

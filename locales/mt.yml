@@ -7,6 +7,7 @@ mt:
       create_success: "Jistieden intbagħtu lill {{emails}}. Inti ser tiġi notifikata jekk jissieħbu {{app_name}}"
       email_password: "Email Password"
       email_password_help: "Il-password ta &#39;kont email tieghek"
+      invalid_email_error: "ma dehra ta &#39;email address validu."
       invite: "{{inviter}} Tistiednek biex jissieħbu {{app_name}}"
       invite_button: Invite
       invite_friends: "Jistiednu lill-ħbieb tiegħek biex jissieħbu {{app_name}}"

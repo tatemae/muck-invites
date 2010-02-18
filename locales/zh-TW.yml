@@ -7,6 +7,7 @@ zh-TW:
       create_success: "請被送往{{emails}}.您將會收到通知，如果他們加入{{app_name}}"
       email_password: 郵箱密碼
       email_password_help: 您的密碼的電子郵件帳戶
+      invalid_email_error: 不像一個有效的電子郵件地址。
       invite: "{{inviter}}邀請您加入{{app_name}}"
       invite_button: 邀請
       invite_friends: "邀請您的朋友加入{{app_name}}"

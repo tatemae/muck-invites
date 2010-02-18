@@ -7,6 +7,7 @@ hi:
       create_success: "निमंत्रण को {{emails}}. भेजा गया तुम अधिसूचित अगर वे {{app_name}} में शामिल हो जाएगा"
       email_password: "ईमेल पासवर्ड"
       email_password_help: "आपके ईमेल खाते का पासवर्ड"
+      invalid_email_error: "एक वैध ईमेल पते की तरह दिखते नहीं है."
       invite: "{{inviter}} आमंत्रित तुम {{app_name}} शामिल होने के लिए"
       invite_button: "आमंत्रित करें"
       invite_friends: "अपने मित्रों को आमंत्रित करें {{app_name}} शामिल होने के लिए"

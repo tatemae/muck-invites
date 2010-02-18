@@ -7,6 +7,7 @@ el:
       create_success: "Καλεί εστάλησαν σε {{emails}}. Οι υποψήφιοι θα ενημερωθούν αν ενταχθούν {{app_name}}"
       email_password: "Email Κωδικός"
       email_password_help: "Ο κωδικός πρόσβασης του λογαριασμού e-mail σας"
+      invalid_email_error: "δεν μοιάζει με μια έγκυρη διεύθυνση email."
       invite: "{{inviter}} Σας προσκαλεί να συμμετάσχετε {{app_name}}"
       invite_button: Προσκαλέστε
       invite_friends: "Προσκαλέστε τους φίλους σας να συμμετάσχουν {{app_name}}"

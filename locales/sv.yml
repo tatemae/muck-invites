@@ -7,6 +7,7 @@ sv:
       create_success: "Inbjudningar sändes till {{emails}}. Du kommer att meddelas om de ansluter sig {{app_name}}"
       email_password: "Email Password"
       email_password_help: "Lösenordet till ditt e-postkonto"
+      invalid_email_error: "ser inte ut som en giltig e-postadress."
       invite: "{{inviter}} Inbjuder dig att gå {{app_name}}"
       invite_button: Bjud
       invite_friends: "Bjud in dina vänner att gå {{app_name}}"

@@ -7,6 +7,7 @@ ar:
       create_success: "تدعو ارسلت الى {{emails}}. سيتم إعلامك إذا كانت انضمام {{app_name}}"
       email_password: "البريد الإلكتروني كلمة المرور"
       email_password_help: "كلمة السر لحساب البريد الإلكتروني"
+      invalid_email_error: "لا تبدو وكأنها عنوان بريد إلكتروني صالح."
       invite: "{{inviter}}يدعوك للانضمام {{app_name}}"
       invite_button: دعوة
       invite_friends: "دعوة أصدقائك للانضمام {{app_name}}"

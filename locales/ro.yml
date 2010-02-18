@@ -7,6 +7,7 @@ ro:
       create_success: "Invitaţii au fost trimise la {{emails}}. Vei fi notificat în cazul în care se alăture {{app_name}}"
       email_password: "Email Parola"
       email_password_help: "Parola contului dumneavoastră de e-mail"
+      invalid_email_error: "nu pare a fi o adresă de e-mail validă."
       invite: "{{inviter}} Vă invită să se alăture {{app_name}}"
       invite_button: Invite
       invite_friends: "Invitaţi-vă prietenii să se alăture {{app_name}}"

@@ -7,6 +7,7 @@ hu:
       create_success: "Felkéri küldtek {{emails}}. Ön értesítést kap, ha csatlakoznak {{app_name}}"
       email_password: "E-mail Jelszó"
       email_password_help: "A jelszó az e-mail fiók"
+      invalid_email_error: "Nem úgy néz ki, mint egy érvényes e-mail címét."
       invite: "{{inviter}} Meghívja Önt, hogy csatlakozzon {{app_name}}"
       invite_button: Meghívja
       invite_friends: "Hívd meg a barátaidat, hogy csatlakozzanak {{app_name}}"

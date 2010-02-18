@@ -7,6 +7,7 @@ id:
       create_success: "Invites dikirim ke {{emails}}. Anda akan diberitahu jika mereka bergabung {{app_name}}"
       email_password: "Email Password"
       email_password_help: "Password dari account email Anda"
+      invalid_email_error: "tidak terlihat seperti alamat email yang valid."
       invite: "{{inviter}} Mengundang Anda untuk bergabung {{app_name}}"
       invite_button: Undangan
       invite_friends: "Undang teman untuk bergabung {{app_name}}"

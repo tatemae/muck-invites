@@ -7,11 +7,12 @@ gl:
       create_success: "Invitacións foron enviados para {{emails}}. Vostede será notificado unirse {{app_name}}"
       email_password: "Email Contraseña"
       email_password_help: "O contrasinal da súa conta de correo-e"
+      invalid_email_error: "non se parece un enderezo de correo-e válido."
       invite: "{{inviter}} Convida vostede para participar {{app_name}}"
       invite_button: Invitar
       invite_friends: "Convidar os seus amigos para se xuntar {{app_name}}"
       invited_joined: "{{user}} Xunto Folksemantic"
-      new_invites: "Invita os teus contactos de e-mail para unirse {{app_name}}"
+      new_invites: "Invita os seus contactos de correo-e para unirse {{app_name}}"
       no_contacts_found: "Ningún contacto se atopou"
       no_email_error: "Non se especifican os enderezos de correo-e"
       retrieving_contacts: "Recuperando contactos"

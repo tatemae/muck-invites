@@ -7,6 +7,7 @@ de:
       create_success: "Fordert wurden gesendet {{emails}}. Sie werden benachrichtigt, wenn sie beitreten {{app_name}}"
       email_password: "E-Mail Passwort"
       email_password_help: "Das Passwort Ihrer E-Mail-Konto"
+      invalid_email_error: "sieht nicht wie eine gültige Email-Adresse."
       invite: "{{inviter}} Lädt Sie ein, {{app_name}} beitreten"
       invite_button: Einladen
       invite_friends: "Laden Sie Ihre Freunde zum Beitritt {{app_name}}"

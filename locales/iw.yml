@@ -7,6 +7,7 @@ iw:
       create_success: "הזמנות נשלחו {{emails}}. תקבל הודעה אם הם מצטרפים {{app_name}}"
       email_password: "אימייל סיסמה"
       email_password_help: "את הסיסמה של חשבון הדוא&quot;ל שלך"
+      invalid_email_error: "לא נראה כמו כתובת דוא&quot;ל חוקית."
       invite: "{{inviter}} מזמינה אותך להצטרף {{app_name}}"
       invite_button: הזמן
       invite_friends: "הזמן את חבריך להצטרף {{app_name}}"

@@ -4,9 +4,10 @@ uk:
     invites: 
       add_invite_button: "Додати Запросити"
       continue_button: Продовжити
-      create_success: "Запрошення були направлені {{emails}}. Ви будете повідомлені, якщо вони набудуть {{app_name}}"
+      create_success: "Запрошення були направлені {{emails}}. Вам буде повідомлено, якщо вони набудуть {{app_name}}"
       email_password: "Email Пароль"
       email_password_help: "Пароль облікового запису електронної пошти"
+      invalid_email_error: "не схожий на справжню адресу електронної пошти."
       invite: "{{inviter}} Запрошує Вас приєднатися до {{app_name}}"
       invite_button: Запросити
       invite_friends: "Запросіть своїх друзів приєднатися до {{app_name}}"

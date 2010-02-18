@@ -7,6 +7,7 @@ nl:
       create_success: "Uitnodigingen werden verstuurd naar {{emails}}. U wordt verwittigd wanneer zij zich bij {{app_name}}"
       email_password: "E-mail Wachtwoord"
       email_password_help: "Het wachtwoord van uw e-mailaccount"
+      invalid_email_error: "lijkt niet op een geldig e-mailadres."
       invite: "{{inviter}} Nodigt u uit om {{app_name}} toetreden"
       invite_button: Invite
       invite_friends: "Nodig je vrienden uit om {{app_name}} toetreden"

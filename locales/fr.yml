@@ -7,6 +7,7 @@ fr:
       create_success: "Invite ont été envoyés à {{emails}}. Vous serez avisé si elles adhèrent à {{app_name}}"
       email_password: "Courriel Mot de passe"
       email_password_help: "Le mot de passe de votre compte e-mail"
+      invalid_email_error: "ne ressemble pas à une adresse email valide."
       invite: "{{inviter}} Vous invite à rejoindre {{app_name}}"
       invite_button: Inviter
       invite_friends: "Invitez vos amis à rejoindre {{app_name}}"

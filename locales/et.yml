@@ -7,6 +7,7 @@ et:
       create_success: "Kutsub saadeti {{emails}}. Teile antakse teada, kui nad kolivad {{app_name}}"
       email_password: "E-mail Parool"
       email_password_help: "Parool Teie e-posti konto"
+      invalid_email_error: "ei tundu nagu kehtiv meiliaadress."
       invite: "{{inviter}} Kutsub sind liituma {{app_name}}"
       invite_button: Kutsu
       invite_friends: "Kutsu sõpru liituma {{app_name}}"

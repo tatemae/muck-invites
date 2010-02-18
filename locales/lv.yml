@@ -7,6 +7,7 @@ lv:
       create_success: "Aicina nosūtītas {{emails}}. Jums tiks paziņots, ja tie pievienotos {{app_name}}"
       email_password: "E-pasts Parole"
       email_password_help: "Parole jūsu e-pasta konts"
+      invalid_email_error: "neizskatās kā derīga e-pasta adresi."
       invite: "{{inviter}} Aicina Jūs pievienoties {{app_name}}"
       invite_button: Invite
       invite_friends: "Uzaiciniet savus draugus pievienoties {{app_name}}"

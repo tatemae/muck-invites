@@ -7,6 +7,7 @@ sk:
       create_success: "Vyzýva boli zaslané {{emails}}. Budete vždy upozornení, ak sa pripojí {{app_name}}"
       email_password: "E-mail Heslo"
       email_password_help: "Heslo e-mailového konta"
+      invalid_email_error: "Nevyzerá ako platnú e-mailovú adresu."
       invite: "{{inviter}} Vás pozýva na vstup {{app_name}}"
       invite_button: Pozvať
       invite_friends: "Pozvite svojich priateľov, aby sa {{app_name}}"
@@ -17,4 +18,4 @@ sk:
       retrieving_contacts: "Získávám kontakty"
       select_all: "Select All"
       your_email: "Váš email (Gmail, Hotmail, alebo Yahoo)"
-      your_email_help: "E-mailovú adresu účtu s kontaktmi, ktoré chcete pozvať"
+      your_email_help: "E-mailovú adresu účtu s kontakty, ktoré chcete pozvať"

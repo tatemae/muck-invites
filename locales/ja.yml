@@ -7,6 +7,7 @@ ja:
       create_success: "招待者に{{emails}}.送られた場合は、{{app_name}}に参加する通知される"
       email_password: メールアドレスパスワード
       email_password_help: あなたの電子メールアカウントのパスワード
+      invalid_email_error: 有効なメールアドレスのようにしていません。
       invite: "{{inviter}}場合{{app_name}}参加するよう呼びかけ"
       invite_button: 招待
       invite_friends: "お友達を招待{{app_name}}に参加する"

@@ -8,6 +8,7 @@
       create_success: "Invitasjoner ble sendt til {{emails}}. Du blir varslet hvis de delta {{app_name}}"
       email_password: "Email Password"
       email_password_help: "Passordet til din e-postkonto"
+      invalid_email_error: "ser ikke ut som en gyldig e-postadresse."
       invite: "{{inviter}} Inviterer deg til å bli {{app_name}}"
       invite_button: Inviter
       invite_friends: "Inviter dine venner til å delta {{app_name}}"

@@ -7,6 +7,7 @@ cs:
       create_success: "Vyzývá byly zaslány {{emails}}. Budete vždy upozorněni, pokud se připojí {{app_name}}"
       email_password: "E-mail Heslo"
       email_password_help: "Heslo e-mailového účtu"
+      invalid_email_error: "Nevypadá jako platnou e-mailovou adresu."
       invite: "{{inviter}} Vás zve ke vstupu {{app_name}}"
       invite_button: Pozvat
       invite_friends: "Pozvěte své přátele, aby se {{app_name}}"

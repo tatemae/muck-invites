@@ -7,6 +7,7 @@ bg:
       create_success: "Приканва бяха изпратени {{emails}}. Вие ще бъдете уведомени, ако те се присъединят {{app_name}}"
       email_password: "Имейл Парола"
       email_password_help: "Паролата на вашия имейл сметка"
+      invalid_email_error: "не изглежда като валиден имейл адрес."
       invite: "{{inviter}} Ви кани да се присъедините {{app_name}}"
       invite_button: Покани
       invite_friends: "Поканете приятели да се присъединят към {{app_name}}"

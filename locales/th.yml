@@ -2,19 +2,20 @@
 th: 
   muck: 
     invites: 
-      add_invite_button: เพิ่มเชิญ
-      continue_button: ดำเนินการต่อ
-      create_success: "เชิญถูกส่งไป {{emails}}. คุณจะได้รับแจ้งหากพวกเขาเข้าร่วม {{app_name}}"
-      email_password: รหัสผ่านอีเมล์
-      email_password_help: รหัสผ่านของบัญชีอีเมลของคุณ
-      invite: "{{inviter}} ขอเชิญท่านเข้าร่วม {{app_name}}"
+      add_invite_button: "เพิ่ม เชิญ"
+      continue_button: "ดำเนิน การ ต่อ"
+      create_success: "เชิญ ถูก ส่ง ไป {{emails}}. คุณ จะ ได้ รับ แจ้ง หาก พวก เขา เข้า ร่วม {{app_name}}"
+      email_password: "รหัส ผ่าน อีเมล์"
+      email_password_help: "รหัส ผ่าน ของ บัญชี อีเมล ของ คุณ"
+      invalid_email_error: "ไม่ พบ ว่า ที่ อยู่ อีเมล ที่ ถูก ต้อง."
+      invite: "{{inviter}} ขอ เชิญ ท่าน เข้า ร่วม {{app_name}}"
       invite_button: เชิญ
-      invite_friends: "เชิญเพื่อนให้เข้าร่วม {{app_name}}"
+      invite_friends: "เชิญ เพื่อน ให้ เข้า ร่วม {{app_name}}"
       invited_joined: "{{user}} ร่วม Folksemantic"
-      new_invites: "เชิญติดต่อที่อีเมล์ของคุณเพื่อเข้าร่วม {{app_name}}"
-      no_contacts_found: รายชื่อไม่พบ
-      no_email_error: ไม่มีที่อยู่อีเมลที่ถูกระบุ
-      retrieving_contacts: เรียกชื่อ
-      select_all: เลือกทั้งหมด
+      new_invites: "เชิญ ติดต่อ ที่ อีเมล์ ของ คุณ เพื่อ เข้า ร่วม {{app_name}}"
+      no_contacts_found: "ราย ชื่อ ไม่ พบ"
+      no_email_error: "ไม่มี ที่ อยู่ อีเมล ที่ ถูก ระบุ"
+      retrieving_contacts: "เรียก ชื่อ"
+      select_all: "เลือก ทั้งหมด"
       your_email: "Email (Gmail, Hotmail หรือ Yahoo) คุณ"
-      your_email_help: ที่อยู่อีเมลของบัญชีที่มีรายชื่อที่คุณต้องการเชิญ
+      your_email_help: "ที่ อยู่ อีเมล ของ บัญชี ที่ มี ราย ชื่อ ที่ คุณ ต้องการ เชิญ"

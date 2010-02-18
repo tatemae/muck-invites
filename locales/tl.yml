@@ -7,6 +7,7 @@ tl:
       create_success: "Paanyaya ay ipinadala sa {{emails}}. Makakatanggap ka ng notipikasyon kung sumali sila {{app_name}}"
       email_password: "Email ang Password"
       email_password_help: "Ang password ng iyong email account"
+      invalid_email_error: "hindi hitsura isang balidong email address."
       invite: "{{inviter}} Imbitasyon upang sumali ka sa {{app_name}}"
       invite_button: Mag-anyaya
       invite_friends: "Anyayahan ang iyong mga kaibigan na sumali sa {{app_name}}"

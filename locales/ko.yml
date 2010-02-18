@@ -7,6 +7,7 @@ ko:
       create_success: "초대장을 발송했다 {{emails}}. 만약 그들이 {{app_name}} 가입 통지를 받으실 것입니다"
       email_password: "이메일 비밀 번호"
       email_password_help: "귀하의 이메일 계정의 비밀 번호를"
+      invalid_email_error: "올바른 이메일 주소가 보이지 않습니다."
       invite: "{{inviter}} 당신 {{app_name}} 가입 초대"
       invite_button: 초대
       invite_friends: "친구 초대 {{app_name}} 가입"

@@ -7,6 +7,7 @@ ca:
       create_success: "Convida van ser enviats a {{emails}}. Seràs notificat si s&#39;uneixen a {{app_name}}"
       email_password: "Email Contrasenya"
       email_password_help: "La contrasenya del vostre compte de correu electrònic"
+      invalid_email_error: "no s&#39;assembla a una adreça de correu electrònic vàlida."
       invite: "{{inviter}} Li convida a unir-se a {{app_name}}"
       invite_button: Invitació
       invite_friends: "Convida als teus amics a unir-se a {{app_name}}"

@@ -7,6 +7,7 @@ it:
       create_success: "Invita gli sono stati inviati a {{emails}}. Vi verrà notificato se si uniscono {{app_name}}"
       email_password: "E-mail Password"
       email_password_help: "La password del vostro account e-mail"
+      invalid_email_error: "non somiglia a un indirizzo email valido."
       invite: "{{inviter}} Ti invita a partecipare {{app_name}}"
       invite_button: Invita
       invite_friends: "Invita i tuoi amici ad unirsi {{app_name}}"

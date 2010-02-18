@@ -7,6 +7,7 @@ lt:
       create_success: "Siūlo buvo išsiųsti {{emails}}. Jums bus pranešta, jeigu jos įstos {{app_name}}"
       email_password: "Paštas Slaptažodis"
       email_password_help: "Jūsų elektroninio pašto sąskaitos slaptažodį"
+      invalid_email_error: "ne atrodo teisingą elektroninio pašto adresą."
       invite: "{{inviter}} Kviečia Jus prisijungti prie {{app_name}}"
       invite_button: Pakviesti
       invite_friends: "Pakvieskite savo draugus prisijungti prie {{app_name}}"

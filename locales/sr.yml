@@ -7,6 +7,7 @@ sr:
       create_success: "Позивнице су послате на {{emails}}. Бићете обавештени када се прикључе {{app_name}}"
       email_password: "Емаил Лозинка"
       email_password_help: "Лозинку за свој налог е-поште"
+      invalid_email_error: "не изгледа као важећу емаил адресу."
       invite: "{{inviter}} Вас позива да се придружите {{app_name}}"
       invite_button: Позвати
       invite_friends: "Позовите своје пријатеље да се придруже {{app_name}}"
