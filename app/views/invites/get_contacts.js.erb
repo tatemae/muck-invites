@@ -2,6 +2,7 @@ jQuery("#contacts-loading").hide();
 <% if @success -%>
 	jQuery("#contacts-chooser-wrapper").html("<%=escape_javascript(render(:partial => 'invites/get_contacts'))%>");
 	jQuery("#contacts-chooser-wrapper").show();
+	apply_ajax_forms();
 <% else -%>
 	<% if GlobalConfig.growl_enabled -%>
 	  jQuery.jGrowl.info(json.message);
