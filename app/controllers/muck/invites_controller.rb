@@ -1,15 +1,14 @@
 class Muck::InvitesController < ApplicationController
-
   unloadable
-
   before_filter :login_required
-
+  
   def new
     flash.discard
     @page_title = t('muck.invites.new_invites', :app_name => GlobalConfig.application_name)
     respond_to do |format|
       format.html { render :template => 'invites/new' }
       format.pjs { render :template => 'invites/new', :layout => false }
+      format.js { render :template => 'invites/new', :layout => false }
     end
   end
 
@@ -38,7 +37,7 @@ class Muck::InvitesController < ApplicationController
 
   def create
     if params[:emails]
-      current_user.invite(params[:emails], current_user)
+      Invite.invite(params[:emails], current_user)
       message = t('muck.invites.create_success', :emails => params[:emails].join(', '), :app_name => GlobalConfig.application_name)
     end
     respond_to do |format|
