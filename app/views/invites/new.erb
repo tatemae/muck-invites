@@ -4,7 +4,7 @@
   <div id="get-contacts-form">
     <% custom_form_for(:get_contacts, :url => get_contacts_invites_path,
                                     :html => {:id => "get-contacts-form", :name => 'get-contacts-form',
-                                    :class => 'get-contacts-form', :autocomplete => 'off'} ) do |f| -%>
+                                    :class => 'ajax get-contacts-form', :autocomplete => 'off'} ) do |f| -%>
       <%= f.text_field :email, { :label => t('muck.invites.your_email'),
                                  :tip => t('muck.invites.your_email_help')} -%>
       <%= f.password_field :password, { :label => t('muck.invites.email_password'),
@@ -25,26 +25,6 @@ jQuery(document).ready(function() {
     jQuery("#get-contacts-form").hide();
     jQuery("#contacts-loading").show();
     jQuery("#notice-error").hide();
-    var form = jQuery(this).parents('form');
-    jQuery.post(form.attr('action'), form.serialize() + '&format=json',
-    function(data){
-      var json = eval('(' + data + ')');
-      jQuery("#contacts-loading").hide();
-      if(!json.success){
-        <% if GlobalConfig.growl_enabled -%>
-          jQuery.jGrowl.info(json.message);
-        <% else -%>
-          jQuery("#notice-error").html(json.message);
-          jQuery("#notice-error").show();
-          jQuery("#get-contacts-form").show();
-        <% end -%>
-      } else {
-        jQuery("#contacts-chooser-wrapper").html(json.html);
-        jQuery("#contacts-chooser-wrapper").show();
-      }
-    });
-    return false;
   });
 });
 </script>
-

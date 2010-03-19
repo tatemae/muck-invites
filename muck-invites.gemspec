@@ -9,7 +9,7 @@ Gem::Specification.new do |s|
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Justin Ball, Joel Duffin"]
-  s.date = %q{2010-03-12}
+  s.date = %q{2010-03-19}
   s.description = %q{The invite engine for the muck system.}
   s.email = %q{justin@tatemae.com}
   s.extra_rdoc_files = [
@@ -28,7 +28,7 @@ Gem::Specification.new do |s|
      "app/views/invite_mailer/invited_joined_notification.text.html.erb",
      "app/views/invite_mailer/invited_joined_notification.text.plain.erb",
      "app/views/invites/_get_contacts.html.erb",
-     "app/views/invites/new.html.erb",
+     "app/views/invites/new.erb",
      "config/muck_invites_routes.rb",
      "db/migrate/20090928213532_create_invites.rb",
      "db/migrate/20091128170318_make_invites_polymorphic.rb",

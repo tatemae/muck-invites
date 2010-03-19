@@ -13,25 +13,24 @@ class Muck::InvitesController < ApplicationController
   end
 
   def get_contacts
-    success = true
+    @success = true
     begin
       @contacts = User.get_contacts(params[:get_contacts][:email], params[:get_contacts][:password])
       if @contacts.blank?
-        message = t('muck.invites.no_contacts_found')
-        success = false
+        @message = t('muck.invites.no_contacts_found')
+        @success = false
       end
     rescue Contacts::AuthenticationError => ex
-      success = false
-      message = ex.to_s
+      @success = false
+      @message = ex.to_s
     end    
     respond_to do |format|
       format.html do
-        flash[:error] = message if message
-        render :template => 'invites/_get_contacts'
+        flash[:error] = @message if @message
+        render :template => 'invites/get_contacts'
       end
-      format.json do
-        render :json => { :success => success, :message => message, :html => get_contacts_html }
-      end
+      format.json { render :json => { :success => @success, :message => @message, :contacts => @contacts.as_json } }
+      format.js { render :template => 'invites/get_contacts', :layout => false }
     end
   end
 
@@ -61,12 +60,4 @@ class Muck::InvitesController < ApplicationController
     end
   end
 
-  protected
-
-    def get_contacts_html
-      render_as_html do
-        render_to_string(:partial => 'invites/get_contacts')
-      end
-    end
-  
 end

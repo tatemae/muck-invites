@@ -2,6 +2,11 @@
 Make it easy to let users invite other users.
 
 == Setup
+Be sure to include muck.js:
+  <%= javascript_include_tag %w{ muck.js } %>
+
+Include a link to initialize the invite process.  You might want to do this in a lightbox.
+  <%= link_to 'Invite Your Friends', new_invite_path, :class => 'invite_box' %>
 
 === Inviter model
 Add 'acts_as_muck_inviter' to the class that you wish to have do the inviting.  This is commonly the user model, but
@@ -36,4 +41,4 @@ Create an Invite model:
   end
 
 
-Copyright (c) 2009 Tatemae.com, released under the MIT license
+Copyright (c) 2009-2010 Tatemae.com, released under the MIT license
