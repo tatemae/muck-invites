@@ -28,6 +28,8 @@ Gem::Specification.new do |s|
      "app/views/invite_mailer/invited_joined_notification.text.html.erb",
      "app/views/invite_mailer/invited_joined_notification.text.plain.erb",
      "app/views/invites/_get_contacts.html.erb",
+     "app/views/invites/get_contacts.html.erb",
+     "app/views/invites/get_contacts.js.erb",
      "app/views/invites/new.erb",
      "config/muck_invites_routes.rb",
      "db/migrate/20090928213532_create_invites.rb",
