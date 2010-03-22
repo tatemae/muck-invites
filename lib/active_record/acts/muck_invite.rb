@@ -27,21 +27,6 @@ module ActiveRecord
 
       # class methods
       module SingletonMethods
-        def invite(emails, user)
-          emails = emails.split(/[, ]/) if !emails.is_a?(Array)
-          emails = emails.find_all { |email| !email.blank? }
-          emails = emails.flatten.collect { |email| email.strip }
-
-          raise MuckInvites::Exceptions::NoEmails.new(I18n.t('muck.invites.no_email_error')) if emails.blank?
-          check_emails = invitee_emails
-          emails.each do |email|
-            if !check_emails.include?(email)
-              check_emails << email
-              invitee = Invitee.find_by_email(email) || Invitee.create!(:email => email)
-              Invite.create!(:inviter => self, :invitee => invitee, :user => user) if user
-            end
-          end 
-        end
       end
       
       # All the methods available to a record that has had <tt>acts_as_muck_invite</tt> specified.
