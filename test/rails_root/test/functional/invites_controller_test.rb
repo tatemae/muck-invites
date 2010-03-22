@@ -40,7 +40,7 @@ class Muck::InvitesControllerTest < ActionController::TestCase
         should "return valid get_contacts json" do
           json = ActiveSupport::JSON.decode(@response.body).symbolize_keys!
           assert json[:success]
-          assert json[:html].include?('support@folksemantic.com')
+          assert json[:contacts].include?(["Folksemantic, Support", "support@folksemantic.com"])
         end
       end
 
@@ -54,14 +54,28 @@ class Muck::InvitesControllerTest < ActionController::TestCase
       end
 
       context "POST to create" do
-        should "create a invite s" do
-          assert_difference "Invite.count", 2 do
-            post :create,  :emails => [[Factory.next(:email),Factory.next(:email)]]
+        context "array of emails" do
+          should "create a invite s" do
+            assert_difference "Invite.count", 2 do
+              post :create,  :emails => [[Factory.next(:email),Factory.next(:email)]]
+            end
+          end
+          should "create a invitee" do
+            assert_difference "Invite.count", 2 do
+              post :create,  :emails => [[Factory.next(:email),Factory.next(:email)]]
+            end
           end
         end
-        should "create a invitee" do
-          assert_difference "Invite.count", 2 do
-            post :create,  :emails => [[Factory.next(:email),Factory.next(:email)]]
+        context "string of emails" do
+          should "create a invite s" do
+            assert_difference "Invite.count", 2 do
+              post :create,  :emails => "#{Factory.next(:email)},#{Factory.next(:email)}"
+            end
+          end
+          should "create a invitee" do
+            assert_difference "Invite.count", 2 do
+              post :create,  :emails => "#{Factory.next(:email)},#{Factory.next(:email)}"
+            end
           end
         end
       end

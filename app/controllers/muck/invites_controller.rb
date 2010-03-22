@@ -36,8 +36,10 @@ class Muck::InvitesController < ApplicationController
 
   def create
     if params[:emails]
+      emails = params[:emails]
+      emails = emails.join(', ') if emails.is_a?(Array)
       current_user.invite(params[:emails], current_user)
-      message = t('muck.invites.create_success', :emails => params[:emails].join(', '), :app_name => GlobalConfig.application_name)
+      message = t('muck.invites.create_success', :emails => emails, :app_name => GlobalConfig.application_name)
     end
     respond_to do |format|
       format.html do
