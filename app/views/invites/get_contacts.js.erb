@@ -7,8 +7,7 @@ jQuery("#contacts-loading").hide();
 	<% if GlobalConfig.growl_enabled -%>
 	  jQuery.jGrowl.info(json.message);
 	<% else -%>
-	  jQuery("#notice-error").html('<%=escape_javascript(@message)%>');
-	  jQuery("#notice-error").show();
+	  <%= invite_ajax_message(@message) %>
 	<% end -%>
 	jQuery("#get-contacts-form").show();
 <% end -%>

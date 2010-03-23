@@ -1,6 +1,6 @@
 <div id="invite-contacts">
   <h1><%= @page_title %></h1>
-  <div id="notice-error" class="error message" style="display:none"></div>
+  <%= invite_ajax_message_container %>
   <div id="get-contacts-form">
     <% custom_form_for(:get_contacts, :url => get_contacts_invites_path,
                                     :html => {:id => "get-contacts-form", :name => 'get-contacts-form',
@@ -24,7 +24,7 @@ jQuery(document).ready(function() {
   jQuery("#get-contacts-button").click(function() {
     jQuery("#get-contacts-form").hide();
     jQuery("#contacts-loading").show();
-    jQuery("#notice-error").hide();
+    jQuery("#invite-messages-container").hide();
   });
   apply_ajax_forms();
 });

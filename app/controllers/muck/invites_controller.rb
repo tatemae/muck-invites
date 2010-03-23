@@ -39,15 +39,15 @@ class Muck::InvitesController < ApplicationController
       emails = params[:emails]
       emails = emails.join(', ') if emails.is_a?(Array)
       current_user.invite(params[:emails], current_user)
-      message = t('muck.invites.create_success', :emails => emails, :app_name => GlobalConfig.application_name)
+      @message = t('muck.invites.create_success', :emails => emails, :app_name => GlobalConfig.application_name)
     end
     respond_to do |format|
       format.html do
-        flash[:notice] = message
-        redirect_to('/')
+        flash[:notice] = @message
+        redirect_back_or_default('/')
       end
-      format.pjs { render :text => message }
-      format.js { render :text => message }
+      format.pjs { render :template => 'invites/create', :layout => false }
+      format.js { render :template => 'invites/create', :layout => false }
     end 
     
   rescue ActiveRecord::RecordInvalid => ex
