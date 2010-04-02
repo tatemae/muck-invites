@@ -1,18 +1,18 @@
 <div id="<%=id%>" class="invite-content" style="display:none;">
   <div id="get-contacts-form">
-    <p>Please enter your <%=title%> email and password</p>
-    <% custom_form_for(:get_contacts, :url => get_contacts_invites_path, :class => 'ajax get-contacts-form' } ) do |f| -%>
+    <p><%=translate('muck.invites.email_password_prompt_title', :title => title) %></p>
+    <% custom_form_for(:get_contacts, :url => get_contacts_invites_path, :class => 'ajax get-contacts-form' ) do |f| -%>
       <%= f.text_field :email, { :label => t('muck.invites.your_email'),
                                  :tip => t('muck.invites.your_email_help')} -%>
       <%= f.password_field :password, { :label => t('muck.invites.email_password'),
                                         :tip => t('muck.invites.email_password_help')} -%>
-      <%= hidden_field_tag :render_contacts_into, '<%=id%>-contacts-chooser' %>
+      <%= hidden_field_tag :render_contacts_into, "#{id}-contacts-chooser" %>
       <%= f.submit t('muck.invites.continue_button'), :class => "button invite-submit" %>
     <% end -%>
   </div>
   <div class="contacts-privacy">
-    <p>We don't store your login and your password is submitted securely.</p>
-    <p>We won't email these addresses without your permission.</p>
+    <p><%=translate('muck.invites.we_dont_store') %></p>
+    <p><%=translate('muck.invites.we_wont_email') %></p>
   </div>
   <div id="contacts-loading" style="display:none">
     <img src="/images/spinner.gif" alt="loading..." />

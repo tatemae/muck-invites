@@ -1,7 +1,11 @@
 module MuckInvitesHelper
 
   def contact_list(contacts)
-    render :partial => 'invites/contact_list', :locals => { :contacts => contacts }
+    if GlobalConfig.use_gravatar_in_photo_list
+      render :partial => 'invites/contact_list_gravatar', :locals => { :contacts => contacts }
+    else
+      render :partial => 'invites/contact_list', :locals => { :contacts => contacts }
+    end
   end
   
   def invite_ajax_message_container
@@ -17,9 +21,15 @@ module MuckInvitesHelper
   
   def user_gmail_contacts_by_oauth(user)
     if user.google
-      @gmail_contacts = user.google.portable_contacts.all.collect do |contact|
-        contact["emails"].collect{ |email| "'#{email['value']}'" }
-      end.flatten
+      contacts = []
+      user.google.portable_contacts.all.each do |contact|
+        name = contact['name']['formatted'] rescue ''
+        contact["emails"].each do |email|
+          email_record = [name, "'#{email['value']}'"]
+          contacts << email_record unless contacts.include?(email_record)
+        end
+      end
+      contacts
     end
   end
   

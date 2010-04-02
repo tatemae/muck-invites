@@ -8,6 +8,10 @@ Be sure to include muck.js:
 Include a link to initialize the invite process.  You might want to do this in a lightbox.
   <%= link_to 'Invite Your Friends', new_invite_path, :class => 'invite_box' %>
 
+The invite list can include photos from gravatar. To enable this functionality add this to global_config.yml
+
+  use_gravatar_in_photo_list: true
+
 === Inviter model
 Add 'acts_as_muck_inviter' to the class that you wish to have do the inviting.  This is commonly the user model, but
 might also be another model - for example Event.

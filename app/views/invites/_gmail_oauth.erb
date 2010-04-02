@@ -1,3 +1,4 @@
+<% return unless logged_in? -%>
 <div id="gmail" class="invite-content">
   <% if !current_user.google -%>
     <p><a href="/oauth_consumers/google">Click to connect to your Gmail</a></p>
