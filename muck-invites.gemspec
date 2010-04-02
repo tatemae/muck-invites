@@ -29,6 +29,7 @@ Gem::Specification.new do |s|
      "app/views/invite_mailer/invited_joined_notification.text.html.erb",
      "app/views/invite_mailer/invited_joined_notification.text.plain.erb",
      "app/views/invites/_contact_list.erb",
+     "app/views/invites/_contact_list_gravatar.erb",
      "app/views/invites/_contacts_container.erb",
      "app/views/invites/_gmail_oauth.erb",
      "app/views/invites/create.erb",
