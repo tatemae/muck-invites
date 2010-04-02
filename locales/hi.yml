@@ -11,7 +11,7 @@ hi:
       invite: "{{inviter}} आमंत्रित तुम {{app_name}} शामिल होने के लिए"
       invite_button: "आमंत्रित करें"
       invite_friends: "अपने मित्रों को आमंत्रित करें {{app_name}} शामिल होने के लिए"
-      invited_joined: "{{user}} Folksemantic में शामिल हो गए"
+      invited_joined: "{{user}} {{app_name}} में शामिल हो गए"
       new_invites: "आमंत्रित अपना ईमेल संपर्क {{app_name}} शामिल होने के लिए"
       no_contacts_found: "कोई संपर्क नहीं मिले"
       no_email_error: "कोई ईमेल पते निर्दिष्ट किया गया"

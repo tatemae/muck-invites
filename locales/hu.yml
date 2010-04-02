@@ -11,7 +11,7 @@ hu:
       invite: "{{inviter}} Meghívja Önt, hogy csatlakozzon {{app_name}}"
       invite_button: Meghívja
       invite_friends: "Hívd meg a barátaidat, hogy csatlakozzanak {{app_name}}"
-      invited_joined: "{{user}} Csatlakozott Folksemantic"
+      invited_joined: "{{user}} Csatlakozott {{app_name}}"
       new_invites: "Hívd meg e-mail címek, hogy csatlakozzanak {{app_name}}"
       no_contacts_found: "Egyetlen partner sem találtak"
       no_email_error: "Nincs e-mail címét adta meg"

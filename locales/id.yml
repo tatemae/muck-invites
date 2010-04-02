@@ -11,7 +11,7 @@ id:
       invite: "{{inviter}} Mengundang Anda untuk bergabung {{app_name}}"
       invite_button: Undangan
       invite_friends: "Undang teman untuk bergabung {{app_name}}"
-      invited_joined: "{{user}} Bergabung Folksemantic"
+      invited_joined: "{{user}} Bergabung {{app_name}}"
       new_invites: "Mengundang kontak email Anda untuk bergabung {{app_name}}"
       no_contacts_found: "Tidak ada kontak yang ditemukan"
       no_email_error: "Tidak ada alamat email yang ditentukan"

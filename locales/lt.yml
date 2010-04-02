@@ -11,7 +11,7 @@ lt:
       invite: "{{inviter}} Kviečia Jus prisijungti prie {{app_name}}"
       invite_button: Pakviesti
       invite_friends: "Pakvieskite savo draugus prisijungti prie {{app_name}}"
-      invited_joined: "{{user}} Prisijungė Folksemantic"
+      invited_joined: "{{user}} Prisijungė {{app_name}}"
       new_invites: "Pakvieskite savo elektroninio pašto kontaktų prisijungti {{app_name}}"
       no_contacts_found: "Nėra įrašų nerasta"
       no_email_error: "Nei elektroninio pašto adresai yra nurodyti"

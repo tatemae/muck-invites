@@ -11,7 +11,7 @@ sk:
       invite: "{{inviter}} Vás pozýva na vstup {{app_name}}"
       invite_button: Pozvať
       invite_friends: "Pozvite svojich priateľov, aby sa {{app_name}}"
-      invited_joined: "{{user}} Pripojil Folksemantic"
+      invited_joined: "{{user}} Pripojil {{app_name}}"
       new_invites: "Pozvite svojej e-mailovej kontakty pripojiť {{app_name}}"
       no_contacts_found: "Neboli nájdené žiadne kontakty"
       no_email_error: "Žiadne e-mailové adresy sú uvedené"

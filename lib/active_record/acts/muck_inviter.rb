@@ -65,6 +65,7 @@ module ActiveRecord
               check_emails << email
               invitee = Invitee.find_by_email(email) || Invitee.create!(:email => email)
               Invite.create!(:inviter => self, :invitee => invitee, :user => user)
+              response = InviteMailer.deliver_invite_notification(user, email)
             end
           end 
         end

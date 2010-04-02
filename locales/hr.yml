@@ -11,7 +11,7 @@ hr:
       invite: "{{inviter}} Vas poziva da se pridružite {{app_name}}"
       invite_button: Invite
       invite_friends: "Pozovite svoje prijatelje da se pridruže {{app_name}}"
-      invited_joined: "{{user}} Pridružio Folksemantic"
+      invited_joined: "{{user}} Pridružio {{app_name}}"
       new_invites: "Pozovite svoju e-mail kontakte da se pridruže {{app_name}}"
       no_contacts_found: "Nema kontakti su pronađeni"
       no_email_error: "Nema adrese e-pošte su navedene"

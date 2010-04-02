@@ -11,7 +11,7 @@ uk:
       invite: "{{inviter}} Запрошує Вас приєднатися до {{app_name}}"
       invite_button: Запросити
       invite_friends: "Запросіть своїх друзів приєднатися до {{app_name}}"
-      invited_joined: "{{user}} Набрав Folksemantic"
+      invited_joined: "{{user}} Набрав {{app_name}}"
       new_invites: "Запрошення контакти електронної пошти приєднатися {{app_name}}"
       no_contacts_found: "Не знайдено ні контактів"
       no_email_error: "Не були вказані адреси електронної пошти"

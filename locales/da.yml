@@ -11,7 +11,7 @@ da:
       invite: "{{inviter}} Inviterer dig til at deltage {{app_name}}"
       invite_button: Inviter
       invite_friends: "Inviter dine venner til at deltage {{app_name}}"
-      invited_joined: "{{user}} Tiltrådte Folksemantic"
+      invited_joined: "{{user}} Tiltrådte {{app_name}}"
       new_invites: "Inviter din e-mail kontakter til at slutte {{app_name}}"
       no_contacts_found: "Ingen kontakter blev ikke fundet"
       no_email_error: "Ingen e-mail-adresser blev specificeret"

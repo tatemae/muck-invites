@@ -11,7 +11,7 @@ th:
       invite: "{{inviter}} ขอ เชิญ ท่าน เข้า ร่วม {{app_name}}"
       invite_button: เชิญ
       invite_friends: "เชิญ เพื่อน ให้ เข้า ร่วม {{app_name}}"
-      invited_joined: "{{user}} ร่วม Folksemantic"
+      invited_joined: "{{user}} ร่วม {{app_name}}"
       new_invites: "เชิญ ติดต่อ ที่ อีเมล์ ของ คุณ เพื่อ เข้า ร่วม {{app_name}}"
       no_contacts_found: "ราย ชื่อ ไม่ พบ"
       no_email_error: "ไม่มี ที่ อยู่ อีเมล ที่ ถูก ระบุ"

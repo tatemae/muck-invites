@@ -11,7 +11,7 @@ lv:
       invite: "{{inviter}} Aicina Jūs pievienoties {{app_name}}"
       invite_button: Invite
       invite_friends: "Uzaiciniet savus draugus pievienoties {{app_name}}"
-      invited_joined: "{{user}} Pievienojās Folksemantic"
+      invited_joined: "{{user}} Pievienojās {{app_name}}"
       new_invites: "Uzaiciniet savu e-pasta kontaktus pievienoties {{app_name}}"
       no_contacts_found: "Adreses netika atrasts"
       no_email_error: "Ne e-pasta adreses ir precizēti"

@@ -11,7 +11,7 @@ nl:
       invite: "{{inviter}} Nodigt u uit om {{app_name}} toetreden"
       invite_button: Invite
       invite_friends: "Nodig je vrienden uit om {{app_name}} toetreden"
-      invited_joined: "{{user}} Toegetreden Folksemantic"
+      invited_joined: "{{user}} Toegetreden {{app_name}}"
       new_invites: "Nodig uw e-mail contacten te treden {{app_name}}"
       no_contacts_found: "Geen contacten gevonden"
       no_email_error: "Geen e-mail adressen werden gespecificeerd"

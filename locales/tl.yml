@@ -11,7 +11,7 @@ tl:
       invite: "{{inviter}} Imbitasyon upang sumali ka sa {{app_name}}"
       invite_button: Mag-anyaya
       invite_friends: "Anyayahan ang iyong mga kaibigan na sumali sa {{app_name}}"
-      invited_joined: "{{user}} Sumali Folksemantic"
+      invited_joined: "{{user}} Sumali {{app_name}}"
       new_invites: "Anyayahan ang iyong email contact sa sumali {{app_name}}"
       no_contacts_found: "Walang contact ang natagpuan"
       no_email_error: "Walang mga email address ay tinukoy"

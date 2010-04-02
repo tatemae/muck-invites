@@ -11,7 +11,7 @@ ca:
       invite: "{{inviter}} Li convida a unir-se a {{app_name}}"
       invite_button: Invitació
       invite_friends: "Convida als teus amics a unir-se a {{app_name}}"
-      invited_joined: "{{user}} Unió Folksemantic"
+      invited_joined: "{{user}} Unió {{app_name}}"
       new_invites: "Convida als teus contactes de correu electrònic per unir-se a {{app_name}}"
       no_contacts_found: "No s&#39;han trobat contactes"
       no_email_error: "No s&#39;especifiquen les adreces de correu electrònic"

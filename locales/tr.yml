@@ -11,7 +11,7 @@ tr:
       invite: "{{inviter}} Size {{app_name}} katılmaya davet ediyor"
       invite_button: Davet
       invite_friends: "Davet Et {{app_name}} katılmak"
-      invited_joined: "{{user}} Folksemantic katıldı"
+      invited_joined: "{{user}} {{app_name}} Katıldı"
       new_invites: "Davet e-posta kişilerinizi {{app_name}} katılmak için"
       no_contacts_found: "Hiçbir kişi bulundu"
       no_email_error: "No e-posta adresleri belirtilen edildi"

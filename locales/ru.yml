@@ -11,7 +11,7 @@ ru:
       invite: "{{inviter}} Приглашает Вас присоединиться к {{app_name}}"
       invite_button: Пригласить
       invite_friends: "Пригласите своих друзей присоединиться к {{app_name}}"
-      invited_joined: "{{user}} Вступил Folksemantic"
+      invited_joined: "{{user}} Вступил {{app_name}}"
       new_invites: "Приглашение контакты электронной почты присоединиться {{app_name}}"
       no_contacts_found: "Не найдено ни контактов"
       no_email_error: "Не были указаны адреса электронной почты"

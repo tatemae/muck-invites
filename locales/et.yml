@@ -11,7 +11,7 @@ et:
       invite: "{{inviter}} Kutsub sind liituma {{app_name}}"
       invite_button: Kutsu
       invite_friends: "Kutsu sõpru liituma {{app_name}}"
-      invited_joined: "{{user}} Liitunud Folksemantic"
+      invited_joined: "{{user}} Liitunud {{app_name}}"
       new_invites: "Kutsu oma e-posti aadressid liituda {{app_name}}"
       no_contacts_found: "Ühtegi kontakti ei leitud"
       no_email_error: "Nr e-posti aadressid on täpsustatud"

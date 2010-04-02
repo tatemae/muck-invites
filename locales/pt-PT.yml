@@ -11,7 +11,7 @@ pt-PT:
       invite: "{{inviter}} Convida você para participar {{app_name}}"
       invite_button: Convidar
       invite_friends: "Convide seus amigos para se juntarem {{app_name}}"
-      invited_joined: "{{user}} Juntou Folksemantic"
+      invited_joined: "{{user}} Juntou {{app_name}}"
       new_invites: "Convide seus contatos de e-mail para se juntar {{app_name}}"
       no_contacts_found: "Nenhum contato foi encontrado"
       no_email_error: "Não foram especificados os endereços de e-mail"

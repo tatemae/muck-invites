@@ -11,7 +11,7 @@ sr:
       invite: "{{inviter}} Вас позива да се придружите {{app_name}}"
       invite_button: Позвати
       invite_friends: "Позовите своје пријатеље да се придруже {{app_name}}"
-      invited_joined: "{{user}} Придружио Фолксемантиц"
+      invited_joined: "{{user}} Придружио {{app_name}}"
       new_invites: "Позовите вашу е-маил контакти за придруживање {{app_name}}"
       no_contacts_found: "Нема контаката није пронађена"
       no_email_error: "Нема адресе е-поште су навели"

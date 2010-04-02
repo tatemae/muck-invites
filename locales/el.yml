@@ -11,7 +11,7 @@ el:
       invite: "{{inviter}} Σας προσκαλεί να συμμετάσχετε {{app_name}}"
       invite_button: Προσκαλέστε
       invite_friends: "Προσκαλέστε τους φίλους σας να συμμετάσχουν {{app_name}}"
-      invited_joined: "{{user}} Προσχώρησαν Folksemantic"
+      invited_joined: "{{user}} Προσχώρησαν {{app_name}}"
       new_invites: "Προσκαλέστε email επαφές σας για να συμμετάσχουν {{app_name}}"
       no_contacts_found: "Δεν βρέθηκαν επαφές"
       no_email_error: "Δεν ήταν διευθύνσεις ηλεκτρονικού ταχυδρομείου που ορίζονται"

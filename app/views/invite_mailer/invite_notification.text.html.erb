@@ -1,8 +1,6 @@
-<p><%= h(@user.full_name) %> invites you to join Folksemantic.</p>
+<p><%= h(@user.full_name) %> invites you to join <%= GlobalConfig.application_name %>.</p>
 
-<p>Folksemantic is the leading OpenCourseWare search engine. It has over 110,000 resources in its index and provides tools for sharing and discussing resources and receiving personalized recommendations.</p>
-
-<p>Visit Folksemantic at: <a href="<%= root_url %>"><%= root_url %></a></p>
+<p>Visit <%= GlobalConfig.application_name %> at: <a href="<%= root_url %>"><%= root_url %></a></p>
 
 <p>See what <%= h(@user.full_name) %> is doing at: <a href="<%= profile_path(@user) %>"><%= profile_path(@user) %></a></p>
 

@@ -11,7 +11,7 @@ ja:
       invite: "{{inviter}}場合{{app_name}}参加するよう呼びかけ"
       invite_button: 招待
       invite_friends: "お友達を招待{{app_name}}に参加する"
-      invited_joined: "{{user}} Folksemanticに参加しました"
+      invited_joined: "{{user}} {{app_name}}に参加しました"
       new_invites: "招待メールの連絡先{{app_name}}に参加する"
       no_contacts_found: 連絡先が見つかりませんでした
       no_email_error: また、電子メールアドレスが指定されて

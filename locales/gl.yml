@@ -11,7 +11,7 @@ gl:
       invite: "{{inviter}} Convida vostede para participar {{app_name}}"
       invite_button: Invitar
       invite_friends: "Convidar os seus amigos para se xuntar {{app_name}}"
-      invited_joined: "{{user}} Xunto Folksemantic"
+      invited_joined: "{{user}} Xunto {{app_name}}"
       new_invites: "Invita os seus contactos de correo-e para unirse {{app_name}}"
       no_contacts_found: "Ningún contacto se atopou"
       no_email_error: "Non se especifican os enderezos de correo-e"

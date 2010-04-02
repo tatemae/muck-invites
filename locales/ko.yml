@@ -11,7 +11,7 @@ ko:
       invite: "{{inviter}} 당신 {{app_name}} 가입 초대"
       invite_button: 초대
       invite_friends: "친구 초대 {{app_name}} 가입"
-      invited_joined: "{{user}} Folksemantic 가입"
+      invited_joined: "{{user}} {{app_name}} 가입"
       new_invites: "초대 귀하의 이메일 연락처 {{app_name}} 가입"
       no_contacts_found: "연락처를 찾을 수 없음"
       no_email_error: "번호 이메일 주소가 지정되지 않았습니다"

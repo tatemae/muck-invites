@@ -11,7 +11,7 @@ iw:
       invite: "{{inviter}} מזמינה אותך להצטרף {{app_name}}"
       invite_button: הזמן
       invite_friends: "הזמן את חבריך להצטרף {{app_name}}"
-      invited_joined: "{{user}} הצטרף Folksemantic"
+      invited_joined: "{{user}} הצטרף {{app_name}}"
       new_invites: "אנשי הקשר שלך הדוא&quot;ל הזמן להצטרף {{app_name}}"
       no_contacts_found: "לא נמצאו אנשי קשר"
       no_email_error: "לא היו כתובות דוא&quot;ל שצוין"

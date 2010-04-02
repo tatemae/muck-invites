@@ -30,7 +30,13 @@ class Muck::InvitesController < ApplicationController
         render :template => 'invites/get_contacts'
       end
       format.json { render :json => { :success => @success, :message => @message, :contacts => @contacts.as_json } }
-      format.js { render :template => 'invites/get_contacts', :layout => false }
+      format.js do
+        if @render_contacts_into = params[:render_contacts_into]
+          render :template => 'invites/get_contacts_into', :layout => false
+        else
+          render :template => 'invites/get_contacts', :layout => false
+        end
+      end
     end
   end
 

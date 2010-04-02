@@ -11,7 +11,7 @@ zh-TW:
       invite: "{{inviter}}邀請您加入{{app_name}}"
       invite_button: 邀請
       invite_friends: "邀請您的朋友加入{{app_name}}"
-      invited_joined: "{{user}}加入Folksemantic"
+      invited_joined: "{{user}}加入{{app_name}}"
       new_invites: "邀請您的電子郵件聯繫人加入{{app_name}}"
       no_contacts_found: 沒有發現接觸
       no_email_error: 沒有被指定的電子郵件地址

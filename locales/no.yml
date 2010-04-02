@@ -12,7 +12,7 @@
       invite: "{{inviter}} Inviterer deg til å bli {{app_name}}"
       invite_button: Inviter
       invite_friends: "Inviter dine venner til å delta {{app_name}}"
-      invited_joined: "{{user}} Blitt Folksemantic"
+      invited_joined: "{{user}} Blitt {{app_name}}"
       new_invites: "Inviter din email kontaktene til å delta {{app_name}}"
       no_contacts_found: "Ingen kontakter ble funnet"
       no_email_error: "Ingen e-postadresser ble spesifisert"

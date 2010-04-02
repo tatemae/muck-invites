@@ -12,7 +12,7 @@ class InviteMailer < ActionMailer::Base
 
   def invited_joined_notification(user, inviter)
     setup_email(inviter.email)
-    subject   I18n.t('muck.invites.invited_joined', :user => inviter.full_name)
+    subject   I18n.t('muck.invites.invited_joined', :user => inviter.full_name, :app_name => GlobalConfig.application_name)
     body      :user => user, :inviter => inviter
   end
   

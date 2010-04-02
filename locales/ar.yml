@@ -11,7 +11,7 @@ ar:
       invite: "{{inviter}}يدعوك للانضمام {{app_name}}"
       invite_button: دعوة
       invite_friends: "دعوة أصدقائك للانضمام {{app_name}}"
-      invited_joined: "{{user}}انضم Folksemantic"
+      invited_joined: "{{user}}انضم {{app_name}}"
       new_invites: "دعوة جهات الاتصال الخاصة بك البريد الالكتروني للانضمام {{app_name}}"
       no_contacts_found: "تم العثور على أي اتصالات"
       no_email_error: "لا عناوين البريد الالكتروني تم تحديده"

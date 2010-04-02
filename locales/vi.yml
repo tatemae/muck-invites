@@ -11,7 +11,7 @@ vi:
       invite: "{{inviter}} Mời các bạn tham gia {{app_name}}"
       invite_button: Mời
       invite_friends: "Mời bạn bè tham gia {{app_name}}"
-      invited_joined: "{{user}} Gia nhập Folksemantic"
+      invited_joined: "{{user}} Gia nhập {{app_name}}"
       new_invites: "Mời bạn liên hệ email để tham gia {{app_name}}"
       no_contacts_found: "Không có địa chỉ liên lạc đã được tìm thấy"
       no_email_error: "Không có địa chỉ email được chỉ định"

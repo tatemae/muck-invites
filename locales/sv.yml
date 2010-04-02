@@ -11,7 +11,7 @@ sv:
       invite: "{{inviter}} Inbjuder dig att gå {{app_name}}"
       invite_button: Bjud
       invite_friends: "Bjud in dina vänner att gå {{app_name}}"
-      invited_joined: "{{user}} Gick Folksemantic"
+      invited_joined: "{{user}} Gick {{app_name}}"
       new_invites: "Bjud in dina kontakter för att ansluta {{app_name}}"
       no_contacts_found: "Inga kontakter hittades"
       no_email_error: "Inga e-postadresser angavs"

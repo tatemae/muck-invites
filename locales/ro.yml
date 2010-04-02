@@ -11,7 +11,7 @@ ro:
       invite: "{{inviter}} Vă invită să se alăture {{app_name}}"
       invite_button: Invite
       invite_friends: "Invitaţi-vă prietenii să se alăture {{app_name}}"
-      invited_joined: "{{user}} S-au alăturat Folksemantic"
+      invited_joined: "{{user}} S-au alăturat {{app_name}}"
       new_invites: "Invitaţi-contactele dvs. de email să se alăture {{app_name}}"
       no_contacts_found: "Nici un contact au fost găsite"
       no_email_error: "Nu adrese de email au fost specificate"

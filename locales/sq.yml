@@ -11,7 +11,7 @@ sq:
       invite: "{{inviter}} Ju fton për t&#39;u bashkuar me {{app_name}}"
       invite_button: Invite
       invite_friends: "Fto shokët tuaj për t&#39;u bashkuar me {{app_name}}"
-      invited_joined: "{{user}} Bashkua Folksemantic"
+      invited_joined: "{{user}} Bashkua {{app_name}}"
       new_invites: "Fto kontakteve tuaj e-mail për t&#39;u bashkuar me {{app_name}}"
       no_contacts_found: "Nuk u gjet kontakte"
       no_email_error: "Nuk adresat e-mail ishin përcaktuar"

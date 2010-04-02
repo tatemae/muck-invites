@@ -11,7 +11,7 @@ bg:
       invite: "{{inviter}} Ви кани да се присъедините {{app_name}}"
       invite_button: Покани
       invite_friends: "Поканете приятели да се присъединят към {{app_name}}"
-      invited_joined: "{{user}} Присъединиха Folksemantic"
+      invited_joined: "{{user}} Присъединиха {{app_name}}"
       new_invites: "Поканете своя имейл контактите да се присъединят към {{app_name}}"
       no_contacts_found: "Не са намерени контакти"
       no_email_error: "Не имейл адреси са посочени"

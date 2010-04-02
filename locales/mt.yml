@@ -11,7 +11,7 @@ mt:
       invite: "{{inviter}} Tistiednek biex jissieħbu {{app_name}}"
       invite_button: Invite
       invite_friends: "Jistiednu lill-ħbieb tiegħek biex jissieħbu {{app_name}}"
-      invited_joined: "{{user}} Ssieħbu Folksemantic"
+      invited_joined: "{{user}} Ssieħbu {{app_name}}"
       new_invites: "Kuntatti Tistieden email tiegħek biex jissieħbu {{app_name}}"
       no_contacts_found: "L-ebda kuntatti nstabu"
       no_email_error: "Nru indirizzi email kienu speċifikati"

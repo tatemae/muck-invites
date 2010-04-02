@@ -11,7 +11,7 @@ pl:
       invite: "{{inviter}} Zaprasza się do {{app_name}}"
       invite_button: Zaproś
       invite_friends: "Zaproś znajomych do {{app_name}}"
-      invited_joined: "{{user}} Dołączył Folksemantic"
+      invited_joined: "{{user}} Dołączył {{app_name}}"
       new_invites: "Zaproś swoich kontaktów e-mail do przyłączenia {{app_name}}"
       no_contacts_found: "Nie znaleziono kontaktów"
       no_email_error: "Brak adresów e-mail zostały określone"

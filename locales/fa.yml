@@ -11,7 +11,7 @@ fa:
       invite: "{{inviter}}دعوت شما برای پیوستن به {{app_name}}"
       invite_button: دعوت
       invite_friends: "دعوت از دوستان خود برای پیوستن به {{app_name}}"
-      invited_joined: "{{user}}تاریخ عضویت Folksemantic"
+      invited_joined: "{{user}}تاریخ عضویت {{app_name}}"
       new_invites: "تماس با دعوت از ایمیل خود برای پیوستن به {{app_name}}"
       no_contacts_found: "هیچ تماسی پیدا نشد"
       no_email_error: "بدون آدرس ایمیل مشخص شدند"

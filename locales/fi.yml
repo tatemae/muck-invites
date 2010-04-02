@@ -11,7 +11,7 @@ fi:
       invite: "{{inviter}} Pyytää teitä liittymään {{app_name}}"
       invite_button: Kehota
       invite_friends: "Kutsu ystäväsi liittymään {{app_name}}"
-      invited_joined: "{{user}} Liittyi Folksemantic"
+      invited_joined: "{{user}} Liittyi {{app_name}}"
       new_invites: "Kutsu sähköpostiyhteystiedot liittyä {{app_name}}"
       no_contacts_found: "Yhteystietoja ei löytynyt"
       no_email_error: "O sähköpostiosoitteet on yksilöity"
