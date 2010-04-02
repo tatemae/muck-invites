@@ -1,14 +1,18 @@
-<div id="invite-contacts" class="invite-query">
-  <%= invite_ajax_message_container %>
+<div id="<%=id%>" class="invite-query" style="display:none;">
   <div class="invite-form">
+    <p><%=translate('muck.invites.email_password_prompt_title', :title => title) %></p>
     <% custom_form_for(:get_contacts, :url => get_contacts_invites_path, :html => { :class => 'ajax' } ) do |f| -%>
       <%= f.text_field :email, { :label => t('muck.invites.your_email'),
                                  :tip => t('muck.invites.your_email_help')} -%>
       <%= f.password_field :password, { :label => t('muck.invites.email_password'),
                                         :tip => t('muck.invites.email_password_help')} -%>
+      <%= hidden_field_tag :render_contacts_into, id %>
       <%= f.submit t('muck.invites.continue_button'), :class => "button invite-submit wait-button" %>
-      <%= render :partial => 'invites/contacts_loading' %>
+      <%= render :partial => 'invites/contacts_loading', :locals => { :id => id } %>
     <% end -%>
   </div>
+  <div class="contacts-privacy">
+    <p><%=translate('muck.invites.we_dont_store') %></p>
+    <p><%=translate('muck.invites.we_wont_email') %></p>
+  </div>
 </div>
-<%= render :partial => 'invites/invite_scripts' %>

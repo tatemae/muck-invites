@@ -1,0 +1,13 @@
+<div class="contact-chooser">
+  <div class="contact-chooser-list">
+    <fieldset>
+      <div id="select-all-contacts">
+        <input id="select-all" type="checkbox" onclick='jQuery("input[type=checkbox]").attr("checked",jQuery("#select-all:checked").val() != null);' />
+        <%= t('muck.invites.select_all') %>
+      </div>
+      <div class="table-wrapper">
+        <%= contact_list(contacts) %>
+      </div>
+    </fieldset>
+  </div>
+</div>

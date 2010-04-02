@@ -19,4 +19,8 @@ module MuckInvitesHelper
     }
   end
   
+  def contact_container(contacts)
+    render :partial => 'invites/contact_container', :locals => { :contacts => contacts }
+  end
+    
 end

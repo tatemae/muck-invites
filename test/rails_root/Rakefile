@@ -12,13 +12,6 @@ require 'tasks/rails'
 require 'muck_users/tasks'
 require 'muck_invites/tasks'
 require 'muck_engine/tasks'
-
 require 'muck_profiles/tasks'
-
-namespace :muck do
-  
-  def muck_gems
-    ['muck-engine', 'muck-users', 'muck-profiles']
-  end
-  
-end
+require 'muck_oauth/tasks'
+require 'muck_activities/tasks'

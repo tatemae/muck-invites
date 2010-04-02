@@ -1,48 +1,47 @@
 jQuery(document).ready(function() {
-	apply_invite_methods();
+	apply_activity_ajax_methods();
 });
 
-function apply_invite_methods(){
-	setup_invite_submit();
-	hide_invite_boxes();
-	apply_invite_hover();
+function apply_activity_ajax_methods(){
+	setup_comment_submit();
+	hide_comment_boxes();
+	apply_comment_hover();
 	apply_activity_hover();
-	jQuery('.activity-no-invites').hide();
-	
-	jQuery('.activity-has-invites').find('textarea').click(function(){
-		show_invite_box(this);
+	jQuery('.activity-no-comments').hide();
+	jQuery('.activity-has-comments').find('textarea').click(function(){
+		show_comment_box(this);
 	});
-	jQuery('.activity-has-invites').find('textarea').blur(function(){
+	jQuery('.activity-has-comments').find('textarea').blur(function(){
 		textarea = jQuery(this);
 		if (textarea.val() == ''){
-			hide_invite_boxes();
+			hide_comment_boxes();
 		}
 	});
 	
-	jQuery(".make-invite").unbind();
-	jQuery('.make-invite').click(function(){
-		var id = this.id.replace('make_invite_activity_', '');
-		var invite_box = jQuery('#invite_activity_' + id);
-		invite_box.find('textarea').removeClass('min');
-		invite_box.find('textarea').addClass('max');
-		invite_box.show();
-		invite_box.find('textarea').get(0).focus();
-		invite_box.find('textarea').blur(function(){
+	jQuery(".make-comment").unbind();
+	jQuery('.make-comment').click(function(){
+		var id = this.id.replace('make_comment_activity_', '');
+		var comment_box = jQuery('#comment_activity_' + id);
+		comment_box.find('textarea').removeClass('min');
+		comment_box.find('textarea').addClass('max');
+		comment_box.show();
+		comment_box.find('textarea').get(0).focus();
+		comment_box.find('textarea').blur(function(){
 			if (jQuery(this).val() == ''){
-				jQuery(this).closest('.activity-invite').hide();
+				jQuery(this).closest('.activity-comment').hide();
 			}
 		});
 		return false;
 	});
 }
 
-function setup_invite_submit(){
-	jQuery(".invite-submit").unbind();
-	jQuery(".invite-submit").click(function() {
+function setup_comment_submit(){
+	jQuery(".comment-submit").unbind();
+	jQuery(".comment-submit").click(function() {
     jQuery(this).hide();
-		jQuery(this).parents('.invite-form-wrapper').siblings('.actor-icon').hide();
+		jQuery(this).parents('.comment-form-wrapper').siblings('.actor-icon').hide();
 		jQuery(this).siblings('textarea').hide();
-		jQuery(this).parent().append('<p class="invite-loading"><img src="/images/spinner.gif" alt="loading..." /> ' + ADD_COMMENT_MESSAGE + '</p>');
+		jQuery(this).parent().append('<p class="comment-loading"><img src="/images/spinner.gif" alt="loading..." /> ' + ADD_COMMENT_MESSAGE + '</p>');
 		var form = jQuery(this).parents('form');
     jQuery.post(form.attr('action'), form.serialize() + '&format=json',
       function(data){
@@ -50,32 +49,32 @@ function setup_invite_submit(){
         if(!json.success){
           jQuery.jGrowl.info(json.message);
         } else {
-					jQuery('.invite-loading').remove();
-					jQuery('.activity-has-invites').find('textarea').show();
-					var invite_box = jQuery('#invite_activity_' + json.parent_id);
-					invite_box.before(json.html);
-					invite_box.removeClass('activity-no-invites');
-					invite_box.addClass('activity-has-invites');
-					invite_box.find('textarea').show();
-					apply_invite_methods();
+					jQuery('.comment-loading').remove();
+					jQuery('.activity-has-comments').find('textarea').show();
+					var comment_box = jQuery('#comment_activity_' + json.parent_id);
+					comment_box.before(json.html);
+					comment_box.removeClass('activity-no-comments');
+					comment_box.addClass('activity-has-comments');
+					comment_box.find('textarea').show();
+					apply_activity_ajax_methods();
 				}
       });
     return false;
   });
 }
 
-function hide_invite_boxes(){
-	jQuery('.activity-has-invites').children('.actor-icon').hide();
-	jQuery('.activity-has-invites').find('.button').hide();
-	jQuery('.activity-has-invites').find('textarea').val(COMMENT_PROMPT);
-	jQuery('.activity-has-invites').find('textarea').addClass('min');
+function hide_comment_boxes(){
+	jQuery('.activity-has-comments').children('.actor-icon').hide();
+	jQuery('.activity-has-comments').find('.button').hide();
+	jQuery('.activity-has-comments').find('textarea').val(COMMENT_PROMPT);
+	jQuery('.activity-has-comments').find('textarea').addClass('min');
 }
 
-function show_invite_box(obj){
+function show_comment_box(obj){
 	textarea = jQuery(obj);
 	textarea.addClass('max');
 	textarea.removeClass('min');
-	textarea.closest('.invite-form-wrapper').siblings('.actor-icon').show();
+	textarea.closest('.comment-form-wrapper').siblings('.actor-icon').show();
 	textarea.siblings('.button').show();
 	if (textarea.val() == COMMENT_PROMPT) {
 		textarea.val('');
@@ -101,8 +100,8 @@ function apply_activity_hover(){
      function () { jQuery(this).removeClass('activity-hover'); } );
 }
 
-function apply_invite_hover(){
-	jQuery('.activity-invite').hover(
-     function () { jQuery(this).addClass('invite-hover'); }, 
-     function () { jQuery(this).removeClass('invite-hover'); } );
+function apply_comment_hover(){
+	jQuery('.activity-comment').hover(
+     function () { jQuery(this).addClass('comment-hover'); }, 
+     function () { jQuery(this).removeClass('comment-hover'); } );
 }

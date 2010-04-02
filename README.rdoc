@@ -8,9 +8,12 @@ Install the gem:
 
 and add it to environment.rb:
 
-
+== Javascript and CSS
 Be sure to include muck.js:
   <%= javascript_include_tag %w{ muck.js } %>
+
+You can include muck-invites.css or copy and paste the styles and change them as desired:
+  <%= stylesheet_link_tag 'muck-invites' -%>
 
 Include a link to initialize the invite process.  You might want to do this in a lightbox.
   <%= link_to 'Invite Your Friends', new_invite_path, :class => 'invite_box' %>
