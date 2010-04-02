@@ -1,0 +1,55 @@
+<div id="invite-friends">
+  <div class="tabs" style="display:none;">
+    <ul>
+      <li><a href="gmail" class="active"><span>Gmail</span></a></li>
+      <li><a href="windows"><span>Windows Live</span></a></li>
+      <li><a href="yahoo"><span>Yahoo</span></a></li>
+    </ul>
+  </div>
+  <div id="invite-contents">
+    <div id="contact-chooser-list">
+      <fieldset>
+        <%= render :partial => 'invites/gmail_oauth' %>
+        <%= render :partial => 'invites/contacts_container', :locals => { :id => 'yahoo', :title => 'Yahoo' } %>
+        <%= render :partial => 'invites/contacts_container', :locals => { :id => 'windows', :title => 'Windows Live' } %>
+      </fieldset>
+    </div>
+  </div>
+  <div id="invite-form">
+    <%= invite_ajax_message_container %>
+    <% custom_form_for(:invite_contacts, :url => {:action => 'create'}, :html => {:id => "invite-contacts-form", :name => 'invite-contacts-form'} ) do |f| -%>
+      <%= text_area_tag :emails, params[:emails] %>
+      <img src="/images/message.png" alt="Bucket Tipped By" />
+      <div class="cl"></div>
+      <%= text_area_tag :message, params[:message] || @project.share_message %>
+      <%= hidden_field_tag :project_id, @project.id %>
+      <%= f.submit t('muck.invites.invite_button'), :class => "button invite-submit" %>
+    <% end -%>
+  </div>
+</div>
+<script type="text/javascript" language="JavaScript">
+jQuery(document).ready(function() {
+  jQuery('.tabs ul li a').click(function(){
+    jQuery('.invite-content').hide();
+    jQuery('#' + jQuery(this).attr('href')).show();
+    jQuery('.tabs ul li a').removeClass('active');
+    jQuery(this).addClass('active');
+    return false;
+  });
+  jQuery('.tabs').show();
+  apply_ajax_forms();
+  jQuery("#get-contacts-button").click(function() {
+    jQuery("#get-contacts-form").hide();
+    jQuery("#contacts-loading").show();
+    jQuery("#notice-error").hide();
+  });
+  <%= gmail_contacts_for_auto_complete(current_user) %>
+  jQuery("#emails").autocomplete(gmail_contacts, {
+               minChars: 1,
+               delay: 200,
+               autoFill: true,
+               mustMatch: false,
+               multiple: true
+  });
+});
+</script>

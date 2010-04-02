@@ -12,6 +12,15 @@ class Muck::InvitesController < ApplicationController
     end
   end
 
+  def compose
+    flash.discard
+    respond_to do |format|
+      format.html { render :template => 'invites/compose' }
+      format.pjs { render :template => 'invites/compose', :layout => false }
+      format.js { render :template => 'invites/compose', :layout => false }
+    end
+  end
+  
   def get_contacts
     @success = true
     begin

@@ -20,6 +20,9 @@ Rails::Initializer.run do |config|
   config.gem 'muck-engine', :lib => 'muck_engine'
   config.gem 'muck-users', :lib => 'muck_users'
   config.gem 'muck-profiles', :lib => 'muck_profiles'
+  config.gem "oauth"
+  config.gem "oauth-plugin"
+  config.gem 'muck-oauth', :lib => 'muck_oauth'
   config.gem 'muck-activities', :lib => 'muck_activities'
   config.plugin_locators << TestGemLocator
 end

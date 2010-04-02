@@ -1,8 +1,3 @@
 <div><%= flash[:notice] %></div>
 <div><%= link_to t('muck.invites.new_invites', :app_name => GlobalConfig.application_name), new_invite_path %></div>
-
-Render partials as test
-<%= render :partial => 'invites/gmail_oauth' %>
-<%= render :partial => 'invites/contacts_container', :locals => { :id => 'yahoo', :title => 'Yahoo' } %>
-<%= render :partial => 'invites/contacts_container', :locals => { :id => 'windows', :title => 'Windows Live' } %>
-
+<div><%= link_to t('muck.invites.compose_invites', :app_name => GlobalConfig.application_name), compose_new_invite_path %></div>

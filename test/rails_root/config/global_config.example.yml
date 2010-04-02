@@ -62,6 +62,37 @@ default: &DEFAULT
   create_activities_when_invited_joins: true
   email_inviters_when_invited_joins: true
   
+  # Oauth
+  # Twitter api access: http://www.twitter.com/apps
+  twitter_oauth_key: ''
+  twitter_oauth_secret: ''
+
+  # Google api access: http://code.google.com/apis/accounts/docs/RegistrationForWebAppsAuto.html#register
+  google_oauth_key: ""
+  google_oauth_secret: ""
+
+  # Yahoo api access: http://developer.yahoo.com/flickr/
+  yahoo_oauth_key: ""
+  yahoo_oauth_secret: ""
+
+  # Flick api access: http://www.flickr.com/services/apps/create/apply
+  # flickr_oauth_key:
+  # flickr_oauth_secret:
+
+  # Linked In api access: https://www.linkedin.com/secure/developer
+  # linkedin_oauth_key: ""
+  # linkedin_oauth_secret: ""
+  linkedin_oauth_key: ""
+  linkedin_oauth_secret: ""
+
+  # Friendfeed api access: https://friendfeed.com/account/login?next=%2Fapi%2Fregister
+  # Production
+  friendfeed_oauth_key: ''
+  friendfeed_oauth_secret: ''
+  # Test
+  friendfeed_oauth_key: ''
+  friendfeed_oauth_secret: ''
+    
 production:
   <<: *DEFAULT
   

@@ -22,3 +22,4 @@ en:
       email_password_prompt_title: Please enter your {{title}} email and password
       email_password: Email Password
       continue_button: Continue
+      compose_invites: Compose Invite

@@ -2,6 +2,13 @@
 Make it easy to let users invite other users.
 
 == Setup
+Install the gem:
+  
+  sudo gem install muck-invites
+
+and add it to environment.rb:
+
+
 Be sure to include muck.js:
   <%= javascript_include_tag %w{ muck.js } %>
 
@@ -11,6 +18,18 @@ Include a link to initialize the invite process.  You might want to do this in a
 The invite list can include photos from gravatar. To enable this functionality add this to global_config.yml
 
   use_gravatar_in_photo_list: true
+
+=== Oauth
+The invite system can use oauth where available to acquire contacts. To enable this functionality install the
+muck-oauth gem:
+
+  sudo gem install muck-oauth
+  
+and add it to your environment.rb
+
+  config.gem 'muck-oauth', :lib => 'muck_oauth'
+  
+See the muck-oauth gem for more information - http://github.com/tatemae/muck-oauth
 
 === Inviter model
 Add 'acts_as_muck_inviter' to the class that you wish to have do the inviting.  This is commonly the user model, but

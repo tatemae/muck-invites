@@ -1,55 +1,30 @@
-<div id="invite-friends">
-  <div class="tabs" style="display:none;">
-    <ul>
-      <li><a href="gmail" class="active"><span>Gmail</span></a></li>
-      <li><a href="windows"><span>Windows Live</span></a></li>
-      <li><a href="yahoo"><span>Yahoo</span></a></li>
-    </ul>
-  </div>
-  <div id="invite-contents">
-    <div id="contact-chooser-list">
-      <fieldset>
-        <%= render :partial => 'invites/gmail_oauth' %>
-        <%= render :partial => 'invites/contacts_container', :locals => { :id => 'yahoo', :title => 'Yahoo' } %>
-        <%= render :partial => 'invites/contacts_container', :locals => { :id => 'windows', :title => 'Windows Live' } %>
-      </fieldset>
-    </div>
-  </div>
-  <div id="invite-form">
-    <%= invite_ajax_message_container %>
-    <% custom_form_for(:invite_contacts, :url => {:action => 'create'}, :html => {:id => "invite-contacts-form", :name => 'invite-contacts-form'} ) do |f| -%>
-      <%= text_area_tag :emails, params[:emails] %>
-      <img src="/images/message.png" alt="Bucket Tipped By" />
-      <div class="cl"></div>
-      <%= text_area_tag :message, params[:message] || @project.share_message %>
-      <%= hidden_field_tag :project_id, @project.id %>
-      <%= f.submit t('muck.invites.invite_button'), :class => "button invite-submit" %>
+<div id="invite-contacts">
+  <%= invite_ajax_message_container %>
+  <div id="get-contacts-form">
+    <% custom_form_for(:get_contacts, :url => get_contacts_invites_path,
+                                    :html => {:id => "get-contacts-form", :name => 'get-contacts-form',
+                                    :class => 'ajax get-contacts-form', :autocomplete => 'off'} ) do |f| -%>
+      <%= f.text_field :email, { :label => t('muck.invites.your_email'),
+                                 :tip => t('muck.invites.your_email_help')} -%>
+      <%= f.password_field :password, { :label => t('muck.invites.email_password'),
+                                        :tip => t('muck.invites.email_password_help')} -%>
+      <%= f.submit t('muck.invites.continue_button'), :class => "button invite-submit", :id => 'get-contacts-button' %>
     <% end -%>
   </div>
+  <div id="contacts-loading" style="display:none">
+    <img src="/images/spinner.gif" alt="loading..." />
+    <%= t('muck.invites.retrieving_contacts') %>
+  </div>
+  <div id="contacts-chooser-wrapper" style="display:none;"></div>
 </div>
-<script type="text/javascript" language="JavaScript">
+
+<script type="text/javascript">
 jQuery(document).ready(function() {
-  jQuery('.tabs ul li a').click(function(){
-    jQuery('.invite-content').hide();
-    jQuery('#' + jQuery(this).attr('href')).show();
-    jQuery('.tabs ul li a').removeClass('active');
-    jQuery(this).addClass('active');
-    return false;
-  });
-  jQuery('.tabs').show();
-  apply_ajax_forms();
   jQuery("#get-contacts-button").click(function() {
     jQuery("#get-contacts-form").hide();
     jQuery("#contacts-loading").show();
-    jQuery("#notice-error").hide();
+    jQuery("#invite-messages-container").hide();
   });
-  <%= gmail_contacts_for_auto_complete(current_user) %>
-  jQuery("#emails").autocomplete(gmail_contacts, {
-               minChars: 1,
-               delay: 200,
-               autoFill: true,
-               mustMatch: false,
-               multiple: true
-  });
+  apply_ajax_forms();
 });
 </script>
