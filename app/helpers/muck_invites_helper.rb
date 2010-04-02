@@ -19,18 +19,4 @@ module MuckInvitesHelper
     }
   end
   
-  def user_gmail_contacts_by_oauth(user)
-    if user.google
-      contacts = []
-      user.google.portable_contacts.all.each do |contact|
-        name = contact['name']['formatted'] rescue ''
-        contact["emails"].each do |email|
-          email_record = [name, "'#{email['value']}'"]
-          contacts << email_record unless contacts.include?(email_record)
-        end
-      end
-      contacts
-    end
-  end
-  
 end

@@ -4,7 +4,7 @@
     <p><a href="/oauth_consumers/google">Click to connect to your Gmail</a></p>
   <% else -%>
     <div class="contact-list">
-      <%= contact_list(user_gmail_contacts_by_oauth(current_user)) %>
+      <%= contact_list(gmail_contacts_as_array(current_user)) %>
     </div>
   <% end -%>
 </div>
