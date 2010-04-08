@@ -6,5 +6,21 @@ jQuery(document).ready(function() {
     jQuery("#invite-messages-container").hide();
   });
   apply_ajax_forms();
+  
+  jQuery('.select-all-contacts').live('click', function(){
+    var cbs = jQuery(this).parent('.select-all').siblings('.table-wrapper').find('input[type=checkbox]');
+    cbs.attr("checked",jQuery(this).is(':checked'));
+    cbs.trigger('change');
+  });
+  
+  jQuery('#contacts-list .cb input').live('change', function(){
+    var emails = jQuery('#emails').val();
+    if(jQuery(this).is(':checked')){
+      jQuery('#emails').val(add_to_list(emails, jQuery(this).val()));
+    } else {
+      jQuery('#emails').val(remove_from_list(emails, jQuery(this).val()));
+    }
+  });
+  
 });
 </script>

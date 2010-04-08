@@ -18,6 +18,7 @@
         <label class="invite-email" for="emails">Emails</label>
         <p class="invite-email">Enter emails of friends to invite or select them above:</p>
         <%= text_area_tag :emails, params[:emails] %>
+      </div>
       <div class="form-row">
         <label class="invite-message" for="message">Message</label>
         <%= text_area_tag :message, params[:message] %>
@@ -53,11 +54,5 @@ jQuery(document).ready(function() {
                multiple: true
   });
   <% end -%>
-  
-  jQuery('#contacts-list .cb input').live('click', function(){
-    var emails = jQuery('#emails').val();
-    jQuery('#emails').val(add_to_list(emails, jQuery(this).val()));
-  });
-  
 });  
 </script>

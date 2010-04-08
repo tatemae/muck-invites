@@ -7,7 +7,7 @@
 .contact-chooser table{border-collapse:collapse;margin:0;padding:0;}
 .contact-chooser .icon{width:20px;height:20px;}
 .contact-chooser-list{width:500px;}
-#select-all-contacts {background-color:#EEEEEE;border-bottom:1px solid #CCCCCC;color:#666666;line-height:200%;margin:0;padding:0 5px;}
+.select-all {background-color:#EEEEEE;border-bottom:1px solid #CCCCCC;color:#666666;line-height:200%;margin:0;padding:0 5px;}
 .table-wrapper{height:250px;overflow-y:scroll;padding:4px 0 0;}
 .tabs ul{padding:2px;margin:0;}
 .tabs ul li{list-style:none;font-weight:bold;display:inline-block;}
