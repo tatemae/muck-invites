@@ -7,39 +7,4 @@ jQuery(document).ready(function() {
   });
   apply_ajax_forms();
 });
-
-// Given a comma delimited string add a new item if it isn't in the string
-function add_to_list(items_string, new_item){
-	var items_string = split_list(items_string);
-  var add = true;
-  var cleaned = [];
-  for(i=0;i<items_string.length;i++){
-    cleaned_item = items_string[i].split(" ").join("");
-    if(cleaned_item.length > 0){ cleaned.push(cleaned_item); }
-    if(cleaned_item == new_item){ add = false; }
-  }
-  if(add){ cleaned.push(new_item); }
-  return cleaned.join(', ');
-}
-
-// Given a comma delimited list remove an item from the string
-function remove_from_list(items_string, remove_item){
-  var items_string = split_list(items_string);
-  for(i=0;i<items_string.length;i++){
-    cleaned_item = items_string[i].split(" ").join("");
-    if(cleaned_item.length > 0){ cleaned.push(cleaned_item); }
-    if(cleaned_item == new_item){ add = false; }
-  }
-}
-
-// Split a string on commas
-function split_list(items_string){
-	if(items_string.length > 0){
-    var items_string = items_string.split(',');
-  } else {
-    var items_string = [];
-  }
-	return items_string;
-}
-
 </script>

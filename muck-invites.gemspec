@@ -5,11 +5,11 @@
 
 Gem::Specification.new do |s|
   s.name = %q{muck-invites}
-  s.version = "0.1.7"
+  s.version = "0.1.8"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Justin Ball, Joel Duffin"]
-  s.date = %q{2010-04-02}
+  s.date = %q{2010-04-08}
   s.description = %q{The invite engine for the muck system.}
   s.email = %q{justin@tatemae.com}
   s.extra_rdoc_files = [
@@ -28,11 +28,14 @@ Gem::Specification.new do |s|
      "app/views/invite_mailer/invite_notification.text.plain.erb",
      "app/views/invite_mailer/invited_joined_notification.text.html.erb",
      "app/views/invite_mailer/invited_joined_notification.text.plain.erb",
+     "app/views/invites/_contact_container.erb",
      "app/views/invites/_contact_list.erb",
      "app/views/invites/_contact_list_gravatar.erb",
-     "app/views/invites/_contacts_container.erb",
+     "app/views/invites/_contacts_loading.erb",
+     "app/views/invites/_contacts_query.erb",
      "app/views/invites/_gmail_oauth.erb",
      "app/views/invites/_invite_compose.erb",
+     "app/views/invites/_invite_scripts.erb",
      "app/views/invites/_invite_standard.erb",
      "app/views/invites/compose.erb",
      "app/views/invites/create.erb",
@@ -123,6 +126,7 @@ Gem::Specification.new do |s|
      "test/rails_root/config/global_config.example.yml",
      "test/rails_root/config/initializers/inflections.rb",
      "test/rails_root/config/initializers/mime_types.rb",
+     "test/rails_root/config/initializers/oauth_consumers.rb",
      "test/rails_root/config/initializers/requires.rb",
      "test/rails_root/config/initializers/session_store.rb",
      "test/rails_root/config/routes.rb",
@@ -137,10 +141,15 @@ Gem::Specification.new do |s|
      "test/rails_root/db/migrate/20090608073052_create_friends.rb",
      "test/rails_root/db/migrate/20090703055724_add_contents.rb",
      "test/rails_root/db/migrate/20090704220055_create_slugs.rb",
+     "test/rails_root/db/migrate/20090730044139_add_comment_cache.rb",
+     "test/rails_root/db/migrate/20090818204527_add_activity_indexes.rb",
+     "test/rails_root/db/migrate/20090819030523_add_attachable_to_activities.rb",
      "test/rails_root/db/migrate/20090928213532_create_invites.rb",
      "test/rails_root/db/migrate/20091124203137_add_location_to_profiles.rb",
      "test/rails_root/db/migrate/20091124205819_add_fields_to_profiles.rb",
      "test/rails_root/db/migrate/20091128170318_make_invites_polymorphic.rb",
+     "test/rails_root/db/migrate/20091205001023_create_oauth_consumer_tokens.rb",
+     "test/rails_root/db/migrate/20091210172015_create_oauth_tables.rb",
      "test/rails_root/db/migrate/20100123035450_create_access_codes.rb",
      "test/rails_root/db/migrate/20100123233654_create_access_code_requests.rb",
      "test/rails_root/db/migrate/20100206000906_remove_name_fields.rb",
@@ -151,6 +160,7 @@ Gem::Specification.new do |s|
      "test/rails_root/features/support/env.rb",
      "test/rails_root/features/support/paths.rb",
      "test/rails_root/lib/tasks/cucumber.rake",
+     "test/rails_root/lib/tasks/muck.rake",
      "test/rails_root/public/.htaccess",
      "test/rails_root/public/404.html",
      "test/rails_root/public/422.html",
@@ -703,6 +713,7 @@ Gem::Specification.new do |s|
      "test/rails_root/public/stylesheets/jquery/ui-lightness/images/ui-icons_ffffff_256x240.png",
      "test/rails_root/public/stylesheets/jquery/ui-lightness/jquery-ui-1.7.1.custom.css",
      "test/rails_root/public/stylesheets/jquery/ui-lightness/jquery-ui-1.7.2.custom.css",
+     "test/rails_root/public/stylesheets/muck-activities.css",
      "test/rails_root/public/stylesheets/muck-invites.css",
      "test/rails_root/public/stylesheets/reset.css",
      "test/rails_root/public/stylesheets/styles.css",
