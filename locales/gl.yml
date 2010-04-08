@@ -3,19 +3,23 @@ gl:
   muck: 
     invites: 
       add_invite_button: "Engadir Invitar"
-      continue_button: Continúe
+      compose_invites: "Invita compor"
+      continue_button: Continuar
       create_success: "Invitacións foron enviados para {{emails}}. Vostede será notificado unirse {{app_name}}"
-      email_password: "Email Contraseña"
+      email_password: "E-mail Contrasinal"
       email_password_help: "O contrasinal da súa conta de correo-e"
+      email_password_prompt_title: "Por favor, escriba o seu e-mail e contrasinal {{title}}"
       invalid_email_error: "non se parece un enderezo de correo-e válido."
       invite: "{{inviter}} Convida vostede para participar {{app_name}}"
       invite_button: Invitar
-      invite_friends: "Convidar os seus amigos para se xuntar {{app_name}}"
-      invited_joined: "{{user}} Xunto {{app_name}}"
-      new_invites: "Invita os seus contactos de correo-e para unirse {{app_name}}"
+      invite_friends: "Invita os teus amigos para participar {{app_name}}"
+      invited_joined: "{{user}} Xuntouse {{app_name}}"
+      new_invites: "Invita os teus contactos de correo-e para unirse {{app_name}}"
       no_contacts_found: "Ningún contacto se atopou"
-      no_email_error: "Non se especifican os enderezos de correo-e"
-      retrieving_contacts: "Recuperando contactos"
-      select_all: "Seleccionar todo"
-      your_email: "O seu correo electrónico (Gmail, Hotmail ou Yahoo)"
-      your_email_help: "O enderezo de correo-e dunha conta cos contactos que pretende invitar"
+      no_email_error: "Ningún dirección de correo electrónico foron especificados"
+      retrieving_contacts: "Recuperación dos contactos"
+      select_all: "Select All"
+      we_dont_store: "Non gardar o seu login e contrasinal é presentado de forma segura."
+      we_wont_email: "Non eses enderezos de correo-e sen o seu permiso."
+      your_email: "O seu correo electrónico"
+      your_email_help: "O enderezo de correo electrónico dunha conta cos contactos que pretende invitar"

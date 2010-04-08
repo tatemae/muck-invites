@@ -2,20 +2,24 @@
 mt: 
   muck: 
     invites: 
-      add_invite_button: "Żid Invite"
+      add_invite_button: "Żid Stieden"
+      compose_invites: "Jikkomponu Stieden"
       continue_button: Kompli
-      create_success: "Jistieden intbagħtu lill {{emails}}. Inti ser tiġi notifikata jekk jissieħbu {{app_name}}"
+      create_success: "Jistieden kienu mibgħuta lill {{emails}}. Inti ser tkun notifikata jekk jissieħbu {{app_name}}"
       email_password: "Email Password"
-      email_password_help: "Il-password ta &#39;kont email tieghek"
+      email_password_help: "Il-password ta &#39;kont email tiegħek"
+      email_password_prompt_title: "Jekk jogħġbok ikteb email {{title}} u password"
       invalid_email_error: "ma dehra ta &#39;email address validu."
       invite: "{{inviter}} Tistiednek biex jissieħbu {{app_name}}"
-      invite_button: Invite
-      invite_friends: "Jistiednu lill-ħbieb tiegħek biex jissieħbu {{app_name}}"
+      invite_button: Jistiednu
+      invite_friends: "Tistieden lill-ħbieb tiegħek biex jissieħbu {{app_name}}"
       invited_joined: "{{user}} Ssieħbu {{app_name}}"
-      new_invites: "Kuntatti Tistieden email tiegħek biex jissieħbu {{app_name}}"
-      no_contacts_found: "L-ebda kuntatti nstabu"
+      new_invites: "kuntatti email Tistieden tiegħek biex jissieħbu {{app_name}}"
+      no_contacts_found: "Ebda kuntatt ma nstabu"
       no_email_error: "Nru indirizzi email kienu speċifikati"
-      retrieving_contacts: "Irkupru tal-kuntatti"
-      select_all: "Select All"
-      your_email: "Your Email (Gmail, Hotmail, jew Yahoo)"
-      your_email_help: "L-indirizz tal-email ta &#39;kont ma&#39; kuntatti li inti tixtieq li tistieden"
+      retrieving_contacts: "Irkupru kuntatti"
+      select_all: "Agħżel Kollha"
+      we_dont_store: "Aħna ma taħżen login u password tiegħek tkun sottomessa b&#39;mod sikur."
+      we_wont_email: "Aħna mhux se email dawn l-indirizzi mingħajr permess tiegħek."
+      your_email: "Your email"
+      your_email_help: "L-indirizz elettroniku ta &#39;kont ma&#39; kuntatti li inti tixtieq li tistieden"

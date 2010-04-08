@@ -3,19 +3,23 @@ sl:
   muck: 
     invites: 
       add_invite_button: "Dodaj Povabi"
+      compose_invites: "Sestavi Povabi"
       continue_button: Nadaljuj
       create_success: "Poziva so bili poslani {{emails}}. Obveščeni boste, če se pridružijo {{app_name}}"
-      email_password: "Email Password"
-      email_password_help: "Geslo vašega e-poštnega računa"
-      invalid_email_error: "ni videti kot veljaven e-poštni naslov."
+      email_password: "E-pošta Geslo"
+      email_password_help: "Geslo vašega e-poštni račun"
+      email_password_prompt_title: "Prosimo, vnesite {{title}} email in geslo"
+      invalid_email_error: "ne izgleda kot veljaven e-poštni naslov."
       invite: "{{inviter}} Vas vabi, da se pridružijo {{app_name}}"
-      invite_button: Invite
-      invite_friends: "Povabi prijatelje, da se pridruži {{app_name}}"
+      invite_button: Povabi
+      invite_friends: "Povabi prijatelje, da se pridružijo {{app_name}}"
       invited_joined: "{{user}} Pridružil {{app_name}}"
-      new_invites: "Povabi vaš e-poštni stiki, da se pridružijo {{app_name}}"
-      no_contacts_found: "No stikov je bilo ugotovljeno,"
-      no_email_error: "No email naslovi so bili določeni"
-      retrieving_contacts: "Retrieving stiki"
+      new_invites: "Povabite vaš e-poštni stiki, da se pridružijo {{app_name}}"
+      no_contacts_found: "Št stikov je bilo ugotovljeno,"
+      no_email_error: "Ne e-poštni naslov je bilo določeno"
+      retrieving_contacts: "Pridobivanje stiki"
       select_all: "Izberi vse"
-      your_email: "Vaš E-mail (Gmail, Hotmail ali Yahoo)"
+      we_dont_store: "Ne hranite svojo prijavo in geslo je varno predložena."
+      we_wont_email: "Ne bomo te naslove e-pošte brez vašega dovoljenja."
+      your_email: "Vaš E-mail"
       your_email_help: "E-poštni naslov računa s stiki, ki jih želite povabiti"

@@ -2,20 +2,24 @@
 lv: 
   muck: 
     invites: 
-      add_invite_button: "Pievienot Invite"
+      add_invite_button: "Pievienot Uzaicināt"
+      compose_invites: "Rakstīt Uzaicināt"
       continue_button: Turpināt
-      create_success: "Aicina nosūtītas {{emails}}. Jums tiks paziņots, ja tie pievienotos {{app_name}}"
+      create_success: "Aicina tika nosūtītas {{emails}}. Jums tiks paziņots, ja tie pievienotos {{app_name}}"
       email_password: "E-pasts Parole"
-      email_password_help: "Parole jūsu e-pasta konts"
-      invalid_email_error: "neizskatās kā derīga e-pasta adresi."
+      email_password_help: "Paroli Jūsu e-pasta kontu"
+      email_password_prompt_title: "Lūdzu ievadiet savu {{title}} e-pastu un paroli"
+      invalid_email_error: "neizskatās kā derīgu e-pasta adresi."
       invite: "{{inviter}} Aicina Jūs pievienoties {{app_name}}"
-      invite_button: Invite
-      invite_friends: "Uzaiciniet savus draugus pievienoties {{app_name}}"
+      invite_button: Uzaicināt
+      invite_friends: "Uzaicināt draugus pievienoties {{app_name}}"
       invited_joined: "{{user}} Pievienojās {{app_name}}"
-      new_invites: "Uzaiciniet savu e-pasta kontaktus pievienoties {{app_name}}"
-      no_contacts_found: "Adreses netika atrasts"
-      no_email_error: "Ne e-pasta adreses ir precizēti"
+      new_invites: "Uzaicināt savu e-pasta kontaktus pievienoties {{app_name}}"
+      no_contacts_found: "Nav kontaktu, tika atrasts"
+      no_email_error: "Nav e-pasta adreses bija norādītas"
       retrieving_contacts: "Izguvei kontakti"
       select_all: "Atlasīt visu"
-      your_email: "Jūsu E-pasts (Gmail, Hotmail vai Yahoo)"
-      your_email_help: "E-pasta adrese konta kontaktus, kurus vēlaties uzaicināt"
+      we_dont_store: "Mums nav uzglabāt savu login un paroli ir iesniegts droši."
+      we_wont_email: "Mēs e-pasta šīs adreses bez jūsu atļaujas."
+      your_email: "Jūsu e-pasts"
+      your_email_help: "E-pasta adrese kontu ar kontaktiem, ko vēlaties uzaicināt"

@@ -3,19 +3,23 @@ nl:
   muck: 
     invites: 
       add_invite_button: "Voeg uitnodigen"
-      continue_button: Doorgaan
-      create_success: "Uitnodigingen werden verstuurd naar {{emails}}. U wordt verwittigd wanneer zij zich bij {{app_name}}"
+      compose_invites: "Compose uitnodigen"
+      continue_button: Voortzetten
+      create_success: "Verzoekt werden gezonden aan {{emails}}. U zal verwittigd worden wanneer zij zich bij {{app_name}}"
       email_password: "E-mail Wachtwoord"
       email_password_help: "Het wachtwoord van uw e-mailaccount"
-      invalid_email_error: "lijkt niet op een geldig e-mailadres."
-      invite: "{{inviter}} Nodigt u uit om {{app_name}} toetreden"
-      invite_button: Invite
-      invite_friends: "Nodig je vrienden uit om {{app_name}} toetreden"
+      email_password_prompt_title: "Vul uw e-mailadres en wachtwoord {{title}}"
+      invalid_email_error: "ziet er niet als een geldig e-mailadres."
+      invite: "{{inviter}} Nodigt u uit te nodigen {{app_name}}"
+      invite_button: Uitnodigen
+      invite_friends: "Nodig je vrienden uit te nodigen {{app_name}}"
       invited_joined: "{{user}} Toegetreden {{app_name}}"
-      new_invites: "Nodig uw e-mail contacten te treden {{app_name}}"
-      no_contacts_found: "Geen contacten gevonden"
+      new_invites: "Nodig uw e-mail contacten te nodigen {{app_name}}"
+      no_contacts_found: "Er werden geen contactpersonen gevonden"
       no_email_error: "Geen e-mail adressen werden gespecificeerd"
       retrieving_contacts: "Contacten ophalen"
       select_all: "Alles selecteren"
-      your_email: "Uw e-mail (Gmail, Hotmail of Yahoo)"
+      we_dont_store: "We slaan uw login en uw wachtwoord is veilig worden verzonden."
+      we_wont_email: "Wij zullen deze adressen geen e-mails zonder uw toestemming."
+      your_email: "Uw e-mail"
       your_email_help: "Het e-mailadres van een account met contacten die u wilt uitnodigen"

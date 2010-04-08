@@ -3,19 +3,23 @@ es:
   muck: 
     invites: 
       add_invite_button: "Añadir Invitación"
+      compose_invites: "Redactar Invitación"
       continue_button: Continuar
-      create_success: "Invita fueron enviados a {{emails}}. Usted será notificado si se unen a {{app_name}}"
-      email_password: "Email Contraseña"
+      create_success: "Invita fueron enviados a {{emails}}. Se le notificará si se unen {{app_name}}"
+      email_password: "E-mail Contraseña"
       email_password_help: "La contraseña de su cuenta de correo electrónico"
+      email_password_prompt_title: "Por favor, introduzca su email y contraseña {{title}}"
       invalid_email_error: "no se parece a una dirección de correo electrónico válida."
-      invite: "{{inviter}} Le invita a unirse a {{app_name}}"
-      invite_button: Invitación
-      invite_friends: "Invita a tus amigos a unirse a {{app_name}}"
+      invite: "{{inviter}} Le invita a unirse {{app_name}}"
+      invite_button: Invitar
+      invite_friends: "Invita a tus amigos a unirse {{app_name}}"
       invited_joined: "{{user}} Unió {{app_name}}"
       new_invites: "Invita a tus contactos de correo electrónico para unirse a {{app_name}}"
-      no_contacts_found: "No se han encontrado contactos"
-      no_email_error: "No se especifican las direcciones de correo electrónico"
-      retrieving_contacts: "Recuperación de los contactos"
+      no_contacts_found: "No se encontraron contactos"
+      no_email_error: "No se especificaron direcciones de correo electrónico"
+      retrieving_contacts: "Recuperar contactos"
       select_all: "Seleccionar todo"
-      your_email: "Su correo electrónico (Gmail, Hotmail o Yahoo)"
+      we_dont_store: "Nosotros no guardamos su nombre de usuario y su contraseña es presentado de forma segura."
+      we_wont_email: "No vamos a estas direcciones de correo electrónico sin su permiso."
+      your_email: "Su correo electrónico"
       your_email_help: "La dirección de correo electrónico de una cuenta con los contactos que desea invitar a"

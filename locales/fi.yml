@@ -3,19 +3,23 @@ fi:
   muck: 
     invites: 
       add_invite_button: "Lisää Kutsu"
-      continue_button: Jatka
+      compose_invites: "Säveltää Kutsu"
+      continue_button: Jatkaa
       create_success: "Kehottaa lähetettiin {{emails}}. Saat ilmoituksen, jos ne liittyvät {{app_name}}"
       email_password: "Sähköposti Salasana"
       email_password_help: "Salasana sähköpostitilisi"
-      invalid_email_error: "ei näytä kuin voimassa oleva sähköpostiosoite."
-      invite: "{{inviter}} Pyytää teitä liittymään {{app_name}}"
-      invite_button: Kehota
-      invite_friends: "Kutsu ystäväsi liittymään {{app_name}}"
+      email_password_prompt_title: "Anna {{title}} sähköpostiosoite ja salasana"
+      invalid_email_error: "ei näytä toimiva sähköpostiosoite."
+      invite: "{{inviter}} Kutsuu sinut liittymään {{app_name}}"
+      invite_button: Pyytää
+      invite_friends: "Kutsu ystäviäsi liittymään {{app_name}}"
       invited_joined: "{{user}} Liittyi {{app_name}}"
-      new_invites: "Kutsu sähköpostiyhteystiedot liittyä {{app_name}}"
+      new_invites: "Kutsu Sähköpostiyhteystietosi liittyä {{app_name}}"
       no_contacts_found: "Yhteystietoja ei löytynyt"
-      no_email_error: "O sähköpostiosoitteet on yksilöity"
-      retrieving_contacts: "Haetaan yhteystiedot"
+      no_email_error: "Ei sähköpostiosoitteita ei määritetty"
+      retrieving_contacts: "Haetaan yhteyksiä"
       select_all: "Valitse kaikki"
-      your_email: "Sähköpostiosoitteesi (Gmail, Hotmail tai Yahoo)"
-      your_email_help: "Sähköpostiosoite tilin yhteystiedot, jotka haluat kutsua"
+      we_dont_store: "Emme tallentaa käyttäjätunnuksen ja salasana on toimitettu turvallisesti."
+      we_wont_email: "Emme email näitä osoitteita ilman lupaa."
+      your_email: Sähköposti
+      your_email_help: "Sähköpostiosoite tilin yhteystietoja, jotka haluat kutsua"

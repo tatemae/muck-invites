@@ -3,19 +3,23 @@ et:
   muck: 
     invites: 
       add_invite_button: "Lisa Kutsu"
-      continue_button: Jätka
-      create_success: "Kutsub saadeti {{emails}}. Teile antakse teada, kui nad kolivad {{app_name}}"
-      email_password: "E-mail Parool"
-      email_password_help: "Parool Teie e-posti konto"
-      invalid_email_error: "ei tundu nagu kehtiv meiliaadress."
+      compose_invites: "Koosta Kutsu"
+      continue_button: Jätkama
+      create_success: "Kutsub saadeti {{emails}}. Teid teavitatakse, kui nad kolivad {{app_name}}"
+      email_password: "E-mail Salasõna"
+      email_password_help: "Parool e-posti konto"
+      email_password_prompt_title: "Palun sisesta oma {{title}} email ja parool"
+      invalid_email_error: "ei tundu kehtiv meiliaadress."
       invite: "{{inviter}} Kutsub sind liituma {{app_name}}"
-      invite_button: Kutsu
-      invite_friends: "Kutsu sõpru liituma {{app_name}}"
+      invite_button: Kutsuma
+      invite_friends: "Kutsu oma sõpru liituma {{app_name}}"
       invited_joined: "{{user}} Liitunud {{app_name}}"
       new_invites: "Kutsu oma e-posti aadressid liituda {{app_name}}"
       no_contacts_found: "Ühtegi kontakti ei leitud"
-      no_email_error: "Nr e-posti aadressid on täpsustatud"
+      no_email_error: "Nr meiliaadressid olid määratletud"
       retrieving_contacts: "Otsib kontakte"
       select_all: "Vali kõik"
-      your_email: "Sinu e-post (Gmail, Hotmail või Yahoo)"
-      your_email_help: "E-posti aadressi konto kontaktid, mida soovite kutsuda"
+      we_dont_store: "Me ei salvesta oma kasutajanimi ja parool on esitatud turvaliselt."
+      we_wont_email: "Me ei saada e need aadressid ilma teie loata."
+      your_email: "Sinu e-post"
+      your_email_help: "E-posti aadress konto kontaktid, keda soovite kutsuda"

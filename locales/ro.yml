@@ -2,20 +2,24 @@
 ro: 
   muck: 
     invites: 
-      add_invite_button: "Adăugaţi Invita"
-      continue_button: Continuaţi
-      create_success: "Invitaţii au fost trimise la {{emails}}. Vei fi notificat în cazul în care se alăture {{app_name}}"
+      add_invite_button: "Adauga Invita"
+      compose_invites: "Compune Invitaţi"
+      continue_button: Continua
+      create_success: "Invitaţii au fost trimise la {{emails}}. Vei fi notificat dacă acestea se alăture {{app_name}}"
       email_password: "Email Parola"
-      email_password_help: "Parola contului dumneavoastră de e-mail"
-      invalid_email_error: "nu pare a fi o adresă de e-mail validă."
-      invite: "{{inviter}} Vă invită să se alăture {{app_name}}"
-      invite_button: Invite
-      invite_friends: "Invitaţi-vă prietenii să se alăture {{app_name}}"
+      email_password_help: "Parola contului de e-mail"
+      email_password_prompt_title: "Vă rugăm să introduceţi adresa dvs. de email şi parola {{title}}"
+      invalid_email_error: "nu arată ca o adresă de email validă."
+      invite: "{{inviter}} Invită să vă alăturaţi {{app_name}}"
+      invite_button: Invita
+      invite_friends: "Invită-ţi prietenii să se alăture {{app_name}}"
       invited_joined: "{{user}} S-au alăturat {{app_name}}"
-      new_invites: "Invitaţi-contactele dvs. de email să se alăture {{app_name}}"
+      new_invites: "Invita contacte dvs. de email să se alăture {{app_name}}"
       no_contacts_found: "Nici un contact au fost găsite"
-      no_email_error: "Nu adrese de email au fost specificate"
-      retrieving_contacts: "Preluarea de contact"
+      no_email_error: "Nici o adresa de e-mail au fost specificate"
+      retrieving_contacts: "Preluarea contactelor"
       select_all: "Selecteaza Tot"
-      your_email: "Email-ul dvs. (Gmail, Hotmail, sau Yahoo)"
-      your_email_help: "Adresa de e-mail a unui cont cu persoanele de contact pe care doriţi să le invitaţi"
+      we_dont_store: "Noi nu stoca login-ul şi parola dvs. este prezentat în siguranţă."
+      we_wont_email: "Nu vom aceste adrese de e-mail fără permisiunea dumneavoastră."
+      your_email: "Email-ul dvs."
+      your_email_help: "Adresa de email a unui cont cu persoanele de contact pe care doriţi să le invitaţi"

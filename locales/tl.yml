@@ -2,20 +2,24 @@
 tl: 
   muck: 
     invites: 
-      add_invite_button: "Magdagdag ng Mag-imbita"
+      add_invite_button: "Magdagdag ng mga Mag-imbita"
+      compose_invites: "Gumawa ng Mag-imbita"
       continue_button: Magpatuloy
-      create_success: "Paanyaya ay ipinadala sa {{emails}}. Makakatanggap ka ng notipikasyon kung sumali sila {{app_name}}"
-      email_password: "Email ang Password"
+      create_success: "Paanyaya ay ipinadala sa {{emails}}. Ikaw ay aabisuhan kapag sumali sila {{app_name}}"
+      email_password: "Email Password"
       email_password_help: "Ang password ng iyong email account"
-      invalid_email_error: "hindi hitsura isang balidong email address."
-      invite: "{{inviter}} Imbitasyon upang sumali ka sa {{app_name}}"
+      email_password_prompt_title: "Mangyaring ipasok ang iyong {{title}} email at password"
+      invalid_email_error: "ay hindi hitsura ng isang wastong email address."
+      invite: "{{inviter}} Mga paanyaya sa iyo upang sumali {{app_name}}"
       invite_button: Mag-anyaya
       invite_friends: "Anyayahan ang iyong mga kaibigan na sumali sa {{app_name}}"
       invited_joined: "{{user}} Sumali {{app_name}}"
-      new_invites: "Anyayahan ang iyong email contact sa sumali {{app_name}}"
+      new_invites: "Anyayahan ang iyong mga contact email na sumali {{app_name}}"
       no_contacts_found: "Walang contact ang natagpuan"
       no_email_error: "Walang mga email address ay tinukoy"
       retrieving_contacts: "Kinukuha ang mga contact"
       select_all: "Piliin ang Lahat"
-      your_email: "Ang iyong Email (Gmail, ang Hotmail, Yahoo o)"
-      your_email_help: "Ang email address ng isang account na may mga kontak na gusto mong mag-imbita"
+      we_dont_store: "Hindi namin tindahan ng iyong login at password na iyong isinumite ay ligtas."
+      we_wont_email: "Hindi namin ng email ang mga address na walang ang iyong pahintulot."
+      your_email: "Ang iyong Email"
+      your_email_help: "Ang email address ng isang account na may mga contact na nais mong anyayahan"
