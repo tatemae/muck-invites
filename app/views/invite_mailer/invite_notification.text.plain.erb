@@ -1,7 +1,11 @@
 <%= h(@user.full_name) %> invites you to join <%= GlobalConfig.application_name %>.
 
+<% if @message -%>
+  <%= h(@message) %>
+<% end -%>
+
 Visit <%= GlobalConfig.application_name %> at: <%= root_url %>
 
-See what <%= h(@user.full_name) %> is doing at: <%= profile_path(@user) %>
+See what <%= h(@user.full_name) %> is doing at: <%= profile_url(@user) %>
 
 If the links do not work, try copying and pasting them into your web browser.

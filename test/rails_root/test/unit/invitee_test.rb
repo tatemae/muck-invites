@@ -47,22 +47,22 @@ class InviteeTest < ActiveSupport::TestCase
     subject { @user }
 
     should "be able to call invite with a single email address" do
-      @user.invite(Factory.next(:email), @user)
+      @user.invite(Factory.next(:email), 'test', @user)
       assert_equal 1, @user.invites.size
     end
 
     should "be able to call invite with a string specifying a space delimited list of email addresses" do
-      @user.invite(Factory.next(:email) + ' ' + Factory.next(:email), @user)
+      @user.invite(Factory.next(:email) + ' ' + Factory.next(:email), 'test', @user)
       assert_equal 2, @user.invites.size
     end
 
     should "be able to call invite with a string specifying a comma delimited list of email addresses" do
-      @user.invite(Factory.next(:email) + ',  ' + Factory.next(:email) + ',' + Factory.next(:email) + ',', @user)
+      @user.invite(Factory.next(:email) + ',  ' + Factory.next(:email) + ',' + Factory.next(:email) + ',', 'test', @user)
       assert_equal 3, @user.invites.size
     end
 
     should "be able to call invite with an array of email addresses" do
-      @user.invite([Factory.next(:email),Factory.next(:email)], @user)
+      @user.invite([Factory.next(:email),Factory.next(:email)], 'test', @user)
       assert_equal 2, @user.invites.size
     end
 
@@ -101,11 +101,11 @@ class InviteeTest < ActiveSupport::TestCase
       user = Factory(:user)
       email = Factory.next(:email)
       assert_difference "Invite.count" do
-        user.invite(email, user)
+        user.invite(email, 'test', user)
       end
       user.reload # if you don't reload the invite just created won't show up.
       assert_no_difference "Invite.count" do
-        user.invite(email, user)
+        user.invite(email, 'test', user)
       end
     end
   end

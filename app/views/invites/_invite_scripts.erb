@@ -8,19 +8,53 @@ jQuery(document).ready(function() {
   apply_ajax_forms();
   
   jQuery('.select-all-contacts').live('click', function(){
-    var cbs = jQuery(this).parent('.select-all').siblings('.table-wrapper').find('input[type=checkbox]');
-    cbs.attr("checked",jQuery(this).is(':checked'));
-    cbs.trigger('change');
+    var cbs = jQuery(this).parent('.select-all').siblings('.table-wrapper').find('input:checkbox').attr("checked", jQuery(this).is(':checked'));
+    var emails = checked_emails();
+    jQuery('#emails').val(emails.join(', '));
   });
   
-  jQuery('#contacts-list .cb input').live('change', function(){
+  jQuery('.contacts-list .cb input[type=checkbox]').live('change', function(){
     var emails = jQuery('#emails').val();
-    if(jQuery(this).is(':checked')){
-      jQuery('#emails').val(add_to_list(emails, jQuery(this).val()));
+    var email = jQuery(this).val();
+    var checked = jQuery(this).is(':checked');
+    if(checked){
+      jQuery('#emails').val(add_to_list(emails, email));
     } else {
-      jQuery('#emails').val(remove_from_list(emails, jQuery(this).val()));
+      jQuery('#emails').val(remove_from_list(emails, email));
+    }
+    included_checkbox_by_email([email], checked);
+  });
+  
+  jQuery('#emails').change(function(){
+    var emails = split_list(jQuery('#emails').val());
+    excluded_checkbox_by_email(emails, false);
+    included_checkbox_by_email(emails, true);
+  });
+});
+
+function checked_emails(){
+   return get_emails(jQuery('.contacts-list .cb input:checkbox:checked'));
+}
+
+function get_emails(cbs){
+  return cbs.map(function() {
+    return jQuery(this).val();
+  }).get();
+}
+// Sets checkboxes that are in 'emails'
+function included_checkbox_by_email(emails, checked){
+  jQuery('.contacts-list .cb input:checkbox').each(function(index) {
+    if(emails.indexOf(jQuery(this).val()) > -1){
+      jQuery(this).attr("checked",checked);
     }
   });
-  
-});
+}
+// Sets checkboxes that aren't in 'emails'
+function excluded_checkbox_by_email(emails, checked){
+  jQuery('.contacts-list .cb input:checkbox').each(function(index) {
+    if(emails.indexOf(jQuery(this).val()) <= -1){
+      jQuery(this).attr("checked",checked);
+    }
+  });
+}
 </script>

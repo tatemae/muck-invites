@@ -1,4 +1,4 @@
-<table id="contacts-list">
+<table class="contacts-list">
  <% contacts.each_with_index do |contact,i| %>
    <tr class="contact <%= i%2==0 ? 'even' : 'odd' %>">
      <td class="cb"><input type="checkbox" value="<%= h(contact[1]) %>" name="emails[]"></td>

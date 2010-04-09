@@ -4,10 +4,10 @@ class InviteMailer < ActionMailer::Base
   layout 'email_default'
   default_url_options[:host] = GlobalConfig.application_url
   
-  def invite_notification(user, email)
+  def invite_notification(user, message, email)
     setup_email(email)
     subject   I18n.t('muck.invites.invite', :inviter => user.full_name, :app_name => GlobalConfig.application_name)
-    body      :user => user
+    body      :user => user, :message => message
   end
 
   def invited_joined_notification(user, inviter)

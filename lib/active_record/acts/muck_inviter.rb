@@ -53,7 +53,7 @@ module ActiveRecord
           
         end
 
-        def invite(emails, user)
+        def invite(emails, message, user)
           emails = emails.split(/[, ]/) if !emails.is_a?(Array)
           emails = emails.find_all { |email| !email.blank? }
           emails = emails.flatten.collect { |email| email.strip }
@@ -65,7 +65,7 @@ module ActiveRecord
               check_emails << email
               invitee = Invitee.find_by_email(email) || Invitee.create!(:email => email)
               Invite.create!(:inviter => self, :invitee => invitee, :user => user)
-              response = InviteMailer.deliver_invite_notification(user, email)
+              response = InviteMailer.deliver_invite_notification(user, message, email)
             end
           end 
         end

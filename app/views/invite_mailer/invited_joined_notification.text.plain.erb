@@ -1,5 +1,5 @@
 <%= h(@user.full_name) %>, a contact you invited, joined <%= GlobalConfig.application_name %>.
 
-Visit <%= h(@user.full_name) %>'s profile to see what they are doing and to begin following them: <%= profile_path(@inviter) %>
+Visit <%= h(@user.full_name) %>'s profile to see what they are doing and to begin following them: <%= profile_url(@inviter) %>
 
 If the links do not work, try copying and pasting them into your web browser.

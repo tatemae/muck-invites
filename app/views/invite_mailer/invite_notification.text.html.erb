@@ -1,7 +1,11 @@
 <p><%= h(@user.full_name) %> invites you to join <%= GlobalConfig.application_name %>.</p>
 
+<% if @message -%>
+  <p><%= h(@message) %></p>
+<% end -%>
+
 <p>Visit <%= GlobalConfig.application_name %> at: <a href="<%= root_url %>"><%= root_url %></a></p>
 
-<p>See what <%= h(@user.full_name) %> is doing at: <a href="<%= profile_path(@user) %>"><%= profile_path(@user) %></a></p>
+<p>See what <%= h(@user.full_name) %> is doing at: <a href="<%= profile_url(@user) %>"><%= profile_url(@user) %></a></p>
 
 <p>If the links do not work, try copying and pasting them into your web browser.</p>

@@ -16,7 +16,7 @@ class InviteMailerTest < ActiveSupport::TestCase
     should "send invite notification email" do
       user = Factory(:user)
       contact_email = Factory.next(:email)
-      response = InviteMailer.deliver_invite_notification(user, contact_email)
+      response = InviteMailer.deliver_invite_notification(user, 'test', contact_email)
       assert !ActionMailer::Base.deliveries.empty?, "No email was sent"
       assert_match "#{user.full_name}", response.body, "User's name was not found in the email"
       assert_match "/#{user.id}", response.body, "A link to the inviter's profile was not found in the email"

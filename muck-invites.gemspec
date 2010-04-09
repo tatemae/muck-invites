@@ -5,7 +5,7 @@
 
 Gem::Specification.new do |s|
   s.name = %q{muck-invites}
-  s.version = "0.1.9"
+  s.version = "0.1.10"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Justin Ball, Joel Duffin"]
@@ -600,6 +600,7 @@ Gem::Specification.new do |s|
      "test/rails_root/public/javascripts/jquery/jquery.tips.js",
      "test/rails_root/public/javascripts/jquery/jrails.js",
      "test/rails_root/public/javascripts/muck-countries.js",
+     "test/rails_root/public/javascripts/muck-src.js",
      "test/rails_root/public/javascripts/muck-users.js",
      "test/rails_root/public/javascripts/muck.js",
      "test/rails_root/public/javascripts/muck_activities.js",
