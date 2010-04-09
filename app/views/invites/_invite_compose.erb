@@ -2,8 +2,10 @@
   <div class="tabs">
     <ul>
       <li><a href="gmail" class="active"><span>Gmail</span></a></li>
-      <li><a href="windows"><span>Windows Live</span></a></li>
       <li><a href="yahoo"><span>Yahoo</span></a></li>
+      <li><a href="windows"><span>Windows Live</span></a></li>
+      <li><a href="aol"><span>AOL</span></a></li>
+      <li><a href="plaxo"><span>Plaxo</span></a></li>
     </ul>
   </div>
   <div id="invite-contents">
@@ -11,6 +13,8 @@
     <%= render :partial => 'invites/gmail_oauth' %>
     <%= render :partial => 'invites/contacts_query', :locals => { :id => 'yahoo', :title => 'Yahoo' } %>
     <%= render :partial => 'invites/contacts_query', :locals => { :id => 'windows', :title => 'Windows Live' } %>
+    <%= render :partial => 'invites/contacts_query', :locals => { :id => 'aol', :title => 'AOL' } %>
+    <%= render :partial => 'invites/contacts_query', :locals => { :id => 'plaxo', :title => 'Plaxo' } %>
   </div>
   <div id="invite">
     <% custom_form_for(:invite_contacts, :url => {:action => 'create'}, :html => {:id => "invite-contacts-form", :name => 'invite-contacts-form'} ) do |f| -%>

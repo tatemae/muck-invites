@@ -26,6 +26,9 @@ module ActiveRecord
           return Contacts::Gmail.new(email, password).contacts if email.include?('@gmail.com')
           return Contacts::Yahoo.new(email, password).contacts if email.include?('@yahoo.com')
           return Contacts::Hotmail.new(email, password).contacts if email.include?('@hotmail.com')
+          return Contacts::Aol.new(email, password).contacts if email.include?('@aol.com')
+          return Contacts::Plaxo.new(email, password).contacts if email.include?('@plaxo.com')
+          return Contacts.guess(email, password).contacts
         end
       end
       
