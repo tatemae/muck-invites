@@ -10,6 +10,7 @@ en:
       invite_friends: Invite your friends to join {{app_name}}
       email_password_help: The password of your email account
       create_success: Invites were sent to {{emails}}. You will be notified if they join {{app_name}}
+      emails_empty: You didn't specify any emails
       we_wont_email: We won't email these addresses without your permission.
       invited_joined: "{{user}} joined {{app_name}}"
       retrieving_contacts: Retrieving contacts

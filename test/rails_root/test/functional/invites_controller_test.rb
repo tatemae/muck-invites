@@ -66,6 +66,34 @@ class Muck::InvitesControllerTest < ActionController::TestCase
             end
           end
         end
+        context "empty emails" do
+          context "html" do
+            setup do
+              post :create,  :emails => ""
+            end
+            should "set message" do
+              assert_equal I18n.translate('muck.invites.emails_empty'), assigns(:message)
+            end
+          end
+          context "js" do
+            setup do
+              post :create,  :emails => "", :format => 'js'
+            end
+            should_respond_with :success
+            should "set message" do
+              assert_equal I18n.translate('muck.invites.emails_empty'), assigns(:message)
+            end
+          end
+          context "pjs" do
+            setup do
+              post :create,  :emails => "", :format => 'pjs'
+            end
+            should_respond_with :success
+            should "set message" do
+              assert_equal I18n.translate('muck.invites.emails_empty'), assigns(:message)
+            end
+          end
+        end
         context "string of emails" do
           should "create a invite s" do
             assert_difference "Invite.count", 2 do

@@ -1,4 +1,4 @@
-RAILS_GEM_VERSION = '2.3.4' unless defined? RAILS_GEM_VERSION
+RAILS_GEM_VERSION = '2.3.5' unless defined? RAILS_GEM_VERSION
 
 require File.join(File.dirname(__FILE__), 'boot')
 
@@ -7,22 +7,6 @@ require 'ostruct'
 require 'yaml'
 ::GlobalConfig = OpenStruct.new(YAML.load_file("#{RAILS_ROOT}/config/global_config.yml")[RAILS_ENV])
 
-class TestGemLocator < Rails::Plugin::Locator
-  def plugins
-    Rails::Plugin.new(File.join(File.dirname(__FILE__), *%w(.. .. ..)))
-  end 
-end
-
 Rails::Initializer.run do |config|
   config.time_zone = 'UTC'
-  config.gem "authlogic"
-  config.gem "contacts"
-  config.gem 'muck-engine', :lib => 'muck_engine'
-  config.gem 'muck-users', :lib => 'muck_users'
-  config.gem 'muck-profiles', :lib => 'muck_profiles'
-  config.gem "oauth"
-  config.gem "oauth-plugin"
-  config.gem 'muck-oauth', :lib => 'muck_oauth'
-  config.gem 'muck-activities', :lib => 'muck_activities'
-  config.plugin_locators << TestGemLocator
 end
