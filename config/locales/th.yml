@@ -1,0 +1,25 @@
+--- 
+th: 
+  muck: 
+    invites: 
+      add_invite_button: เพิ่มเชิญ
+      compose_invites: เชิญเขียน
+      continue_button: ต่อเนื่อง
+      create_success: "เชิญถูกส่งไปยัง %{emails}}. คุณจะได้รับแจ้งว่าพวกเขาเข้าร่วม %{app_name}"
+      email_password: รหัสผ่านอีเมล์
+      email_password_help: รหัสผ่านของบัญชีอีเมลของคุณ
+      email_password_prompt_title: "กรุณากรอก email %{title} และรหัสผ่าน"
+      invalid_email_error: ไม่เหมือนกับที่อยู่อีเมลที่ถูกต้อง
+      invite: "%{inviter}} ขอเชิญเข้าร่วม %{app_name}"
+      invite_button: เชิญ
+      invite_friends: "เชิญเพื่อนให้เข้าร่วม %{app_name}"
+      invited_joined: "%{user}} ร่วม %{app_name}"
+      new_invites: "เชิญรายชื่ออีเมล์ของคุณเพื่อเข้าร่วม %{app_name}"
+      no_contacts_found: รายชื่อไม่พบ
+      no_email_error: ไม่ได้ระบุที่อยู่อีเมล
+      retrieving_contacts: เรียกชื่อ
+      select_all: เลือกทั้งหมด
+      we_dont_store: เราไม่ได้เก็บเข้าสู่ระบบและรหัสผ่านจะถูกส่งอย่างปลอดภัย
+      we_wont_email: เราจะไม่อีเมล์ที่อยู่เหล่านี้ไม่ได้รับอนุญาตของคุณ
+      your_email: อีเมล์ของคุณ
+      your_email_help: ที่อยู่อีเมลของบัญชีที่มีรายชื่อที่คุณต้องการเชิญ

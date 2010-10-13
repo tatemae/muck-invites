@@ -1,0 +1,25 @@
+--- 
+sr: 
+  muck: 
+    invites: 
+      add_invite_button: "Додај Позовите"
+      compose_invites: "Напиши Позовите"
+      continue_button: Наставити
+      create_success: "Позивнице су послате на %{emails}}. Бићете обавештени ако се прикључе %{app_name}"
+      email_password: "Емаил Лозинка"
+      email_password_help: "Лозинку вашег налога е-поште"
+      email_password_prompt_title: "Молимо Вас да унесете емаил и лозинку %{title}"
+      invalid_email_error: "не изгледа као валидну емаил адресу."
+      invite: "%{inviter}} Вас позива да се придружите %{app_name}"
+      invite_button: Позвати
+      invite_friends: "Позовите своје пријатеље да се придруже %{app_name}"
+      invited_joined: "%{user}} Придружио %{app_name}"
+      new_invites: "Позовите вашу е-маил контакте да се придруже %{app_name}"
+      no_contacts_found: "Нема контаката није пронађена"
+      no_email_error: "Нема е-адресе су наведене"
+      retrieving_contacts: "Преузимање контакти"
+      select_all: "Изабери све"
+      we_dont_store: "Ми не сачувате своје корисничко име и лозинку није безбедно достављена."
+      we_wont_email: "Нећемо е-маил адресе, без ваше дозволе."
+      your_email: "Ваша е-маил"
+      your_email_help: "Е-маил адресу рачуна са контактима који желите да позовете"

@@ -1,0 +1,25 @@
+--- 
+da: 
+  muck: 
+    invites: 
+      add_invite_button: "Tilføj Inviter"
+      compose_invites: "Komponere Inviter"
+      continue_button: Fortsæt
+      create_success: "Opfordrer blev sendt til %{emails}}. Du vil få besked, hvis de tilslutter %{app_name}"
+      email_password: "Email Password"
+      email_password_help: "Adgangskoden af din e-mail-konto"
+      email_password_prompt_title: "Indtast din %{title} e-mail og adgangskode"
+      invalid_email_error: "ligner ikke en gyldig email-adresse."
+      invite: "%{inviter}} Inviterer dig til at deltage %{app_name}"
+      invite_button: Inviter
+      invite_friends: "Inviter dine venner til at deltage %{app_name}"
+      invited_joined: "%{user}} Tiltrådte %{app_name}"
+      new_invites: "Inviter din e-mail kontakter til at slutte %{app_name}"
+      no_contacts_found: "Ingen kontakter blev fundet"
+      no_email_error: "Ingen e-mail-adresser blev specificeret"
+      retrieving_contacts: "Henter kontakter"
+      select_all: "Vælg alle"
+      we_dont_store: "Vi gemmer ikke dit login og dit password er sendt sikkert."
+      we_wont_email: "Vi vil ikke e-mail disse adresser uden din tilladelse."
+      your_email: "Din e-mail"
+      your_email_help: "E-mail-adressen for en konto med kontakter, du vil invitere"

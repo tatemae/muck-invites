@@ -1,0 +1,25 @@
+--- 
+vi: 
+  muck: 
+    invites: 
+      add_invite_button: "Thêm Invite"
+      compose_invites: "Soạn Invite"
+      continue_button: "Tiếp tục"
+      create_success: "Lời mời được gửi đến %{emails}}. Bạn sẽ được thông báo nếu họ tham gia %{app_name}"
+      email_password: "Email Mật khẩu"
+      email_password_help: "Các mật khẩu của tài khoản email của bạn"
+      email_password_prompt_title: "Xin vui lòng nhập email và mật khẩu của bạn %{title}"
+      invalid_email_error: "không giống như một địa chỉ email hợp lệ."
+      invite: "%{inviter}} Mời bạn tham gia %{app_name}"
+      invite_button: Mời
+      invite_friends: "Mời bạn bè tham gia %{app_name}"
+      invited_joined: "%{user}} Gia nhập %{app_name}"
+      new_invites: "Mời liên lạc email của bạn để tham gia %{app_name}"
+      no_contacts_found: "Không có địa chỉ liên lạc đã được tìm thấy"
+      no_email_error: "Không có địa chỉ email đã được quy định"
+      retrieving_contacts: "Lấy địa chỉ liên lạc"
+      select_all: "Chọn Tất cả"
+      we_dont_store: "Chúng tôi không lưu trữ thông tin đăng nhập và mật khẩu của bạn được gửi một cách an toàn."
+      we_wont_email: "Chúng tôi sẽ không email các địa chỉ này mà không cần sự cho phép của bạn."
+      your_email: "Email của bạn"
+      your_email_help: "Địa chỉ email của tài khoản với các liên hệ mà bạn muốn mời"

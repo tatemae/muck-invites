@@ -1,0 +1,26 @@
+--- 
+? "no"
+: 
+  muck: 
+    invites: 
+      add_invite_button: "Legg Inviter"
+      compose_invites: "Skriv Inviter"
+      continue_button: Fortsett
+      create_success: "Invitasjoner ble sendt til %{emails}}. Du vil få beskjed hvis de blir med %{app_name}"
+      email_password: "E-post Passord"
+      email_password_help: "Passordet for din e-postkonto"
+      email_password_prompt_title: "Vennligst skriv inn %{title}-postadresse og passord"
+      invalid_email_error: "ser ikke ut som en gyldig e-postadresse."
+      invite: "%{inviter}} Inviterer deg til å bli %{app_name}"
+      invite_button: Inviter
+      invite_friends: "Inviter dine venner til å delta %{app_name}"
+      invited_joined: "%{user}} Sluttet %{app_name}"
+      new_invites: "Inviter e-kontakter til å delta %{app_name}"
+      no_contacts_found: "Ingen kontakter ble funnet"
+      no_email_error: "Ingen e-postadresser ble spesifisert"
+      retrieving_contacts: "Henter kontakter"
+      select_all: "Velg alle"
+      we_dont_store: "Vi lagrer ikke ditt brukernavn og passord er sendt inn sikkert."
+      we_wont_email: "Vi vil ikke e disse adressene uten din tillatelse."
+      your_email: "Din e-post"
+      your_email_help: "E-postadressen til en konto med kontakter som du vil invitere"

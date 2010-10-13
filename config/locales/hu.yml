@@ -1,0 +1,25 @@
+--- 
+hu: 
+  muck: 
+    invites: 
+      add_invite_button: "Add hozzá meghívó"
+      compose_invites: "Állítsa meghívó"
+      continue_button: Folytatódik
+      create_success: "Felkéri küldtek %{emails}}. Akkor kell értesíteni, ha csatlakoznak %{app_name}"
+      email_password: "Email Jelszó"
+      email_password_help: "A jelszó e-mail fiók"
+      email_password_prompt_title: "Kérjük, adja meg e-mail és jelszó %{title}"
+      invalid_email_error: "nem úgy néz ki, mint egy érvényes e-mail címet."
+      invite: "%{inviter}} Meghívja Önt, hogy csatlakozzon %{app_name}"
+      invite_button: Meghív
+      invite_friends: "Hívja meg barátait, hogy csatlakozzanak %{app_name}"
+      invited_joined: "%{user}} Csatlakozott %{app_name}"
+      new_invites: "Hívja meg e-mail címek, hogy csatlakozzanak %{app_name}"
+      no_contacts_found: "Nem találtak kapcsolatot"
+      no_email_error: "Nem e-mail címek kerültek meghatározásra"
+      retrieving_contacts: "Letöltéséhez kapcsolatok"
+      select_all: "Válasszuk a Minden"
+      we_dont_store: "Mi nem tárolja a login és a jelszó be biztonságosan."
+      we_wont_email: "Nem fogunk e-mailben ezeket a címeket az Ön engedélye nélkül."
+      your_email: "Az Ön e-mail"
+      your_email_help: "Az e-mail címét fiókkal névjegyeket szeretnénk meghívni"

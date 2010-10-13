@@ -1,0 +1,25 @@
+--- 
+id: 
+  muck: 
+    invites: 
+      add_invite_button: "Tambahkan Undangan"
+      compose_invites: "Tulis Undangan"
+      continue_button: Terus
+      create_success: "Invites dikirim ke %{emails}}. Anda akan diberitahu jika mereka bergabung %{app_name}"
+      email_password: "Email Password"
+      email_password_help: "Password dari account email Anda"
+      email_password_prompt_title: "Silahkan masukkan email dan password Anda %{title}"
+      invalid_email_error: "tidak terlihat seperti alamat email yang valid."
+      invite: "%{inviter}} Mengundang Anda untuk bergabung %{app_name}"
+      invite_button: Mengundang
+      invite_friends: "Undang teman Anda untuk bergabung %{app_name}"
+      invited_joined: "%{user}} Bergabung %{app_name}"
+      new_invites: "kontak Undangan email Anda untuk bergabung %{app_name}"
+      no_contacts_found: "Tidak ada kontak yang ditemukan"
+      no_email_error: "Tidak ada alamat email yang ditetapkan"
+      retrieving_contacts: "Mengambil kontak"
+      select_all: "Pilih Semua"
+      we_dont_store: "Kami tidak menyimpan login Anda dan password Anda dikirim dengan aman."
+      we_wont_email: "Kami tidak akan email alamat ini tanpa izin Anda."
+      your_email: "Email Anda"
+      your_email_help: "Alamat email account dengan kontak yang ingin Anda mengundang"

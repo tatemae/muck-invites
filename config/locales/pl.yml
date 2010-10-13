@@ -1,0 +1,25 @@
+--- 
+pl: 
+  muck: 
+    invites: 
+      add_invite_button: "Dodaj zaproszenie"
+      compose_invites: "Skomponować zaproszenie"
+      continue_button: Kontynuować
+      create_success: "Zaprasza zostały wysłane do %{emails}}. Zostaniesz powiadomiony, jeśli dołączyć %{app_name}"
+      email_password: "E-mail Hasło"
+      email_password_help: "Hasło do konta e-mail"
+      email_password_prompt_title: "Podaj swój e-mail i hasło %{title}"
+      invalid_email_error: "nie wygląda na poprawny adres e-mail."
+      invite: "%{inviter}} Zaprasza do przyłączenia się %{app_name}"
+      invite_button: Zapraszać
+      invite_friends: "Zaproś znajomych do %{app_name}"
+      invited_joined: "%{user}} Dołączył %{app_name}"
+      new_invites: "Zaproś swoich kontaktów e-mail do %{app_name}"
+      no_contacts_found: "Stwierdzono żadnych kontaktów"
+      no_email_error: "Nie zostały określone adresy e-mail"
+      retrieving_contacts: "Pobieranie kontaktów"
+      select_all: "Wybierz Wszystkie"
+      we_dont_store: "Nie przechowywać login i hasło zostały przedstawione prawidłowo."
+      we_wont_email: "Nie będziemy tych adresów e-mail bez Twojej zgody."
+      your_email: "Twój e-mail"
+      your_email_help: "Adres e-mail konto w kontakty, które chcesz zaprosić"

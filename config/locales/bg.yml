@@ -1,0 +1,25 @@
+--- 
+bg: 
+  muck: 
+    invites: 
+      add_invite_button: "Добави Покани"
+      compose_invites: "Състав Покани"
+      continue_button: Продължи
+      create_success: "Приканва бяха изпратени %{emails}}. Ще бъдете уведомени, ако те се присъединят %{app_name}"
+      email_password: "E-mail Парола"
+      email_password_help: "Паролата на вашия имейл акаунт"
+      email_password_prompt_title: "Моля въведете вашето %{title} имейл и парола"
+      invalid_email_error: "не изглежда като валиден адрес на електронна поща."
+      invite: "%{inviter}} Кани да се присъедините %{app_name}"
+      invite_button: Каня
+      invite_friends: "Поканете приятели да се присъединят към %{app_name}"
+      invited_joined: "%{user}} Присъединиха %{app_name}"
+      new_invites: "Покани вашия имейл контакти, за да се присъединят към %{app_name}"
+      no_contacts_found: "Не са намерени контакти"
+      no_email_error: "Без имейл адресите, посочени са"
+      retrieving_contacts: "Изтегляне на контакти"
+      select_all: "Избери всички"
+      we_dont_store: "Ние не се съхранява данните си за вход и паролата ви е представена сигурно."
+      we_wont_email: "Ние няма имейл адреси на тези, без вашето разрешение."
+      your_email: "Вашият e-mail"
+      your_email_help: "Имейл адресът на една сметка с контактите, които искате да поканите"

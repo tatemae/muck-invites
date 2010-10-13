@@ -1,0 +1,25 @@
+--- 
+fr: 
+  muck: 
+    invites: 
+      add_invite_button: "Ajouter Inviter"
+      compose_invites: "Composez Inviter"
+      continue_button: Continuer
+      create_success: "Invite ont été envoyés à %{emails}}. Vous serez informés s&#39;ils rejoignent %{app_name}"
+      email_password: "Courriel Mot de passe"
+      email_password_help: "Le mot de passe de votre compte e-mail"
+      email_password_prompt_title: "S&#39;il vous plaît entrer votre email et mot de passe %{title}"
+      invalid_email_error: "ne ressemble pas à une adresse email valide."
+      invite: "%{inviter}} Vous invite à rejoindre %{app_name}"
+      invite_button: Inviter
+      invite_friends: "Invitez vos amis à rejoindre %{app_name}"
+      invited_joined: "%{user}} Rejoint %{app_name}"
+      new_invites: "Inviter des contacts e-mail à rejoindre votre %{app_name}"
+      no_contacts_found: "Aucun contact n&#39;a été trouvé"
+      no_email_error: "Aucune adresse email ont été précisées"
+      retrieving_contacts: "Récupération des contacts"
+      select_all: "Sélectionner tout"
+      we_dont_store: "Nous ne stockons pas votre login et votre mot de passe est soumis en toute sécurité."
+      we_wont_email: "Nous ne serons pas ces adresses e-mail sans votre permission."
+      your_email: "Votre Email"
+      your_email_help: "L&#39;adresse e-mail d&#39;un compte avec des contacts que vous souhaitez inviter"

@@ -1,0 +1,25 @@
+--- 
+iw: 
+  muck: 
+    invites: 
+      add_invite_button: "הוסף הזמן"
+      compose_invites: "כתוב הזמן"
+      continue_button: להמשיך
+      create_success: "הזמנות נשלחו %{emails}}. תקבל הודעה אם הם מצטרפים %{app_name}"
+      email_password: "דוא&quot;ל סיסמה"
+      email_password_help: "את הסיסמה של חשבון הדוא&quot;ל שלך"
+      email_password_prompt_title: "הזן דוא&quot;ל %{title} והסיסמה שלך"
+      invalid_email_error: "לא נראה כמו כתובת דוא&quot;ל חוקית."
+      invite: "%{inviter}} מזמינה אותך להצטרף %{app_name}"
+      invite_button: להזמין
+      invite_friends: "הזמינו את חבריכם להצטרף %{app_name}"
+      invited_joined: "%{user}} הצטרף %{app_name}"
+      new_invites: "אנשי הקשר שלך הזמן דוא&quot;ל להצטרף %{app_name}"
+      no_contacts_found: "הקשר לא נמצאו"
+      no_email_error: "לא כתובות דוא&quot;ל פורטו"
+      retrieving_contacts: "למציאת הקשר"
+      select_all: "בחר הכל"
+      we_dont_store: "אנחנו לא שומרים את שם המשתמש שלך והסיסמה שלך מוגש בצורה מאובטחת."
+      we_wont_email: "אנו לא אלו הן כתובות דוא&quot;ל ללא רשותך."
+      your_email: "האימייל שלך"
+      your_email_help: "כתובת הדוא&quot;ל של חשבון עם אנשי הקשר שברצונך להזמין"

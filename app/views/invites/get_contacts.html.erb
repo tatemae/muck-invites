@@ -1,6 +1,6 @@
 <%= output_errors(t('muck.invites.problem_adding_invite'), {:class => 'help-box'}, @invite) %>
 <% if !@contacts.blank? -%>
-  <% custom_form_for(:invite_contacts, :url => {:action => 'create'}, :html => {:id => "invite-contacts-form", :name => 'invite-contacts-form', :class => 'ajax'} ) do |f| -%>
+  <%= muck_form_for(:invite_contacts, :url => {:action => 'create'}, :html => {:id => "invite-contacts-form", :name => 'invite-contacts-form', :class => 'ajax'} ) do |f| -%>
     <%= contact_container(@contacts) -%>
     <%= f.submit t('muck.invites.invite_button'), :class => "button invite-submit" %>
   <% end -%>

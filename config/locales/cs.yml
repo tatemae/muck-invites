@@ -1,0 +1,25 @@
+--- 
+cs: 
+  muck: 
+    invites: 
+      add_invite_button: "Přidat Pozvat"
+      compose_invites: "Napsat Pozvat"
+      continue_button: Pokračovat
+      create_success: "Pozvání bylo zasláno %{emails}}. Budete upozorněn, pokud se připojí %{app_name}"
+      email_password: "E-mail Heslo"
+      email_password_help: "Heslo vašeho e-mailového účtu"
+      email_password_prompt_title: "Prosím, zadejte své %{title} email a heslo"
+      invalid_email_error: "nevypadá jako platnou e-mailovou adresu."
+      invite: "%{inviter}} Zve, abyste se připojili %{app_name}"
+      invite_button: Pozvat
+      invite_friends: "Pozvěte své přátele, aby se %{app_name}"
+      invited_joined: "%{user}} Připojil %{app_name}"
+      new_invites: "Pozvěte své e-mailové kontakty připojit %{app_name}"
+      no_contacts_found: "Žádné kontakty nebyly nalezeny"
+      no_email_error: "Žádné e-mailové adresy byly upřesněny"
+      retrieving_contacts: "Získávám kontaktů"
+      select_all: "Vybrat vše"
+      we_dont_store: "Nechceme ukládat své přihlašovací jméno a heslo je podána bezpečně."
+      we_wont_email: "Nebudeme e-mailové adresy těchto bez vašeho svolení."
+      your_email: "Váš e-mail"
+      your_email_help: "E-mailová adresa účet s kontakty, které chcete pozvat"

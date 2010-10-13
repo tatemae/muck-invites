@@ -19,8 +19,9 @@ Include a link to initialize the invite process.  You might want to do this in a
   <%= link_to 'Invite Your Friends', new_invite_path, :class => 'invite_box' %>
 
 The invite list can include photos from gravatar. To enable this functionality add this to global_config.yml
-
-  use_gravatar_in_photo_list: true
+MuckInvites.configure do |config|
+  config.use_gravatar_in_photo_list = true
+end
 
 === Oauth
 The invite system can use oauth where available to acquire contacts. To enable this functionality install the
@@ -28,28 +29,28 @@ muck-oauth gem:
 
   sudo gem install muck-oauth
   
-and add it to your environment.rb
+and add it to your Gemfile
 
-  config.gem 'muck-oauth', :lib => 'muck_oauth'
+  gem 'muck-oauth', :require => 'muck_oauth'
   
 See the muck-oauth gem for more information - http://github.com/tatemae/muck-oauth
 
 === Inviter model
-Add 'acts_as_muck_inviter' to the class that you wish to have do the inviting.  This is commonly the user model, but
+Add 'include MuckInvites::Models::Inviter' to the class that you wish to have do the inviting.  This is commonly the user model, but
 might also be another model - for example Event.
 
   class User < ActiveRecord::Base
     acts_as_authentic do |c|
       c.crypto_provider = Authlogic::CryptoProviders::BCrypt
     end
-    acts_as_muck_user
-    acts_as_muck_inviter
+    include MuckUsers::Models::MuckUser
+    include MuckInvites::Models::Inviter
   end
 
 or
   
   class Event < ActiveRecord::Base
-    acts_as_muck_inviter
+    include MuckInvites::Models::Inviter
   end
 
 === Other models
@@ -58,12 +59,12 @@ can be added to each model as needed.
 
 Create an Invitee model:
   class Invitee < ActiveRecord::Base
-    acts_as_muck_invitee
+    include MuckInvites::Models::Invitee
   end
 
 Create an Invite model:
   class Invite < ActiveRecord::Base
-    acts_as_muck_invite
+    include MuckInvites::Models::Invite
   end
 
 

@@ -1,0 +1,25 @@
+--- 
+ar: 
+  muck: 
+    invites: 
+      add_invite_button: "أضف دعوة"
+      compose_invites: "دعوة للكتابة"
+      continue_button: تواصل
+      create_success: "وأرسلت تدعو إلى %{emails}}. سيتم إعلامك إذا كانت انضمام %{app_name}"
+      email_password: "البريد الإلكتروني كلمة المرور"
+      email_password_help: "كلمة مرور حساب البريد الإلكتروني الخاص بك"
+      email_password_prompt_title: "الرجاء كتابة البريد الالكتروني وكلمة المرور %{title}"
+      invalid_email_error: "لا يبدو مثل عنوان بريد إلكتروني صحيح."
+      invite: "%{inviter}}يدعوك للانضمام %{app_name}"
+      invite_button: دعوة
+      invite_friends: "دعوة أصدقائك للانضمام %{app_name}"
+      invited_joined: "انضم %{user}}%{app_name}"
+      new_invites: "اتصالات دعوة للانضمام إلى البريد الإلكتروني الخاص بك %{app_name}"
+      no_contacts_found: "ولم يتسن العثور على الاتصالات"
+      no_email_error: "ولم عناوين البريد الإلكتروني المحدد"
+      retrieving_contacts: "استرجاع اتصالات"
+      select_all: "تحديد الكل"
+      we_dont_store: "نحن لا نقوم بتخزين معلومات تسجيل الدخول وكلمة السر الخاصة بك ويقدم بشكل آمن."
+      we_wont_email: "ونحن لن البريد الإلكتروني هذه العناوين من دون موافقتك."
+      your_email: "البريد الإلكتروني"
+      your_email_help: "عنوان البريد الإلكتروني من حساب مع جهات الاتصال التي تريد دعوة"

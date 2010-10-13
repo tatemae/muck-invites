@@ -4,7 +4,7 @@ class Muck::InvitesController < ApplicationController
   
   def new
     flash.discard
-    @page_title = t('muck.invites.new_invites', :app_name => GlobalConfig.application_name)
+    @page_title = t('muck.invites.new_invites', :app_name => MuckEngine.configuration.application_name)
     respond_to do |format|
       format.html { render :template => 'invites/new' }
       format.pjs { render :template => 'invites/new', :layout => false }
@@ -51,7 +51,7 @@ class Muck::InvitesController < ApplicationController
       emails = params[:emails]
       emails = emails.join(', ') if emails.is_a?(Array)
       current_user.invite(params[:emails], params[:message], current_user)
-      @message = t('muck.invites.create_success', :emails => emails, :app_name => GlobalConfig.application_name)
+      @message = t('muck.invites.create_success', :emails => emails, :app_name => MuckEngine.configuration.application_name)
     else
       @message = t('muck.invites.emails_empty')
     end

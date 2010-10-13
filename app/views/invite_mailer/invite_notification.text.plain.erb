@@ -1,10 +1,10 @@
-<%= h(@user.full_name) %> invites you to join <%= GlobalConfig.application_name %>.
+<%= h(@user.full_name) %> invites you to join <%= MuckEngine.configuration.application_name %>.
 
 <% if @message -%>
   <%= h(@message) %>
 <% end -%>
 
-Visit <%= GlobalConfig.application_name %> at: <%= root_url %>
+Visit <%= MuckEngine.configuration.application_name %> at: <%= root_url %>
 
 See what <%= h(@user.full_name) %> is doing at: <%= profile_url(@user) %>
 

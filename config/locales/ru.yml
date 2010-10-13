@@ -1,0 +1,25 @@
+--- 
+ru: 
+  muck: 
+    invites: 
+      add_invite_button: "Добавить Приглашение"
+      compose_invites: "Формировать Приглашение"
+      continue_button: Продолжать
+      create_success: "Предлагает были направлены %{emails}}. Вы будете уведомлены, если они вступают %{app_name}"
+      email_password: "E-mail Пароль"
+      email_password_help: "Пароль учетной записи электронной почты"
+      email_password_prompt_title: "Пожалуйста, введите Ваш %{title} электронной почты и пароль"
+      invalid_email_error: "не похож на адрес электронной почты."
+      invite: "%{inviter}} Приглашает Вас присоединиться к %{app_name}"
+      invite_button: Приглашать
+      invite_friends: "Пригласите своих друзей присоединиться к %{app_name}"
+      invited_joined: "%{user}} Вступил %{app_name}"
+      new_invites: "Приглашение контакты электронной почты, чтобы присоединиться к %{app_name}"
+      no_contacts_found: "Контакты не были найдены"
+      no_email_error: "Нет адреса электронной почты были определены"
+      retrieving_contacts: "Получение контакты"
+      select_all: "Выбрать все"
+      we_dont_store: "Мы не храним ваши Логин и пароль представляется надежно."
+      we_wont_email: "Мы не будем этим адресам электронной почты без вашего разрешения."
+      your_email: "Ваш E-mail"
+      your_email_help: "Адрес электронной почты счет контакты, которые вы хотите пригласить"

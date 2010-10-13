@@ -1,0 +1,26 @@
+--- 
+en: 
+  muck: 
+    invites: 
+      no_email_error: No email addresses were specified
+      add_invite_button: Add Invite
+      invite_button: Invite
+      invite: "%{inviter}} invites you to join %{app_name}"
+      new_invites: Invite your email contacts to join %{app_name}
+      invite_friends: Invite your friends to join %{app_name}
+      email_password_help: The password of your email account
+      create_success: Invites were sent to %{emails}}. You will be notified if they join %{app_name}
+      emails_empty: You didn't specify any emails
+      we_wont_email: We won't email these addresses without your permission.
+      invited_joined: "%{user}} joined %{app_name}"
+      retrieving_contacts: Retrieving contacts
+      we_dont_store: We don't store your login and your password is submitted securely.
+      invalid_email_error: does not look like a valid email address.
+      your_email: Your Email
+      your_email_help: The email address of an account with contacts that you want to invite
+      select_all: Select All
+      no_contacts_found: No contacts were found
+      email_password_prompt_title: Please enter your %{title} email and password
+      email_password: Email Password
+      continue_button: Continue
+      compose_invites: Compose Invite

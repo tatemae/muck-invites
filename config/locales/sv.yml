@@ -1,0 +1,25 @@
+--- 
+sv: 
+  muck: 
+    invites: 
+      add_invite_button: "Lägg till Bjud"
+      compose_invites: "Skriv Bjud"
+      continue_button: Fortsätt
+      create_success: "Europaparlamentet uppmanar sändes till %{emails}}. Du kommer att meddelas om de ansluter sig %{app_name}"
+      email_password: "E-post Lösenord"
+      email_password_help: "Lösenordet till ditt e-postkonto"
+      email_password_prompt_title: "Fyll i din %{title} email och lösenord"
+      invalid_email_error: "ser inte ut som en giltig e-postadress."
+      invite: "%{inviter}} Inbjuder dig att gå %{app_name}"
+      invite_button: "Bjud in"
+      invite_friends: "Bjud in dina vänner att gå med %{app_name}"
+      invited_joined: "%{user}} Gick %{app_name}"
+      new_invites: "Bjud in dina kontakter att gå %{app_name}"
+      no_contacts_found: "Inga kontakter hittades"
+      no_email_error: "Inga e-postadresser har angetts"
+      retrieving_contacts: "Hämta kontakter"
+      select_all: "Markera alla"
+      we_dont_store: "Vi sparar inte din inloggning och ditt lösenord skickas säkert."
+      we_wont_email: "Vi kommer inte att e-dessa adresser utan din tillåtelse."
+      your_email: "Din e-postadress"
+      your_email_help: "E-postadressen till ett konto med kontakter som du vill bjuda in"

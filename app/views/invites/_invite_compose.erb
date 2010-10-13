@@ -17,7 +17,7 @@
     <%= render :partial => 'invites/contacts_query', :locals => { :id => 'plaxo', :title => 'Plaxo' } %>
   </div>
   <div id="invite">
-    <% custom_form_for(:invite_contacts, :url => {:action => 'create'}, :html => {:id => "invite-contacts-form", :name => 'invite-contacts-form'} ) do |f| -%>
+    <%= muck_form_for(:invite_contacts, :url => {:action => 'create'}, :html => {:id => "invite-contacts-form", :name => 'invite-contacts-form'} ) do |f| -%>
       <div class="form-row">
         <label class="invite-email" for="emails">Emails</label>
         <p class="invite-email">Enter emails of friends to invite or select them above:</p>

@@ -1,0 +1,25 @@
+--- 
+tr: 
+  muck: 
+    invites: 
+      add_invite_button: "Davet Ekle"
+      compose_invites: "Oluştur Davet"
+      continue_button: "Devam etmek"
+      create_success: "Davet %{emails}}. gönderildi onlar %{app_name} katılmak takdirde bildirilecektir"
+      email_password: "E-posta Şifre"
+      email_password_help: "e-posta hesabınızın şifresini"
+      email_password_prompt_title: "Lütfen %{title} email ve şifrenizi giriniz"
+      invalid_email_error: "Geçerli bir e-posta adresi gibi görünmüyor."
+      invite: "%{inviter}} Sen %{app_name} katılmaya davet etti"
+      invite_button: "Davet etmek"
+      invite_friends: "Arkadaşlarınızı davet edin %{app_name} katılmak için"
+      invited_joined: "%{user}} %{app_name} Katıldı"
+      new_invites: "Davet e-posta kişilerinizi %{app_name} katılmak için"
+      no_contacts_found: "Herhangi bir kişi bulundu"
+      no_email_error: "Hiçbir e-posta adresleri belirtilen edildi"
+      retrieving_contacts: "kişiler alınıyor"
+      select_all: "Tümünü Seç"
+      we_dont_store: "Biz ve giriş saklamiyoruz şifrenizi güvenli bir şekilde sunulur."
+      we_wont_email: "Sizin izniniz olmadan bu e-posta adresi olmayacaktır."
+      your_email: E-posta
+      your_email_help: "davet etmek istediğiniz kişileri bir hesabın e-posta adresi"

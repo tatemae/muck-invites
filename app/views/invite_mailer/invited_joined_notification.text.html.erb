@@ -1,4 +1,4 @@
-<p><%= h(@user.full_name) %>, a contact you invited, joined <%= GlobalConfig.application_name %>.</p>
+<p><%= h(@user.full_name) %>, a contact you invited, joined <%= MuckEngine.configuration.application_name %>.</p>
 
 <p>Visit <%= h(@user.full_name) %>'s profile to see what they are doing and to begin following them: <a href="<%= profile_url(@inviter) %>"><%= profile_url(@inviter) %></a></p>
 

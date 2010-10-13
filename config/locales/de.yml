@@ -1,0 +1,25 @@
+--- 
+de: 
+  muck: 
+    invites: 
+      add_invite_button: "Fügen Sie einladen"
+      compose_invites: "Compose einladen"
+      continue_button: Fortsetzen
+      create_success: "Einladungen wurden verschickt %{emails}}. Sie werden benachrichtigt, wenn sie beitreten werden %{app_name}"
+      email_password: "E-Mail Passwort"
+      email_password_help: "Das Kennwort Ihres E-Mail-Konto"
+      email_password_prompt_title: "Bitte geben Sie Ihre Email und Passwort %{title}"
+      invalid_email_error: "nicht wie eine gültige E-Mail-Adresse zu suchen."
+      invite: "%{inviter}} Lädt zum %{app_name} beitreten"
+      invite_button: Einladen
+      invite_friends: "Lade Deine Freunde zu verbinden %{app_name}"
+      invited_joined: "%{user}} Beigetreten %{app_name}"
+      new_invites: "Laden Sie Ihre E-Mail-Kontakte zu verbinden %{app_name}"
+      no_contacts_found: "Keine Kontakte gefunden"
+      no_email_error: "Keine E-Mail-Adressen angegeben wurden"
+      retrieving_contacts: "Abrufen von Kontakten"
+      select_all: "Alle auswählen"
+      we_dont_store: "Wir speichern nicht Ihren Benutzernamen und Ihr Passwort wird sicher gestellt."
+      we_wont_email: "Wir werden nicht per E-Mail-Adressen diese ohne Ihre Erlaubnis."
+      your_email: "Ihre E-Mail"
+      your_email_help: "Die E-Mail-Adresse eines Kontos mit Kontakten, die Sie einladen möchten"

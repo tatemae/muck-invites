@@ -1,7 +1,7 @@
 <div id="invite-contacts" class="invite-query">
   <%= invite_ajax_message_container %>
   <div class="invite-form">
-    <% custom_form_for(:get_contacts, :url => get_contacts_invites_path, :html => { :class => 'ajax' } ) do |f| -%>
+    <%= muck_form_for(:get_contacts, :url => get_contacts_invites_path, :html => { :class => 'ajax' } ) do |f| -%>
       <%= f.text_field :email, { :label => t('muck.invites.your_email'),
                                  :tip => t('muck.invites.your_email_help')} -%>
       <%= f.password_field :password, { :label => t('muck.invites.email_password'),

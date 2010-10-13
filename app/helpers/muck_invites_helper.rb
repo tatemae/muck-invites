@@ -1,7 +1,7 @@
 module MuckInvitesHelper
 
   def contact_list(contacts)
-    if GlobalConfig.use_gravatar_in_photo_list
+    if MuckInvites.configuration.use_gravatar_in_photo_list
       render :partial => 'invites/contact_list_gravatar', :locals => { :contacts => contacts }
     else
       render :partial => 'invites/contact_list', :locals => { :contacts => contacts }
