@@ -9,7 +9,7 @@ Gem::Specification.new do |s|
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Justin Ball, Joel Duffin"]
-  s.date = %q{2010-10-12}
+  s.date = %q{2010-10-13}
   s.description = %q{The invite engine for the muck system.}
   s.email = %q{justin@tatemae.com}
   s.extra_rdoc_files = [
@@ -89,14 +89,15 @@ Gem::Specification.new do |s|
      "config/muck_invites_routes.rb",
      "db/migrate/20090928213532_create_invites.rb",
      "db/migrate/20091128170318_make_invites_polymorphic.rb",
-     "lib/muck_invites.rb",
-     "lib/muck_invites/config.rb",
-     "lib/muck_invites/engine.rb",
-     "lib/muck_invites/exceptions.rb",
-     "lib/muck_invites/models/invite.rb",
-     "lib/muck_invites/models/invitee.rb",
-     "lib/muck_invites/models/inviter.rb",
-     "lib/muck_invites/tasks/muck_invites.rake",
+     "lib/muck-invites.rb",
+     "lib/muck-invites/config.rb",
+     "lib/muck-invites/engine.rb",
+     "lib/muck-invites/exceptions.rb",
+     "lib/muck-invites/models/invite.rb",
+     "lib/muck-invites/models/invitee.rb",
+     "lib/muck-invites/models/inviter.rb",
+     "lib/muck-invites/tasks/muck_invites.rake",
+     "muck-invites.gemspec",
      "public/stylesheets/muck-invites.css",
      "test/rails_test/.gitignore",
      "test/rails_test/.rake_tasks",
