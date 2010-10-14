@@ -1,4 +1,4 @@
-require 'muck_invites'
+require 'muck-invites'
 require 'rails'
 
 module MuckActivities
@@ -8,7 +8,7 @@ module MuckActivities
       'muck-invites'
     end
     
-    initializer 'muck_invites.helpers' do
+    initializer 'muck-invites.helpers' do
       ActiveSupport.on_load(:action_view) do
         include MuckInvitesHelper
       end

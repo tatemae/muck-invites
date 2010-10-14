@@ -31,7 +31,7 @@ muck-oauth gem:
   
 and add it to your Gemfile
 
-  gem 'muck-oauth', :require => 'muck_oauth'
+  gem 'muck-oauth'
   
 See the muck-oauth gem for more information - http://github.com/tatemae/muck-oauth
 

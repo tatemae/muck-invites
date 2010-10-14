@@ -10,11 +10,11 @@ gem "bcrypt-ruby", :require => "bcrypt"
 
 
 gem 'muck-engine', :path => "~/projects/muck-engine"
-gem 'muck-users', :require => 'muck_users', :path => "~/projects/muck-users"
-gem 'muck-profiles', :require => 'muck_profiles', :path => "~/projects/muck-profiles"
+gem 'muck-users', :path => "~/projects/muck-users"
+gem 'muck-profiles', :path => "~/projects/muck-profiles"
 gem 'muck-activities', :path => "~/projects/muck-activities"
-gem 'muck-oauth', :require => 'muck_oauth', :path => "~/projects/muck-oauth"
-gem 'muck-invites', :require => 'muck_invites', :path => '../../'
+gem 'muck-oauth', :path => "~/projects/muck-oauth"
+gem 'muck-invites', :path => '../../'
     
 if RUBY_VERSION < '1.9'
   gem "ruby-debug"
