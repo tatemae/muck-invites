@@ -23,6 +23,25 @@ PATH
       will_paginate (~> 3.0.beta)
 
 PATH
+  remote: /Users/jbasdf/projects/muck-invites
+  specs:
+    muck-invites (0.1.12)
+      contacts
+      muck-engine
+
+PATH
+  remote: /Users/jbasdf/projects/muck-oauth
+  specs:
+    muck-oauth (3.0.0)
+      muck-engine
+      muck-users
+      oauth (>= 0.3.6)
+      oauth-plugin (~> 0.3.14)
+      overlord
+      portablecontacts (>= 0.1.0)
+      twitter (~> 0.9.5)
+
+PATH
   remote: /Users/jbasdf/projects/muck-profiles
   specs:
     muck-profiles (3.0.0)
@@ -106,6 +125,9 @@ GEM
       selenium-webdriver (>= 0.0.3)
     columnize (0.3.1)
     configuration (1.1.0)
+    contacts (1.2.4)
+      gdata (= 1.1.1)
+      json (>= 0.4.1)
     crack (0.1.8)
     cucumber (0.9.0)
       builder (~> 2.1.2)
@@ -125,11 +147,13 @@ GEM
       rake (>= 0.8.7)
     friendly_id (3.1.7)
       babosa (~> 0.2.0)
+    gdata (1.1.1)
     geokit (1.5.0)
     gherkin (2.2.4)
       json (~> 1.4.6)
       term-ansicolor (~> 1.0.5)
       trollop (~> 1.16.2)
+    hashie (0.4.0)
     httparty (0.6.1)
       crack (= 0.1.8)
     i18n (0.4.1)
@@ -167,17 +191,24 @@ GEM
       muck-engine
       muck-users
     muck-solr (0.4.7)
+    multi_json (0.0.4)
     mysql (2.8.1)
     nested_set (1.5.2)
       activerecord (>= 3.0.0)
       railties (>= 3.0.0)
     nokogiri (1.4.3.1)
+    oauth (0.4.3)
+    oauth-plugin (0.3.14)
+      oauth (>= 0.3.5)
     overlord (3.0.1)
       httparty
     paperclip (2.3.4)
       activerecord
       activesupport
     polyglot (0.3.1)
+    portablecontacts (0.1.0)
+      json
+      oauth (>= 0.3.6)
     rack (1.2.1)
     rack-mount (0.6.13)
       rack (>= 1.0.0)
@@ -229,6 +260,11 @@ GEM
     treetop (1.4.8)
       polyglot (>= 0.3.1)
     trollop (1.16.2)
+    twitter (0.9.12)
+      hashie (~> 0.4.0)
+      httparty (~> 0.6.1)
+      multi_json (~> 0.0.4)
+      oauth (~> 0.4.3)
     tzinfo (0.3.23)
     uploader (3.0.2)
       aws-s3
@@ -255,6 +291,8 @@ DEPENDENCIES
   launchy
   muck-activities!
   muck-engine!
+  muck-invites!
+  muck-oauth!
   muck-profiles!
   muck-users!
   mysql
