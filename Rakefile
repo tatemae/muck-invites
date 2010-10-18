@@ -2,15 +2,13 @@ require 'rake'
 require 'rake/testtask'
 require 'rake/rdoctask'
 
-desc 'Default: run unit tests.'
-task :default => :test
+require 'rspec/core/rake_task'
 
-desc 'Test muck-invites.'
-Rake::TestTask.new(:test) do |t|
-  t.libs << 'lib'
-  t.libs << 'test/rails_test/test'
-  t.pattern = 'test/rails_test/test/**/*_test.rb'
-  t.verbose = true
+desc 'Default: run specs.'
+task :default => :spec
+RSpec::Core::RakeTask.new(:spec) do |t|
+  t.rspec_opts = ["--color", "-c", "-f progress", "-r test/rails_test/spec/spec_helper.rb"]
+  t.pattern = 'test/rails_test/spec/**/*_spec.rb'  
 end
 
 begin
@@ -50,11 +48,12 @@ begin
     gemspec.name = "muck-invites"
     gemspec.summary = "The invite engine for the muck system"
     gemspec.email = "justin@tatemae.com"
-    gemspec.homepage = "http://github.com/tatemae/muck_invites"
+    gemspec.homepage = "http://github.com/tatemae/muck-invites"
     gemspec.description = "The invite engine for the muck system."
     gemspec.authors = ["Justin Ball, Joel Duffin"]
     gemspec.rubyforge_project = 'muck-invites'
     gemspec.add_dependency "contacts"
+    gemspec.add_dependency "hpricot"
     gemspec.add_dependency "muck-engine"
   end
   Jeweler::GemcutterTasks.new

@@ -33,8 +33,8 @@ module MuckInvites
         if inviters.size > 0
           content = I18n.t('muck.activities.joined_status', :name => self.full_name, :application_name => MuckEngine.configuration.application_name)
           inviters.each do |inviter|
-            add_activity(self, self, self, 'status_update', '', content) if GlobalConfig.create_activities_when_invited_joins
-            send_invited_joined_emails(inviters) if GlobalConfig.email_inviters_when_invited_joins
+            add_activity(self, self, self, 'status_update', '', content) if MuckInvites.configuration.create_activities_when_invited_joins
+            send_invited_joined_emails(inviters) if MuckInvites.configuration.email_inviters_when_invited_joins
           end
         end 
       end
@@ -55,7 +55,7 @@ module MuckInvites
             check_emails << email
             invitee = Invitee.find_by_email(email) || Invitee.create!(:email => email)
             Invite.create!(:inviter => self, :invitee => invitee, :user => user)
-            response = InviteMailer.deliver_invite_notification(user, message, email)
+            response = InviteMailer.invite_notification(user, message, email).deliver
           end
         end 
       end

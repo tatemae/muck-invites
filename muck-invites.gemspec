@@ -9,7 +9,7 @@ Gem::Specification.new do |s|
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Justin Ball, Joel Duffin"]
-  s.date = %q{2010-10-13}
+  s.date = %q{2010-10-18}
   s.description = %q{The invite engine for the muck system.}
   s.email = %q{justin@tatemae.com}
   s.extra_rdoc_files = [
@@ -86,7 +86,6 @@ Gem::Specification.new do |s|
      "config/locales/zh-CN.yml",
      "config/locales/zh-TW.yml",
      "config/locales/zh.yml",
-     "config/muck_invites_routes.rb",
      "db/migrate/20090928213532_create_invites.rb",
      "db/migrate/20091128170318_make_invites_polymorphic.rb",
      "lib/muck-invites.rb",
@@ -96,7 +95,6 @@ Gem::Specification.new do |s|
      "lib/muck-invites/models/invite.rb",
      "lib/muck-invites/models/invitee.rb",
      "lib/muck-invites/models/inviter.rb",
-     "lib/muck-invites/tasks/muck_invites.rake",
      "muck-invites.gemspec",
      "public/stylesheets/muck-invites.css",
      "test/rails_test/.gitignore",
@@ -130,7 +128,6 @@ Gem::Specification.new do |s|
      "test/rails_test/config/initializers/inflections.rb",
      "test/rails_test/config/initializers/mime_types.rb",
      "test/rails_test/config/initializers/muck.rb",
-     "test/rails_test/config/initializers/oauth_consumers.rb",
      "test/rails_test/config/initializers/secret_token.rb",
      "test/rails_test/config/initializers/session_store.rb",
      "test/rails_test/config/locales/en.yml",
@@ -1428,7 +1425,7 @@ Gem::Specification.new do |s|
      "test/rails_test/spec/spec_helper.rb",
      "test/rails_test/test/fixtures/rails.png"
   ]
-  s.homepage = %q{http://github.com/tatemae/muck_invites}
+  s.homepage = %q{http://github.com/tatemae/muck-invites}
   s.rdoc_options = ["--charset=UTF-8"]
   s.require_paths = ["lib"]
   s.rubyforge_project = %q{muck-invites}
@@ -1456,7 +1453,6 @@ Gem::Specification.new do |s|
      "test/rails_test/config/initializers/inflections.rb",
      "test/rails_test/config/initializers/mime_types.rb",
      "test/rails_test/config/initializers/muck.rb",
-     "test/rails_test/config/initializers/oauth_consumers.rb",
      "test/rails_test/config/initializers/secret_token.rb",
      "test/rails_test/config/initializers/session_store.rb",
      "test/rails_test/config/routes.rb",
@@ -1505,13 +1501,16 @@ Gem::Specification.new do |s|
 
     if Gem::Version.new(Gem::VERSION) >= Gem::Version.new('1.2.0') then
       s.add_runtime_dependency(%q<contacts>, [">= 0"])
+      s.add_runtime_dependency(%q<hpricot>, [">= 0"])
       s.add_runtime_dependency(%q<muck-engine>, [">= 0"])
     else
       s.add_dependency(%q<contacts>, [">= 0"])
+      s.add_dependency(%q<hpricot>, [">= 0"])
       s.add_dependency(%q<muck-engine>, [">= 0"])
     end
   else
     s.add_dependency(%q<contacts>, [">= 0"])
+    s.add_dependency(%q<hpricot>, [">= 0"])
     s.add_dependency(%q<muck-engine>, [">= 0"])
   end
 end

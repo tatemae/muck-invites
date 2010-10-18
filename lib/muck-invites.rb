@@ -1,3 +1,5 @@
+require 'contacts'
+
 require 'muck-invites/config'
 require 'muck-invites/exceptions'
 require 'muck-invites/models/invite'

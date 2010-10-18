@@ -1,6 +1,6 @@
 module MuckInvites
   module Models #:nodoc:
-    module Invite #:nodoc:
+    module MuckInvite #:nodoc:
       extend ActiveSupport::Concern
       
       included do

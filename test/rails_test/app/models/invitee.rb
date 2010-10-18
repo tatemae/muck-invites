@@ -1,4 +1,4 @@
 class Invitee < ActiveRecord::Base
-  include MuckInvites::Models::Invitee
+  include MuckInvites::Models::MuckInvitee
 end
 

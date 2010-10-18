@@ -9,20 +9,24 @@ describe Invitee do
       @invite = Invite.create(:inviter => @user, :invitee => @invitee, :user => @user)
       @user.reload
     end
-
     
     it { should validate_presence_of :email }
     it { should have_many :users }
 
-    should_allow_values_for :email, 'a@x.com', 'de.veloper@example.com'
-    should_not_allow_values_for :email, 'example.com', '@example.com', 'developer@example', 'developer', :message => 'does not look like a valid email address.'
+    it { should allow_value('a@x.com').for(:email) }
+    it { should allow_value('de.veloper@example.com').for(:email) }
+    
+    it { should_not allow_value('example.com').for(:email) }
+    it { should_not allow_value('@example.com').for(:email) }
+    it { should_not allow_value('developer@example').for(:email) }
+    it { should_not allow_value('developer').for(:email) }
 
     it "should require email" do
       lambda{
         u = Factory.build(:invitee, :email => nil)
         u.should_not be_valid
         u.errors[:email].should_not be_empty
-      }.should change(Invite, :count)
+      }.should_not change(Invite, :count)
     end
 
     it "should not create new invites when more than one person invites the same email address" do

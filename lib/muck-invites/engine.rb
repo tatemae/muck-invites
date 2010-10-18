@@ -1,7 +1,7 @@
 require 'muck-invites'
 require 'rails'
 
-module MuckActivities
+module MuckInvites
   class Engine < ::Rails::Engine
     
     def muck_name

@@ -3,8 +3,8 @@ class User < ActiveRecord::Base
     c.crypto_provider = Authlogic::CryptoProviders::BCrypt
   end
   include MuckUsers::Models::MuckUser
-  include MuckInvites::Models::Inviter
+  include MuckInvites::Models::MuckInviter
   include MuckActivities::Models::MuckActivityConsumer
-  include MuckOauth::Models::MuckUser
+  #include MuckAuth::Models::MuckUser
 end
 

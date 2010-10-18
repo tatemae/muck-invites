@@ -38,7 +38,7 @@ describe Muck::InvitesController do
         it "should return valid get_contacts json" do
           json = ActiveSupport::JSON.decode(@response.body).symbolize_keys!
           assert json[:success]
-          json[:contacts].should include(["Folksemantic, Support", "support@folksemantic.com"])
+          json[:contacts].include?(["Support Folksemantic", "support@folksemantic.com"]).should be_true
         end
       end
 

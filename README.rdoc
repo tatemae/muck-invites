@@ -2,11 +2,18 @@
 Make it easy to let users invite other users.
 
 == Setup
-Install the gem:
+Add the gem to your Gemfile:
   
-  sudo gem install muck-invites
+  gem 'muck-invites'
 
-and add it to environment.rb:
+=== Initializer
+# Create an initializer to configure settings:
+  MuckInvites.configure do |config|
+    config.use_gravatar_in_photo_list = true            # The invite list can include photos from gravatar.
+    config.create_activities_when_invited_joins = true  # Add an entry to the inviter's activity when the invited joins.
+    config.email_inviters_when_invited_joins = true     # Send out an email to the inviter when the invited person joins.
+  end
+
 
 == Javascript and CSS
 Be sure to include muck.js:
@@ -18,25 +25,17 @@ You can include muck-invites.css or copy and paste the styles and change them as
 Include a link to initialize the invite process.  You might want to do this in a lightbox.
   <%= link_to 'Invite Your Friends', new_invite_path, :class => 'invite_box' %>
 
-The invite list can include photos from gravatar. To enable this functionality add this to global_config.yml
-MuckInvites.configure do |config|
-  config.use_gravatar_in_photo_list = true
-end
 
 === Oauth
 The invite system can use oauth where available to acquire contacts. To enable this functionality install the
-muck-oauth gem:
+muck-auth gem:
 
-  sudo gem install muck-oauth
+  gem 'muck-auth'
   
-and add it to your Gemfile
-
-  gem 'muck-oauth'
-  
-See the muck-oauth gem for more information - http://github.com/tatemae/muck-oauth
+See the muck-auth gem for more information - http://github.com/tatemae/muck-auth
 
 === Inviter model
-Add 'include MuckInvites::Models::Inviter' to the class that you wish to have do the inviting.  This is commonly the user model, but
+Add 'include MuckInvites::Models::MuckInviter' to the class that you wish to have do the inviting.  This is commonly the user model, but
 might also be another model - for example Event.
 
   class User < ActiveRecord::Base
@@ -44,13 +43,13 @@ might also be another model - for example Event.
       c.crypto_provider = Authlogic::CryptoProviders::BCrypt
     end
     include MuckUsers::Models::MuckUser
-    include MuckInvites::Models::Inviter
+    include MuckInvites::Models::MuckInviter
   end
 
 or
   
   class Event < ActiveRecord::Base
-    include MuckInvites::Models::Inviter
+    include MuckInvites::Models::MuckInviter
   end
 
 === Other models
@@ -59,12 +58,12 @@ can be added to each model as needed.
 
 Create an Invitee model:
   class Invitee < ActiveRecord::Base
-    include MuckInvites::Models::Invitee
+    include MuckInvites::Models::MuckInvitee
   end
 
 Create an Invite model:
   class Invite < ActiveRecord::Base
-    include MuckInvites::Models::Invite
+    include MuckInvites::Models::MuckInvite 
   end
 
 
