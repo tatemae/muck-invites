@@ -5,7 +5,7 @@
 
 Gem::Specification.new do |s|
   s.name = %q{muck-invites}
-  s.version = "0.1.12"
+  s.version = "3.0.0"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Justin Ball, Joel Duffin"]
@@ -24,10 +24,10 @@ Gem::Specification.new do |s|
      "app/controllers/muck/invites_controller.rb",
      "app/helpers/muck_invites_helper.rb",
      "app/mailers/invite_mailer.rb",
-     "app/views/invite_mailer/invite_notification.text.html.erb",
-     "app/views/invite_mailer/invite_notification.text.plain.erb",
-     "app/views/invite_mailer/invited_joined_notification.text.html.erb",
-     "app/views/invite_mailer/invited_joined_notification.text.plain.erb",
+     "app/views/invite_mailer/invite_notification.html.erb",
+     "app/views/invite_mailer/invite_notification.text.erb",
+     "app/views/invite_mailer/invited_joined_notification.html.erb",
+     "app/views/invite_mailer/invited_joined_notification.text.erb",
      "app/views/invites/_contact_container.erb",
      "app/views/invites/_contact_list.erb",
      "app/views/invites/_contact_list_gravatar.erb",
@@ -86,6 +86,7 @@ Gem::Specification.new do |s|
      "config/locales/zh-CN.yml",
      "config/locales/zh-TW.yml",
      "config/locales/zh.yml",
+     "config/routes.rb",
      "db/migrate/20090928213532_create_invites.rb",
      "db/migrate/20091128170318_make_invites_polymorphic.rb",
      "lib/muck-invites.rb",
@@ -95,6 +96,7 @@ Gem::Specification.new do |s|
      "lib/muck-invites/models/invite.rb",
      "lib/muck-invites/models/invitee.rb",
      "lib/muck-invites/models/inviter.rb",
+     "lib/tasks/muck_invites.rake",
      "muck-invites.gemspec",
      "public/stylesheets/muck-invites.css",
      "test/rails_test/.gitignore",
