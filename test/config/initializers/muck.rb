@@ -60,6 +60,12 @@ MuckComments.configure do |config|
   config.sanitize_content = true            # Turns sanitize off/on for comments. We highly recommend leaving this on.
 end
 
+MuckInvites.configure do |config|
+  config.use_gravatar_in_photo_list = true            # The invite list can include photos from gravatar.
+  config.create_activities_when_invited_joins = true  # Add an entry to the inviter's activity when the invited joins.
+  config.email_inviters_when_invited_joins = true     # Send out an email to the inviter when the invited person joins.
+end
+
 if defined?(ActiveRecord)
   # Don't Include Active Record class name as root for JSON serialized output.
   ActiveRecord::Base.include_root_in_json = false

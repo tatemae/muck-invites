@@ -34,6 +34,7 @@
   </div>
 </div>
 <%= render :partial => 'invites/invite_scripts' %>
+<% content_for :javascript do -%>
 <script type="text/javascript" language="JavaScript">
 jQuery(document).ready(function() {
   
@@ -60,3 +61,4 @@ jQuery(document).ready(function() {
   <% end -%>
 });  
 </script>
+<% end -%>
