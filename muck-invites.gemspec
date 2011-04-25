@@ -5,11 +5,11 @@
 
 Gem::Specification.new do |s|
   s.name = %q{muck-invites}
-  s.version = "3.2.0"
+  s.version = "3.3.0"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Justin Ball, Joel Duffin"]
-  s.date = %q{2011-04-21}
+  s.date = %q{2011-04-25}
   s.description = %q{The invite engine for the muck system.}
   s.email = %q{justin@tatemae.com}
   s.extra_rdoc_files = [
@@ -108,21 +108,24 @@ Gem::Specification.new do |s|
     s.specification_version = 3
 
     if Gem::Version.new(Gem::VERSION) >= Gem::Version.new('1.2.0') then
-      s.add_runtime_dependency(%q<contacts>, [">= 0"])
+      s.add_runtime_dependency(%q<contacts>, [">= 1.2.4"])
       s.add_runtime_dependency(%q<muck-portablecontacts>, [">= 0"])
       s.add_runtime_dependency(%q<hpricot>, [">= 0"])
       s.add_runtime_dependency(%q<muck-engine>, [">= 0"])
+      s.add_runtime_dependency(%q<muck-auth>, [">= 3.5.1"])
     else
-      s.add_dependency(%q<contacts>, [">= 0"])
+      s.add_dependency(%q<contacts>, [">= 1.2.4"])
       s.add_dependency(%q<muck-portablecontacts>, [">= 0"])
       s.add_dependency(%q<hpricot>, [">= 0"])
       s.add_dependency(%q<muck-engine>, [">= 0"])
+      s.add_dependency(%q<muck-auth>, [">= 3.5.1"])
     end
   else
-    s.add_dependency(%q<contacts>, [">= 0"])
+    s.add_dependency(%q<contacts>, [">= 1.2.4"])
     s.add_dependency(%q<muck-portablecontacts>, [">= 0"])
     s.add_dependency(%q<hpricot>, [">= 0"])
     s.add_dependency(%q<muck-engine>, [">= 0"])
+    s.add_dependency(%q<muck-auth>, [">= 3.5.1"])
   end
 end
 
