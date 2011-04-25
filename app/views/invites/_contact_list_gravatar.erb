@@ -2,10 +2,10 @@
 <table class="contacts-list">
  <% contacts.each_with_index do |contact,i| %>
    <tr class="contact <%= i%2==0 ? 'even' : 'odd' %>">
-     <td class="cb"><input type="checkbox" value="<%= h(contact[1]) %>" name="emails[]"></td>
-     <td class="icon"><%= image_tag(gravatar(contact[1], default_image, 20), :class => 'contact-list-image', :alt => contact[0]) %></td>
-     <td class="name"><%= contact[0] %></td>
-     <td class="email"><%= contact[1] %></td>
+     <td class="cb"><input type="checkbox" value="<%= contact[:email] %>" name="emails[]"></td>
+     <td class="icon"><%= image_tag(gravatar(contact[:email], default_image, 20), :class => 'contact-list-image', :alt => contact[:email]) %></td>
+     <td class="name"><%= contact[:name] %></td>
+     <td class="email"><%= contact[:email] %></td>
    </tr>
  <% end %>
 </table>

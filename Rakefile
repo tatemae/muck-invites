@@ -52,16 +52,15 @@ begin
     gem.description = "The invite engine for the muck system."
     gem.authors = ["Justin Ball, Joel Duffin"]
     
-    gem.add_dependency "contacts"
+    gem.add_dependency "contacts", ">=1.2.4"
+    gem.add_dependency "muck-portablecontacts"
     gem.add_dependency "hpricot"
     gem.add_dependency "muck-engine"
+    gem.add_dependency "muck-auth", ">=3.5.1"
     gem.files.exclude 'test/**'
     gem.test_files.exclude 'test/**'
   end
   Jeweler::GemcutterTasks.new
-  Jeweler::RubyforgeTasks.new do |rubyforge|
-    rubyforge.doc_task = "rdoc"
-  end
 rescue LoadError
   puts "Jeweler not available. Install it with: sudo gem install jeweler"
 end

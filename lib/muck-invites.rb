@@ -1,4 +1,5 @@
 require 'contacts'
+require 'portable_contacts'
 
 require 'muck-invites/config'
 require 'muck-invites/exceptions'

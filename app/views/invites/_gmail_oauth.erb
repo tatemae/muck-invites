@@ -1,10 +1,10 @@
 <% return unless logged_in? -%>
 <div id="gmail" class="invite-query">
-  <% if !current_user.google -%>
-    <p><a href="/oauth_consumers/google">Click to connect to your Gmail</a></p>
-  <% else -%>
+  <% if google_oauth_for(current_user) -%>
     <div class="contact-list">
-      <%= contact_container(gmail_contacts_as_array(current_user)) %>
-    </div>
+      <%= contact_container(gmail_contacts(current_user)) %>
+    </div>    
+  <% else -%>
+    <p><a href="/auth/google">Connect to Gmail</a></p>
   <% end -%>
 </div>

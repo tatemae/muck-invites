@@ -21,11 +21,11 @@
       <div class="form-row">
         <label class="invite-email" for="emails">Emails</label>
         <p class="invite-email">Enter emails of friends to invite or select them above:</p>
-        <%= text_area_tag :emails, params[:emails] %>
+        <%= text_area_tag :emails, emails || params[:emails] %>
       </div>
       <div class="form-row">
         <label class="invite-message" for="message">Message</label>
-        <%= text_area_tag :message, params[:message] %>
+        <%= text_area_tag :message, message || params[:message] %>
       </div>
       <div class="form-row">
         <%= f.submit t('muck.invites.invite_button'), :class => "button invite-submit" %>
@@ -49,7 +49,7 @@ jQuery(document).ready(function() {
   
   apply_ajax_forms();
   
-  <% if current_user.google -%>
+  <% if google_oauth_for(current_user) -%>
   <%= gmail_contacts_for_auto_complete(current_user) %>
   jQuery("#emails").autocomplete(gmail_contacts, {
                minChars: 1,
