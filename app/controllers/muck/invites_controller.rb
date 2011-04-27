@@ -6,7 +6,7 @@ class Muck::InvitesController < ApplicationController
     flash.discard
     @page_title = t('muck.invites.new_invites', :app_name => MuckEngine.configuration.application_name)
     respond_to do |format|
-      format.html { render :template => 'invites/new' }
+      format.html { render :template => 'invites/new', :layout => 'popup' }
       format.pjs { render :template => 'invites/new', :layout => false }
       format.js { render :template => 'invites/new', :layout => false }
     end
@@ -15,7 +15,7 @@ class Muck::InvitesController < ApplicationController
   def compose
     flash.discard
     respond_to do |format|
-      format.html { render :template => 'invites/compose' }
+      format.html { render :template => 'invites/compose', :layout => 'popup' }
       format.pjs { render :template => 'invites/compose', :layout => false }
       format.js { render :template => 'invites/compose', :layout => false }
     end
