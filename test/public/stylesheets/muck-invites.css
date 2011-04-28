@@ -14,3 +14,4 @@
 .tabs ul li a{float:left;text-decoration:none;font-weight:bold;}
 .tabs ul li a:hover{text-decoration:underline;}
 #invite textarea{width:600px;height:80px;font-size:1em;}
+.contacts-list .icon img{width:20px;}

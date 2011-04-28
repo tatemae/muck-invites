@@ -1,4 +1,6 @@
 <div id="compose-invite">
+  <h2>Email invites to friends</h2>
+  <!--
   <div class="tabs">
     <ul>
       <li><a href="gmail" class="active"><span>Gmail</span></a></li>
@@ -8,19 +10,23 @@
       <li><a href="plaxo"><span>Plaxo</span></a></li>
     </ul>
   </div>
+  -->
   <div id="invite-contents">
     <%= invite_ajax_message_container %>
-    <%= render :partial => 'invites/gmail_oauth' %>
-    <%= render :partial => 'invites/contacts_query', :locals => { :id => 'yahoo', :title => 'Yahoo' } %>
-    <%= render :partial => 'invites/contacts_query', :locals => { :id => 'windows', :title => 'Windows Live' } %>
-    <%= render :partial => 'invites/contacts_query', :locals => { :id => 'aol', :title => 'AOL' } %>
-    <%= render :partial => 'invites/contacts_query', :locals => { :id => 'plaxo', :title => 'Plaxo' } %>
+    <% if google_oauth_for(current_user) -%>
+      <p><%=translate('muck.invites.select_emails') %></p>
+      <%= render :partial => 'invites/gmail_oauth' %>
+    <% end -%>
+    <%#= render :partial => 'invites/contacts_query', :locals => { :id => 'yahoo', :title => 'Yahoo' } %>
+    <%#= render :partial => 'invites/contacts_query', :locals => { :id => 'windows', :title => 'Windows Live' } %>
+    <%#= render :partial => 'invites/contacts_query', :locals => { :id => 'aol', :title => 'AOL' } %>
+    <%#= render :partial => 'invites/contacts_query', :locals => { :id => 'plaxo', :title => 'Plaxo' } %>
   </div>
   <div id="invite">
     <%= muck_form_for(:invite_contacts, :url => {:action => 'create'}, :html => {:id => "invite-contacts-form", :name => 'invite-contacts-form'} ) do |f| -%>
       <div class="form-row">
         <label class="invite-email" for="emails">Emails</label>
-        <p class="invite-email">Enter emails of friends to invite or select them above:</p>
+        <p class="invite-email"><%=translate('muck.invites.email_friends_prompt') %></p>
         <%= text_area_tag :emails, emails || params[:emails] %>
       </div>
       <div class="form-row">

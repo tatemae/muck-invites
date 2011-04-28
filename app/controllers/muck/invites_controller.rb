@@ -32,7 +32,7 @@ class Muck::InvitesController < ApplicationController
     rescue Contacts::AuthenticationError => ex
       @success = false
       @message = ex.to_s
-    end    
+    end   
     respond_to do |format|
       format.html do
         flash[:error] = @message if @message
@@ -56,10 +56,7 @@ class Muck::InvitesController < ApplicationController
       @message = t('muck.invites.emails_empty')
     end
     respond_to do |format|
-      format.html do
-        flash[:notice] = @message
-        redirect_back_or_default('/')
-      end
+      format.html { render :template => 'invites/create', :layout => false }
       format.pjs { render :template => 'invites/create', :layout => false }
       format.js { render :template => 'invites/create', :layout => false }
     end 

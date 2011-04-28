@@ -28,7 +28,11 @@ The simple version that simply asks for an email and password:
   <%= link_to 'Invite Your Friends', new_invite_path, :class => 'invite_box' %>
 
 The better method that uses oauth to talk to email services instead of asking for a password:
-  <%= link_to 'Invite Friends', compose_invites_path, :class => 'invite_box' %>
+
+  <%= link_to 'Invite Friends', compose_invites_path, :class => 'invite_box iframe' %>
+The 'invite_box' class will result in the invite showing up in a popup. Remove that class if you want to customize the link to do something else. 
+By default the popup will use the 'popup' layout from muck-engine.
+
 
 === Oauth
 The invite system can use oauth where available to acquire contacts. To enable this functionality install the

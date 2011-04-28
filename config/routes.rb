@@ -6,9 +6,6 @@ Rails.application.routes.draw do
     collection do
       post :get_contacts
       get :compose
-      post :compose
-      get :new
-      post :new
     end
   end
 end
