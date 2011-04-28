@@ -5,7 +5,7 @@
 
 Gem::Specification.new do |s|
   s.name = %q{muck-invites}
-  s.version = "3.3.2"
+  s.version = "3.3.3"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Justin Ball, Joel Duffin"]
@@ -30,12 +30,14 @@ Gem::Specification.new do |s|
     "app/views/invites/_contact_container.erb",
     "app/views/invites/_contact_list.erb",
     "app/views/invites/_contact_list_gravatar.erb",
+    "app/views/invites/_contacts_from_services.html.erb",
     "app/views/invites/_contacts_loading.erb",
     "app/views/invites/_contacts_query.erb",
     "app/views/invites/_gmail_oauth.erb",
     "app/views/invites/_invite_compose.erb",
     "app/views/invites/_invite_scripts.erb",
     "app/views/invites/_invite_standard.erb",
+    "app/views/invites/_yahoo_oauth.html.erb",
     "app/views/invites/compose.erb",
     "app/views/invites/create.erb",
     "app/views/invites/create.html.erb",
