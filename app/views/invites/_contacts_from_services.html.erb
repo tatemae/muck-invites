@@ -1,0 +1,9 @@
+<% return unless logged_in? -%>
+<% if google_oauth_for(current_user) || yahoo_oauth_for(current_user) -%>
+  <p><%=translate('muck.invites.select_emails') %></p>
+  <div id="contacts-from-services" class="invite-query">
+    <div class="contact-list">
+      <%= contact_container(service_contacts(current_user)) %>
+    </div>  
+  </div>
+<% end -%>

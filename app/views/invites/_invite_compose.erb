@@ -13,10 +13,7 @@
   -->
   <div id="invite-contents">
     <%= invite_ajax_message_container %>
-    <% if google_oauth_for(current_user) -%>
-      <p><%=translate('muck.invites.select_emails') %></p>
-      <%= render :partial => 'invites/gmail_oauth' %>
-    <% end -%>
+    <%= render :partial => 'invites/contacts_from_services' %>
     <%#= render :partial => 'invites/contacts_query', :locals => { :id => 'yahoo', :title => 'Yahoo' } %>
     <%#= render :partial => 'invites/contacts_query', :locals => { :id => 'windows', :title => 'Windows Live' } %>
     <%#= render :partial => 'invites/contacts_query', :locals => { :id => 'aol', :title => 'AOL' } %>

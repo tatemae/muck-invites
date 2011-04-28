@@ -1,0 +1,10 @@
+<% return unless logged_in? -%>
+<div id="yahoo" class="invite-query">
+  <% if yahoo_oauth_for(current_user) -%>
+    <div class="contact-list">
+      <%= contact_container(yahoo_contacts(current_user)) %>
+    </div>    
+  <% else -%>
+    <p><a href="/auth/google">Connect to Yahoo</a></p>
+  <% end -%>
+</div>

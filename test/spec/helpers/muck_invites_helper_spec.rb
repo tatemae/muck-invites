@@ -61,10 +61,26 @@ describe MuckInvitesHelper do
         xml = File.open(File.expand_path("../../../test/fixtures/google_contacts.xml", __FILE__), "rb").read
         result = mock(:code => '200', :body => xml)
         google = Factory(:authentication)
+        @user = google.user
         google.access_token.stub!(:get).and_return(result)
         helper.stub!(:google_oauth_for).and_return(google)        
       end
       it "should parse the returned xml" do
+        helper.gmail_contacts(@user)
+      end
+    end
+    
+    describe "yahoo_contacts" do
+      before do
+        xml = File.open(File.expand_path("../../../test/fixtures/yahoo_contacts.xml", __FILE__), "rb").read
+        result = mock(:code => '200', :body => xml)
+        yahoo = Factory(:authentication)
+        @user = yahoo.user
+        yahoo.access_token.stub!(:get).and_return(result)
+        helper.stub!(:yahoo_oauth_for).and_return(yahoo)        
+      end
+      it "should parse the returned xml" do
+        helper.yahoo_contacts(@user)
       end
     end
     
