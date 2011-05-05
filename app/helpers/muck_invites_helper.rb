@@ -27,16 +27,15 @@ module MuckInvitesHelper
     user.authentications.find_by_provider('google')
   end
    
- def yahoo_oauth_for(user)
-   user.authentications.find_by_provider('yahoo')
- end
+  def yahoo_oauth_for(user)
+    user.authentications.find_by_provider('yahoo')
+  end
  
   # Generates a javascript array of emails from gmail.  Values will be
   # put into a variable named 'gmail_contacts'
-  def gmail_contacts_for_auto_complete(user, ignore_cache = false)
-    return unless google_oauth_for(user)
-    contacts = gmail_contacts(user, ignore_cache).collect{|contact| "'#{contact[:email]} (#{contact[:name]})'" }
-    "var gmail_contacts = [#{contacts.join(',')}];"
+  def contacts_for_auto_complete(contacts, ignore_cache = false)
+    contacts = contacts.collect{|contact| "'#{contact[:email]}'" }
+    "var auto_complete_contacts = [#{contacts.join(',')}];"
   end
   
   def service_contacts(user, ignore_cache = false)

@@ -1,5 +1,5 @@
 <div id="compose-invite">
-  <h2>Email invites to friends</h2>
+  <h2><%=translate('muck.invites.invite_via_email_title') %></h2>
   <!--
   <div class="tabs">
     <ul>
@@ -22,12 +22,12 @@
   <div id="invite">
     <%= muck_form_for(:invite_contacts, :url => {:action => 'create'}, :html => {:id => "invite-contacts-form", :name => 'invite-contacts-form'} ) do |f| -%>
       <div class="form-row">
-        <label class="invite-email" for="emails">Emails</label>
+        <label class="invite-email" for="emails"><%=translate('muck.invites.emails') %></label>
         <p class="invite-email"><%=translate('muck.invites.email_friends_prompt') %></p>
         <%= text_area_tag :emails, emails || params[:emails] %>
       </div>
       <div class="form-row">
-        <label class="invite-message" for="message">Message</label>
+        <label class="invite-message" for="message"><%=translate('muck.invites.message') %></label>
         <%= text_area_tag :message, message || params[:message] %>
       </div>
       <div class="form-row">
@@ -50,18 +50,6 @@ jQuery(document).ready(function() {
   });
   jQuery('.tabs').show();
   
-  apply_ajax_forms();
-  
-  <% if google_oauth_for(current_user) -%>
-  <%= gmail_contacts_for_auto_complete(current_user) %>
-  jQuery("#emails").autocomplete(gmail_contacts, {
-               minChars: 1,
-               delay: 200,
-               autoFill: true,
-               mustMatch: false,
-               multiple: true
-  });
-  <% end -%>
 });  
 </script>
 <% end -%>

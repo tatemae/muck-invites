@@ -8,10 +8,11 @@ GIT
 PATH
   remote: ../
   specs:
-    muck-invites (3.2.0)
-      contacts
+    muck-invites (3.3.3)
+      contacts (>= 1.2.4)
       hpricot
-      muck-engine
+      muck-auth (>= 3.5.1)
+      muck-engine (>= 3.3.4)
       muck-portablecontacts
 
 PATH
@@ -59,7 +60,7 @@ PATH
 PATH
   remote: ~/projects/muck-engine
   specs:
-    muck-engine (3.3.3)
+    muck-engine (3.3.5)
       overlord
       validation_reflection
       will_paginate (~> 3.0.pre2)
@@ -83,7 +84,7 @@ PATH
 PATH
   remote: ~/projects/muck-users
   specs:
-    muck-users (3.2.1)
+    muck-users (3.2.2)
       authlogic
       bcrypt-ruby
       friendly_id

@@ -27,11 +27,50 @@ jQuery(document).ready(function() {
   });
   
   jQuery('#emails').change(function(){
-    var emails = split_list(jQuery('#emails').val());
-    excluded_checkbox_by_email(emails, false);
-    included_checkbox_by_email(emails, true);
+    set_email_ui();
   });
+  
+  <%= contacts_for_auto_complete(service_contacts(current_user)) %>
+  jQuery("#emails")
+  // don't navigate away from the field on tab when selecting an item
+  .bind("keydown", function(event){
+    if(event.keyCode === $.ui.keyCode.TAB && jQuery(this).data("autocomplete" ).menu.active){
+      event.preventDefault();
+    }
+    set_email_ui();
+  })
+  .autocomplete({
+    minLength: 0,
+    source: function( request, response ) {
+      // delegate back to autocomplete, but extract the last term
+      response( jQuery.ui.autocomplete.filter(
+        auto_complete_contacts, extractLast(request.term)));
+      },
+      focus: function() {
+        // prevent value inserted on focus
+        return false;
+      },
+      select: function(event, ui) {
+        var terms = split(this.value);
+        // remove the current input
+        terms.pop();
+        // add the selected item
+        terms.push(ui.item.value);
+        // add placeholder to get the comma-and-space at the end
+        terms.push("");
+        this.value = terms.join(", ");
+        return false;
+      }
+  });
+	
 });
+
+function split( val ) {
+	return val.split( /,\s*/ );
+}
+function extractLast( term ) {
+	return split( term ).pop();
+}
 
 function checked_emails(){
    return get_emails(jQuery('.contacts-list .cb input:checkbox:checked'));
@@ -41,6 +80,12 @@ function get_emails(cbs){
   return cbs.map(function() {
     return jQuery(this).val();
   }).get();
+}
+
+function set_email_ui(){
+  var emails = split_list(jQuery('#emails').val());
+  excluded_checkbox_by_email(emails, false);
+  included_checkbox_by_email(emails, true);
 }
 // Sets checkboxes that are in 'emails'
 function included_checkbox_by_email(emails, checked){

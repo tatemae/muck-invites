@@ -12,14 +12,17 @@ en:
       create_success: Invites were sent to %{emails}. You will be notified if they join %{app_name}
       we_wont_email: We won't email these addresses without your permission.
       invited_joined: "%{user}} joined %{app_name}"
+      invite_via_email_title: Email invites to friends
       retrieving_contacts: Retrieving contacts
       we_dont_store: We don't store your login and your password is submitted securely.
+      emails: Emails
       emails_empty: You didn't specify any emails
       invalid_email_error: does not look like a valid email address.
       your_email: Your Email
       your_email_help: The email address of an account with contacts that you want to invite
       select_emails: "Select emails:"
       select_all: Select All
+      message: Message
       no_contacts_found: No contacts were found
       compose_invites: Compose Invite
       email_friends_prompt: "Enter emails of friends to invite:"
