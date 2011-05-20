@@ -54,11 +54,12 @@ module MuckInvitesHelper
         if result.code == '200'
           xml_doc = Nokogiri::XML(result.body) {|config| config.options = Nokogiri::XML::ParseOptions::STRICT }
           contacts = xml_doc.xpath('//xmlns:entry').map do |entry|
-            {
-              :name => entry.xpath('xmlns:title').inner_html,
-              :email => entry.xpath('gd:email').attr('address').value
-            }
+            if !entry.xpath('gd:email').blank?
+              { :name => entry.xpath('xmlns:title').inner_html,
+                :email => entry.xpath('gd:email').attr('address').value }
+            end
           end
+          contacts.flatten!
         end
         @user_gmail_contacts[user] = contacts
       end

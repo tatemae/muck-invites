@@ -51,31 +51,29 @@ describe MuckInvitesHelper do
     describe "contacts_for_auto_complete" do
       it "should generate a javascript array" do
         helper.contacts_for_auto_complete(@contacts).should_not be_blank
-        helper.contacts_for_auto_complete(@contacts).should == %q{var gmail_contacts = ['test@example.com (john smith)'];}
+        helper.contacts_for_auto_complete(@contacts).should == %q{var auto_complete_contacts = ['test@example.com'];}
       end
     end
     
     describe "gmail_contacts" do
       before do
         xml = File.open(File.expand_path("../../../test/fixtures/google_contacts.xml", __FILE__), "rb").read
-        result = mock(:code => '200', :body => xml)
+        FakeWeb.register_uri(:get, "https://www.google.com/m8/feeds/contacts/default/full?max-results=10000", :body => xml)          
         google = Factory(:authentication)
         @user = google.authenticatable
-        google.access_token.stub!(:get).and_return(result)
         helper.stub!(:google_oauth_for).and_return(google)        
       end
       it "should parse the returned xml" do
-        helper.gmail_contacts(@user)
+        helper.gmail_contacts(@user).should_not be_blank
       end
     end
     
     describe "yahoo_contacts" do
       before do
         xml = File.open(File.expand_path("../../../test/fixtures/yahoo_contacts.json", __FILE__), "rb").read
-        result = mock(:code => '200', :body => xml)
+        FakeWeb.register_uri(:get, "http://social.yahooapis.com/v1/user/", :body => xml)  
         yahoo = Factory(:authentication)
         @user = yahoo.authenticatable
-        yahoo.access_token.stub!(:get).and_return(result)
         helper.stub!(:yahoo_oauth_for).and_return(yahoo)        
       end
       it "should parse the returned xml" do
