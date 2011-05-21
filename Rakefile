@@ -1,6 +1,5 @@
-require 'rake'
-require 'rake/testtask'
-require 'rake/rdoctask'
+require 'rubygems'
+require 'bundler'
 
 require 'rspec/core/rake_task'
 
@@ -27,8 +26,10 @@ rescue LoadError
   end
 end
 
+require 'rake/rdoctask'
 desc 'Generate documentation for the muck-invites gem.'
 Rake::RDocTask.new(:rdoc) do |rdoc|
+  version = File.exist?('VERSION') ? File.read('VERSION') : ""
   rdoc.rdoc_dir = 'rdoc'
   rdoc.title    = 'MuckInvites'
   rdoc.options << '--line-numbers' << '--inline-source'
@@ -42,24 +43,21 @@ task :translate do
   system("babelphish -o -y #{file}")
 end
 
-begin
-  require 'jeweler'
-  Jeweler::Tasks.new do |gem|
-    gem.name = "muck-invites"
-    gem.summary = "The invite engine for the muck system"
-    gem.email = "justin@tatemae.com"
-    gem.homepage = "http://github.com/tatemae/muck-invites"
-    gem.description = "The invite engine for the muck system."
-    gem.authors = ["Justin Ball, Joel Duffin"]
-    
-    gem.add_dependency "contacts", ">=1.2.4"
-    gem.add_dependency "muck-portablecontacts"
-    gem.add_dependency "hpricot"
-    gem.add_dependency "muck-engine", ">=3.3.4"
-    gem.add_dependency "muck-auth", ">=3.5.1"
-    gem.files.exclude 'test/**'
-  end
-  Jeweler::GemcutterTasks.new
-rescue LoadError
-  puts "Jeweler not available. Install it with: sudo gem install jeweler"
+require 'jeweler'
+Jeweler::Tasks.new do |gem|
+  gem.name = "muck-invites"
+  gem.summary = "The invite engine for the muck system"
+  gem.email = "justin@tatemae.com"
+  gem.homepage = "http://github.com/tatemae/muck-invites"
+  gem.description = "The invite engine for the muck system."
+  gem.authors = ["Justin Ball, Joel Duffin"]
+  gem.license = "MIT"
+  gem.add_dependency "contacts", ">=1.2.4"
+  gem.add_dependency "muck-portablecontacts"
+  gem.add_dependency "hpricot"
+  gem.add_dependency "muck-engine", ">=3.3.4"
+  gem.add_dependency "muck-auth", ">=3.5.1"
+  gem.files.exclude 'test/**'
 end
+Jeweler::RubygemsDotOrgTasks.new
+
