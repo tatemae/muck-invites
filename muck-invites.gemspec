@@ -2219,6 +2219,7 @@ Gem::Specification.new do |s|
     "test/test/fixtures/yahoo_contacts.json"
   ]
   s.homepage = %q{http://github.com/tatemae/muck-invites}
+  s.licenses = [%q{MIT}]
   s.require_paths = [%q{lib}]
   s.rubygems_version = %q{1.8.1}
   s.summary = %q{The invite engine for the muck system}
