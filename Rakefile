@@ -58,7 +58,6 @@ begin
     gem.add_dependency "muck-engine", ">=3.3.4"
     gem.add_dependency "muck-auth", ">=3.5.1"
     gem.files.exclude 'test/**'
-    gem.test_files.exclude 'test/**'
   end
   Jeweler::GemcutterTasks.new
 rescue LoadError
