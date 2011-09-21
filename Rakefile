@@ -1,6 +1,5 @@
 require 'rubygems'
 require 'bundler'
-
 require 'rspec/core/rake_task'
 
 desc 'Default: run specs.'
@@ -52,12 +51,7 @@ Jeweler::Tasks.new do |gem|
   gem.description = "The invite engine for the muck system."
   gem.authors = ["Justin Ball, Joel Duffin"]
   gem.license = "MIT"
-  gem.add_dependency "contacts", ">=1.2.4"
-  gem.add_dependency "muck-portablecontacts"
-  gem.add_dependency "hpricot"
-  gem.add_dependency "muck-engine", ">=3.3.4"
-  gem.add_dependency "muck-auth", ">=3.5.1"
-  gem.files.exclude 'test/**'
+  gem.files.exclude 'test/**/**'
 end
 Jeweler::RubygemsDotOrgTasks.new
 
