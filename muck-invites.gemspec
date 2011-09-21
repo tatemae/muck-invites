@@ -16,6 +16,7 @@ Gem::Specification.new do |s|
     "README.rdoc"
   ]
   s.files = [
+    "Gemfile",
     "MIT-LICENSE",
     "README.rdoc",
     "Rakefile",
@@ -100,11 +101,7 @@ Gem::Specification.new do |s|
     "lib/muck-invites/models/inviter.rb",
     "lib/tasks/muck_invites.rake",
     "muck-invites.gemspec",
-    "public/stylesheets/muck-invites.css",
-    "test/app/models/.keep",
-    "test/lib/tasks/.gitkeep",
-    "test/public/.htaccess",
-    "test/public/stylesheets/.keep"
+    "public/stylesheets/muck-invites.css"
   ]
   s.homepage = "http://github.com/tatemae/muck-invites"
   s.licenses = ["MIT"]
